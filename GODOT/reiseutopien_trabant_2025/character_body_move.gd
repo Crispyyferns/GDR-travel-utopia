@@ -22,19 +22,20 @@ func _process(delta):
 		interact_object.emit(collider)
 	else: interact_object.emit(null)
 	
-#func _physics_process(delta):
-	
+# 
 func _unhandled_input(event: InputEvent) -> void:
 	if event is InputEventMouseButton:
 		Input.set_mouse_mode(Input.MOUSE_MODE_CAPTURED)
 	elif event.is_action_pressed("ui_cancel"):
 		Input.set_mouse_mode(Input.MOUSE_MODE_VISIBLE)
+		
+	# if Mouse is not captured (ESC not pressed), Mouse coordinates Neck movements
 	if Input.get_mouse_mode() == Input.MOUSE_MODE_CAPTURED:
 		if event is InputEventMouseMotion:
 			neck.rotate_y(-event.relative.x * 0.005)
 			camera.rotate_x(-event.relative.y * 0.005)
-			camera.rotation.x = clamp(camera.rotation.x, deg_to_rad(-40), deg_to_rad(0))
-			neck.rotation.y = clamp(neck.rotation.y, deg_to_rad(-50), deg_to_rad(50))
+			camera.rotation.x = clamp(camera.rotation.x, deg_to_rad(-50), deg_to_rad(15))
+			neck.rotation.y = clamp(neck.rotation.y, deg_to_rad(-50), deg_to_rad(60))
 
 
 func _physics_process(delta: float) -> void:

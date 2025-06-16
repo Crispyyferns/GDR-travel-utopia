@@ -1,7 +1,7 @@
-[gd_scene load_steps=24 format=4 uid="uid://tqfxixxfrxi1"]
+[gd_scene load_steps=23 format=4 uid="uid://tqfxixxfrxi1"]
 
-[ext_resource type="Script" path="res://character_body_move.gd" id="1_ejcvr"]
-[ext_resource type="Script" path="res://Scenes/lamp_stand_placeholder.gd" id="5_4h61a"]
+[ext_resource type="PackedScene" uid="uid://00dmfg45pl5y" path="res://Scenes/first_person_player.tscn" id="6_ho5sd"]
+[ext_resource type="PackedScene" uid="uid://bd865flk4j8p2" path="res://Scenes/carrot.tscn" id="7_7w3qm"]
 [ext_resource type="Material" uid="uid://sse2n1l1ghfe" path="res://Assets/00.3D/Godot_StandardMaterials/baseObject_standardmat.tres" id="9_b7jx7"]
 [ext_resource type="Material" uid="uid://cpr0euaodheo2" path="res://Assets/00.3D/Godot_StandardMaterials/paper_standardmat.tres" id="10_hhjx1"]
 [ext_resource type="Script" path="res://Scenes/ObjectInspector.gd" id="11_pckaq"]
@@ -17,10 +17,6 @@ sky = SubResource("Sky_ku10h")
 ambient_light_color = Color(0.455608, 0.545595, 0.751373, 1)
 ambient_light_sky_contribution = 0.95
 ambient_light_energy = 1.17
-
-[sub_resource type="CapsuleShape3D" id="CapsuleShape3D_rle3x"]
-
-[sub_resource type="CapsuleMesh" id="CapsuleMesh_vp6sr"]
 
 [sub_resource type="StandardMaterial3D" id="StandardMaterial3D_elc5w"]
 albedo_color = Color(0.618196, 0.647253, 0.465268, 1)
@@ -51,6 +47,30 @@ material = SubResource("StandardMaterial3D_n4s0f")
 
 [sub_resource type="BoxMesh" id="BoxMesh_r8a4b"]
 material = ExtResource("10_hhjx1")
+
+[sub_resource type="GDScript" id="GDScript_at44h"]
+script/source = "extends MeshInstance3D
+
+@onready var Lamp = $Lamp_stand_Placeholder
+@onready var outlineMesh = $MeshInstance3D
+
+var selected = false
+var outlineWidth = 0.05
+
+func _ready():
+	get_tree().get_first_node_in_group(\"player\").interact_object.connect(_set_selected)
+	
+	outlineMesh.visible = false
+
+func _process(delta):
+	outlineMesh.visible = selected
+	
+	if selected: Lamp.position.y = outlineWidth
+	#else: Lamp.position.y = 0
+	
+func _set_selected(object):
+	selected = self == object
+"
 
 [sub_resource type="ConcavePolygonShape3D" id="ConcavePolygonShape3D_n4mvm"]
 data = PackedVector3Array(-0.5, 0.5, 0.5, 0.5, 0.5, 0.5, -0.5, -0.5, 0.5, 0.5, 0.5, 0.5, 0.5, -0.5, 0.5, -0.5, -0.5, 0.5, 0.5, 0.5, -0.5, -0.5, 0.5, -0.5, 0.5, -0.5, -0.5, -0.5, 0.5, -0.5, -0.5, -0.5, -0.5, 0.5, -0.5, -0.5, 0.5, 0.5, 0.5, 0.5, 0.5, -0.5, 0.5, -0.5, 0.5, 0.5, 0.5, -0.5, 0.5, -0.5, -0.5, 0.5, -0.5, 0.5, -0.5, 0.5, -0.5, -0.5, 0.5, 0.5, -0.5, -0.5, -0.5, -0.5, 0.5, 0.5, -0.5, -0.5, 0.5, -0.5, -0.5, -0.5, 0.5, 0.5, 0.5, -0.5, 0.5, 0.5, 0.5, 0.5, -0.5, -0.5, 0.5, 0.5, -0.5, 0.5, -0.5, 0.5, 0.5, -0.5, -0.5, -0.5, 0.5, 0.5, -0.5, 0.5, -0.5, -0.5, -0.5, 0.5, -0.5, 0.5, 0.5, -0.5, -0.5, -0.5, -0.5, -0.5)
@@ -87,31 +107,6 @@ transform = Transform3D(0.928453, 6.91752e-09, -0.371449, 0.361019, 0.235312, 0.
 light_color = Color(0.885059, 0.573438, 0.716347, 1)
 omni_range = 16.886
 omni_attenuation = 0.024
-
-[node name="Player" type="Node3D" parent="."]
-transform = Transform3D(-0.998099, 0, 0.0616233, 0, 1.365, 0, -0.0616233, 0, -0.998099, 4.40693, 1.31113, -1.39401)
-
-[node name="CharacterBody3D" type="CharacterBody3D" parent="Player"]
-transform = Transform3D(-3.10351e-08, 0, 0.71, 0, 0.71, 0, -0.71, 0, -3.10351e-08, 0, 0, 0)
-script = ExtResource("1_ejcvr")
-
-[node name="Neck" type="Node3D" parent="Player/CharacterBody3D"]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0.46204, 0)
-
-[node name="Camera3D" type="Camera3D" parent="Player/CharacterBody3D/Neck"]
-transform = Transform3D(1, 0, 1.86265e-09, 0, 1, 0, -1.86265e-09, 0, 1, 0, 0.0991898, 0)
-
-[node name="ObjectView" type="Node3D" parent="Player/CharacterBody3D/Neck/Camera3D"]
-
-[node name="RayCast3D" type="RayCast3D" parent="Player/CharacterBody3D/Neck/Camera3D"]
-target_position = Vector3(0, 0, -3.06)
-
-[node name="CollisionShape3D" type="CollisionShape3D" parent="Player/CharacterBody3D"]
-shape = SubResource("CapsuleShape3D_rle3x")
-
-[node name="Body" type="MeshInstance3D" parent="Player/CharacterBody3D/CollisionShape3D"]
-mesh = SubResource("CapsuleMesh_vp6sr")
-skeleton = NodePath("../../..")
 
 [node name="Room" type="Node3D" parent="."]
 
@@ -242,7 +237,7 @@ skeleton = NodePath("../..")
 transform = Transform3D(0.21042, 0, 0, 0, 0.368815, 0, 0, 0, 0.264246, -0.169972, 0.294797, 0)
 mesh = SubResource("BoxMesh_r8a4b")
 skeleton = NodePath("../..")
-script = ExtResource("5_4h61a")
+script = SubResource("GDScript_at44h")
 
 [node name="StaticBody3D" type="StaticBody3D" parent="Room/Table/Lamp_Table/Lamp_stand_Placeholder"]
 
@@ -266,3 +261,12 @@ offset_right = 77.0
 offset_bottom = 36.0
 text = "RETURN"
 metadata/_edit_use_anchors_ = true
+
+[node name="Player_test" parent="." instance=ExtResource("6_ho5sd")]
+transform = Transform3D(-0.99504, 0, -0.099476, 0, 1, 0, 0.099476, 0, -0.99504, 3.09685, 0.829739, -1.24361)
+
+[node name="Carrot2" parent="." instance=ExtResource("7_7w3qm")]
+transform = Transform3D(-0.215405, -0.00240951, -0.34086, -0.00570144, 0.403184, 0.000752933, 0.34082, 0.00522184, -0.215417, 2.06139, 1.48282, -4.56966)
+
+[node name="Carrot" parent="." instance=ExtResource("7_7w3qm")]
+transform = Transform3D(0.453488, 0, -0.444492, 0, 0.635, 0, 0.444492, 0, 0.453488, 2.52766, 0.359907, -1.30193)
