@@ -6,7 +6,7 @@ extends Node3D
 @onready var hand = $Hand
 
 var v = Vector3()
-var sens = 0.12
+var sens = 0.08
 
 var held_object: RigidBody3D = null #Object we're holding
 var rotating = false
