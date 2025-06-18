@@ -1,0 +1,46 @@
+extends Node3D
+
+@onready var cam = $"."
+@onready var ch3d = $".."
+@onready var raycast = $Camera3D/RayCast3D
+@onready var hand = $Hand
+
+var v = Vector3()
+var sens = 0.12
+
+var held_object: RigidBody3D = null #Object we're holding
+var rotating = false
+
+# Called when the node enters the scene tree for the first time.
+func _ready():
+
+	Input.mouse_mode = Input.MOUSE_MODE_CAPTURED
+
+func _process(delta):
+
+	cam.rotation_degrees.x = v.x
+	ch3d.rotation_degrees.y = v.y
+
+	var object = raycast.get_collider()
+	if raycast.is_colliding():
+		if object.is_in_group("pickable"):
+			if Input.is_action_pressed("Interact"):
+				object.global_position = hand.global_position
+				object.global_rotation = hand.global_rotation
+				object.collision_layer = 2
+				object.linear_velocity = Vector3(0.1, 3, 0.1)
+
+
+func _input(event):
+
+	if event is InputEventMouseMotion:
+		v.y -= (event.relative.x * sens)
+		v.x -= (event.relative.y * sens)
+		v.x = clamp(v.x,-60,70)
+
+	
+func _unhandled_input(event: InputEvent) -> void:
+	if event is InputEventMouseButton:
+		Input.set_mouse_mode(Input.MOUSE_MODE_CAPTURED)
+	elif event.is_action_pressed("ui_cancel"):
+		Input.set_mouse_mode(Input.MOUSE_MODE_VISIBLE)

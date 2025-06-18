@@ -21,6 +21,8 @@ func _input(event):
 	if event is InputEventMouseMotion:
 		rotation.y -= event.relative.x * CAMERA_SENS
 		rotation.x -= event.relative.y * CAMERA_SENS
+		rotation.x = clamp(rotation.x, -0.5, 1.2)
+	
 	if event.is_action_pressed("interaction") and pickedObject:
 		pickedObject.reparent(get_tree().current_scene)
 		pickedObject = null

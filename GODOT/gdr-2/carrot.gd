@@ -3,7 +3,7 @@ extends CharacterBody3D
 @onready var food_ingredient_carrot_2: Node3D = $food_ingredient_carrot2
 @onready var outlineMesh = $food_ingredient_carrot2/Carrot_0/MeshInstance3D
 
-var gravity = ProjectSettings.get_setting("physics/2d/default_gravity")
+var gravity = ProjectSettings.get_setting("physics/3d/default_gravity")
 var selected = false
 var outlineWidth = 0.05
 var player
