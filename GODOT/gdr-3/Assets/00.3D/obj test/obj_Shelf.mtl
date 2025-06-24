@@ -1,0 +1,12 @@
+# Blender 4.4.0 MTL File: 'KW_Reise-Utopie_GDR_GameObjects_SoSe2026_MMVR.blend'
+# www.blender.org
+
+newmtl mat_Desk_main
+Ns 116.219032
+Ka 1.000000 1.000000 1.000000
+Ks 0.500000 0.500000 0.500000
+Ke 0.000000 0.000000 0.000000
+Ni 1.500000
+d 1.000000
+illum 2
+map_Kd C:/Users/alexa/Desktop/UNI/Semester 6/Reise-Utopien/GDR-travel-utopia/GODOT/gdr-3/Assets/01.Textures/Baked/tex_Desk_darker_diffuse.png

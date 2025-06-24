@@ -1,7 +1,7 @@
-[gd_scene load_steps=16 format=3 uid="uid://bq5aw4t3xa4wn"]
+[gd_scene load_steps=16 format=3 uid="uid://fonrr48bvrb"]
 
-[ext_resource type="Script" uid="uid://2hq30gi7miki" path="res://player.gd" id="1_bjxpf"]
-[ext_resource type="Script" uid="uid://bk08coj4r1atq" path="res://head.gd" id="2_iq125"]
+[ext_resource type="Script" uid="uid://2hq30gi7miki" path="res://player.gd" id="1_rmouo"]
+[ext_resource type="Script" uid="uid://bk08coj4r1atq" path="res://head.gd" id="2_3ghdk"]
 
 [sub_resource type="ProceduralSkyMaterial" id="ProceduralSkyMaterial_udtmk"]
 sky_top_color = Color(0.224972, 0.479705, 0.615122, 1)
@@ -67,7 +67,7 @@ shape = SubResource("ConcavePolygonShape3D_negfh")
 
 [node name="Player" type="CharacterBody3D" parent="."]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 1.02946, 0)
-script = ExtResource("1_bjxpf")
+script = ExtResource("1_rmouo")
 
 [node name="CollisionShape3D" type="CollisionShape3D" parent="Player"]
 shape = SubResource("CapsuleShape3D_103d2")
@@ -76,7 +76,7 @@ shape = SubResource("CapsuleShape3D_103d2")
 mesh = SubResource("CapsuleMesh_cwyd7")
 
 [node name="Head" type="Node3D" parent="Player"]
-script = ExtResource("2_iq125")
+script = ExtResource("2_3ghdk")
 
 [node name="Camera3D" type="Camera3D" parent="Player/Head"]
 

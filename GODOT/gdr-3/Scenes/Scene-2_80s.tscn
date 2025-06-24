@@ -1,0 +1,131 @@
+[gd_scene load_steps=19 format=3 uid="uid://rg7hcgwu48eh"]
+
+[ext_resource type="Script" uid="uid://2hq30gi7miki" path="res://player.gd" id="1_6rxpq"]
+[ext_resource type="Script" uid="uid://bk08coj4r1atq" path="res://head.gd" id="2_louhu"]
+[ext_resource type="ArrayMesh" uid="uid://c34t6clhtk15t" path="res://Assets/00.3D/KW_Reise-Utopie_GDR_GameObjects_SoSe2026_MMVR.obj" id="3_711mf"]
+[ext_resource type="AudioStream" uid="uid://cpij26jj1qt8a" path="res://Assets/02.Sound/Silly - Bataillon d amour.mp3" id="4_hvi0c"]
+
+[sub_resource type="ProceduralSkyMaterial" id="ProceduralSkyMaterial_udtmk"]
+sky_top_color = Color(0.224972, 0.479705, 0.615122, 1)
+sky_horizon_color = Color(0.785185, 0.615419, 0.495696, 1)
+ground_bottom_color = Color(0.442117, 0.707286, 0.487684, 1)
+ground_horizon_color = Color(0.785185, 0.615419, 0.495696, 1)
+
+[sub_resource type="Sky" id="Sky_fvdug"]
+sky_material = SubResource("ProceduralSkyMaterial_udtmk")
+
+[sub_resource type="Environment" id="Environment_bs7aw"]
+background_mode = 2
+sky = SubResource("Sky_fvdug")
+tonemap_mode = 2
+glow_enabled = true
+
+[sub_resource type="FastNoiseLite" id="FastNoiseLite_kurnt"]
+frequency = 0.3119
+
+[sub_resource type="NoiseTexture2D" id="NoiseTexture2D_gf64q"]
+noise = SubResource("FastNoiseLite_kurnt")
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_yq7cb"]
+albedo_color = Color(0, 0.196078, 0.105882, 1)
+albedo_texture = SubResource("NoiseTexture2D_gf64q")
+
+[sub_resource type="PlaneMesh" id="PlaneMesh_su4rq"]
+material = SubResource("StandardMaterial3D_yq7cb")
+
+[sub_resource type="ConcavePolygonShape3D" id="ConcavePolygonShape3D_negfh"]
+data = PackedVector3Array(1, 0, 1, -1, 0, 1, 1, 0, -1, -1, 0, 1, -1, 0, -1, 1, 0, -1)
+
+[sub_resource type="CapsuleShape3D" id="CapsuleShape3D_103d2"]
+
+[sub_resource type="CapsuleMesh" id="CapsuleMesh_cwyd7"]
+
+[sub_resource type="SphereMesh" id="SphereMesh_jesec"]
+
+[sub_resource type="BoxShape3D" id="BoxShape3D_kesv7"]
+
+[sub_resource type="BoxMesh" id="BoxMesh_mvsd4"]
+
+[sub_resource type="GDScript" id="GDScript_hvi0c"]
+script/source = "extends Node3D
+
+func _process(delta):
+	if Input.is_action_just_pressed(\"TravelForward\"):
+		get_tree().change_scene_to_file(\"res://Scene-2_80s.tscn\")
+	elif Input.is_action_just_pressed(\"TravelBackward\"):
+		get_tree().change_scene_to_file(\"res://Scene-1_70s.tscn\")
+		
+"
+
+[node name="World" type="Node3D"]
+
+[node name="WorldEnvironment" type="WorldEnvironment" parent="."]
+environment = SubResource("Environment_bs7aw")
+
+[node name="OmniLight3D" type="OmniLight3D" parent="."]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 10.5628, 0)
+light_color = Color(0.797346, 0.592848, 0, 1)
+light_energy = 3.671
+omni_range = 25.58
+omni_attenuation = 0.353
+
+[node name="MeshInstance3D" type="MeshInstance3D" parent="."]
+transform = Transform3D(20, 0, 0, 0, 20, 0, 0, 0, 20, 0, 0, 0)
+mesh = SubResource("PlaneMesh_su4rq")
+
+[node name="StaticBody3D" type="StaticBody3D" parent="MeshInstance3D"]
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="MeshInstance3D/StaticBody3D"]
+shape = SubResource("ConcavePolygonShape3D_negfh")
+
+[node name="Player" type="CharacterBody3D" parent="."]
+transform = Transform3D(1.45, 0, 0, 0, 1.45, 0, 0, 0, 1.45, 0, 1.23012, -3.91486)
+script = ExtResource("1_6rxpq")
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="Player"]
+shape = SubResource("CapsuleShape3D_103d2")
+
+[node name="MeshInstance3D" type="MeshInstance3D" parent="Player"]
+mesh = SubResource("CapsuleMesh_cwyd7")
+
+[node name="Head" type="Node3D" parent="Player"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0.68885, 0)
+script = ExtResource("2_louhu")
+
+[node name="Camera3D" type="Camera3D" parent="Player/Head"]
+
+[node name="RayCast3D" type="RayCast3D" parent="Player/Head/Camera3D"]
+target_position = Vector3(0, 0, -4)
+collision_mask = 3
+
+[node name="Hand" type="Node3D" parent="Player/Head"]
+transform = Transform3D(0.315, 0, 0, 0, 0.315, 0, 0, 0, 0.315, 0, 0, -1.34749)
+
+[node name="MeshInstance3D" type="MeshInstance3D" parent="Player/Head/Hand"]
+mesh = SubResource("SphereMesh_jesec")
+
+[node name="RigidBody3D" type="RigidBody3D" parent="." groups=["pickable"]]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 5.29006, 0.544352, -3.00761)
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="RigidBody3D"]
+shape = SubResource("BoxShape3D_kesv7")
+
+[node name="MeshInstance3D" type="MeshInstance3D" parent="RigidBody3D"]
+mesh = SubResource("BoxMesh_mvsd4")
+
+[node name="Set_TEST" type="Node3D" parent="."]
+transform = Transform3D(0.00167556, 0, -0.999999, 0, 1, 0, 0.999999, 0, 0.00167556, 0, 0, -3.484)
+
+[node name="MeshInstance3D" type="MeshInstance3D" parent="Set_TEST"]
+transform = Transform3D(1.735, 0, 0, 0, 1.735, 0, 0, 0, 1.735, -1.6029, 0, 0)
+mesh = ExtResource("3_711mf")
+
+[node name="Sound" type="Node3D" parent="."]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.602305, 1.92522, -5.60003)
+script = SubResource("GDScript_hvi0c")
+
+[node name="AudioStreamPlayer3D" type="AudioStreamPlayer3D" parent="Sound"]
+stream = ExtResource("4_hvi0c")
+autoplay = true
+max_distance = 10.0
+parameters/looping = true
