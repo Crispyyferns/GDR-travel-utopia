@@ -1,4 +1,4 @@
-[gd_scene load_steps=142 format=3 uid="uid://bq5aw4t3xa4wn"]
+[gd_scene load_steps=144 format=3 uid="uid://bq5aw4t3xa4wn"]
 
 [ext_resource type="Script" uid="uid://chlarin68qmfo" path="res://Scripts/scene-1_70s.gd" id="1_x1vip"]
 [ext_resource type="PackedScene" uid="uid://dmwm17s5dovv1" path="res://Scenes/Player.tscn" id="2_d12h7"]
@@ -84,6 +84,7 @@
 [ext_resource type="ArrayMesh" uid="uid://wuogoohp8f1q" path="res://Assets/00.3D/obj_export_kw27/obj_Lampe_VEB_NARVA_Kombinat_70er.obj" id="77_hpku1"]
 [ext_resource type="ArrayMesh" uid="uid://ccvyyjjcdh85g" path="res://Assets/00.3D/obj_export_kw27/Plane_010.obj" id="78_ua2yj"]
 [ext_resource type="ArrayMesh" uid="uid://tby7hf02lt5d" path="res://Assets/00.3D/obj_export_kw27/Plane_011.obj" id="79_qhhid"]
+[ext_resource type="Script" uid="uid://cow0vxrob8uvt" path="res://Scripts/obj_document_jugendtourist_einlieferungsschein_quittung_70s.gd" id="81_iwmvm"]
 [ext_resource type="Script" uid="uid://bd046eokvcnu2" path="res://addons/phantom_camera/scripts/phantom_camera_host/phantom_camera_host.gd" id="85_shgk2"]
 [ext_resource type="Script" uid="uid://csjccrhj5wnx7" path="res://addons/phantom_camera/scripts/phantom_camera/phantom_camera_3d.gd" id="86_iwmvm"]
 [ext_resource type="Script" uid="uid://8umksf8e80fw" path="res://addons/phantom_camera/scripts/resources/tween_resource.gd" id="87_t7fvn"]
@@ -255,6 +256,9 @@ albedo_texture = ExtResource("65_lfqnm")
 [sub_resource type="StandardMaterial3D" id="StandardMaterial3D_dsw8n"]
 cull_mode = 2
 albedo_texture = ExtResource("65_lfqnm")
+
+[sub_resource type="ConcavePolygonShape3D" id="ConcavePolygonShape3D_t7fvn"]
+data = PackedVector3Array(-0.0605, 0, -0.0328, -0.0605, 0, 0.0328, 0.0605, 0, -0.0328, 0.0605, 0, -0.0328, -0.0605, 0, 0.0328, 0.0605, 0, 0.0328)
 
 [sub_resource type="StandardMaterial3D" id="StandardMaterial3D_d12h7"]
 cull_mode = 2
@@ -892,10 +896,16 @@ skeleton = NodePath("../../../..")
 surface_material_override/0 = SubResource("StandardMaterial3D_j7nk8")
 
 [node name="ObjDocumentJugendtourist-einlieferungsschein-quittung70s" type="MeshInstance3D" parent="3D Scene/Set_allgemein/Documents"]
-transform = Transform3D(-0.00152472, -0.0161817, -1.39491, 1.3949, -0.0163928, -0.00133455, -0.0163762, -1.39481, 0.0161985, -0.368265, 0.832821, 1.52823)
+transform = Transform3D(-0.0780997, -0.0161817, -1.39272, 1.39272, -0.0163928, -0.07791, -0.0154622, -1.39481, 0.0170731, -0.368265, 0.832821, 1.52823)
 mesh = ExtResource("65_t7fvn")
 skeleton = NodePath("../../../..")
 surface_material_override/0 = SubResource("StandardMaterial3D_dsw8n")
+script = ExtResource("81_iwmvm")
+
+[node name="StaticBody3D" type="StaticBody3D" parent="3D Scene/Set_allgemein/Documents/ObjDocumentJugendtourist-einlieferungsschein-quittung70s"]
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="3D Scene/Set_allgemein/Documents/ObjDocumentJugendtourist-einlieferungsschein-quittung70s/StaticBody3D"]
+shape = SubResource("ConcavePolygonShape3D_t7fvn")
 
 [node name="ObjDocumentRBdDdr-jugendtourist-reiseprogramm-vrBulgarien70s" type="MeshInstance3D" parent="3D Scene/Set_allgemein/Documents"]
 transform = Transform3D(0.0530218, -0.0186757, -1.60902, 1.60901, -0.0189192, 0.0532411, -0.0195253, -1.60978, 0.0180411, -0.475805, 0.798866, 1.53461)
@@ -935,7 +945,7 @@ mesh = ExtResource("72_3b28h")
 surface_material_override/0 = SubResource("StandardMaterial3D_t7fvn")
 
 [node name="Camera3D" type="Camera3D" parent="."]
-transform = Transform3D(0.0971877, -0.289112, 0.952349, 0.00544598, 0.957019, 0.289974, -0.995251, -0.0229956, 0.0945851, -0.127458, 1.67848, -2.55061)
+transform = Transform3D(-0.162593, -0.986035, 0.0360348, -0.0452603, 0.0439357, 0.998009, -0.985655, 0.160638, -0.0517719, -0.0294618, 2.00886, -0.320552)
 
 [node name="PhantomCameraHost" type="Node" parent="Camera3D"]
 process_priority = 300
@@ -978,6 +988,13 @@ metadata/_custom_type_script = "uid://csjccrhj5wnx7"
 [node name="PhantomCamera3D5" type="Node3D" parent="."]
 transform = Transform3D(-0.361575, -0.92894, 0.0795828, -0.126611, 0.133489, 0.98293, -0.923706, 0.345327, -0.16588, 0.0242441, 2.01936, 0.0182925)
 visible = false
+script = ExtResource("86_iwmvm")
+tween_resource = SubResource("Resource_sm84e")
+host_layers = 2
+metadata/_custom_type_script = "uid://csjccrhj5wnx7"
+
+[node name="PhantomCamera3D17" type="Node3D" parent="."]
+transform = Transform3D(-0.162593, -0.986035, 0.0360348, -0.0452603, 0.0439357, 0.998009, -0.985655, 0.160638, -0.0517719, -0.0294618, 2.00886, -0.320552)
 script = ExtResource("86_iwmvm")
 tween_resource = SubResource("Resource_sm84e")
 host_layers = 2
@@ -1065,6 +1082,7 @@ metadata/_custom_type_script = "uid://csjccrhj5wnx7"
 
 [node name="PhantomCamera3D16" type="Node3D" parent="."]
 transform = Transform3D(0.0971877, -0.289112, 0.952349, 0.00544598, 0.957019, 0.289974, -0.995251, -0.0229956, 0.0945851, -0.127458, 1.67848, -2.55061)
+visible = false
 script = ExtResource("86_iwmvm")
 tween_resource = SubResource("Resource_sm84e")
 host_layers = 2
