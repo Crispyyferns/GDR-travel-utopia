@@ -1,8 +1,7 @@
-[gd_scene load_steps=140 format=3 uid="uid://bq5aw4t3xa4wn"]
+[gd_scene load_steps=137 format=3 uid="uid://bq5aw4t3xa4wn"]
 
-[ext_resource type="Script" uid="uid://dl33bqc6cyt77" path="res://Scripts/player.gd" id="1_wncax"]
 [ext_resource type="Script" uid="uid://chlarin68qmfo" path="res://Scripts/scene-1_70s.gd" id="1_x1vip"]
-[ext_resource type="Script" uid="uid://dr46d85byfqd1" path="res://Scripts/head.gd" id="2_vmq46"]
+[ext_resource type="PackedScene" uid="uid://dmwm17s5dovv1" path="res://Scenes/Player.tscn" id="2_d12h7"]
 [ext_resource type="ArrayMesh" uid="uid://bdta26d22mk8f" path="res://Assets/00.3D/obj_export_kw26/obj_Desk.obj" id="4_ufj43"]
 [ext_resource type="AudioStream" uid="uid://xajgnulylsfk" path="res://Assets/02.Sound/Puhdys - Lebenszeit.mp3" id="4_vmq46"]
 [ext_resource type="Texture2D" uid="uid://dqwbni8yodls4" path="res://Assets/01.Textures/Baked/tex_Desk_darker_diffuse.png" id="6_d57ka"]
@@ -116,10 +115,6 @@ material = SubResource("StandardMaterial3D_yq7cb")
 
 [sub_resource type="ConcavePolygonShape3D" id="ConcavePolygonShape3D_negfh"]
 data = PackedVector3Array(1, 0, 1, -1, 0, 1, 1, 0, -1, -1, 0, 1, -1, 0, -1, 1, 0, -1)
-
-[sub_resource type="CapsuleShape3D" id="CapsuleShape3D_103d2"]
-
-[sub_resource type="CapsuleMesh" id="CapsuleMesh_5h32y"]
 
 [sub_resource type="BoxShape3D" id="BoxShape3D_kesv7"]
 
@@ -372,6 +367,8 @@ metadata/_edit_use_anchors_ = true
 [node name="WorldEnvironment" type="WorldEnvironment" parent="."]
 environment = SubResource("Environment_bs7aw")
 
+[node name="Player" parent="." instance=ExtResource("2_d12h7")]
+
 [node name="LIGHTS" type="Node3D" parent="."]
 
 [node name="OmniLight3D" type="OmniLight3D" parent="LIGHTS"]
@@ -401,34 +398,6 @@ skeleton = NodePath("../..")
 
 [node name="CollisionShape3D" type="CollisionShape3D" parent="3D Scene/MeshInstance3D/StaticBody3D"]
 shape = SubResource("ConcavePolygonShape3D_negfh")
-
-[node name="Player" type="CharacterBody3D" parent="3D Scene"]
-transform = Transform3D(1.065, 0, 0, 0, 1.065, 0, 0, 0, 1.065, 0.901979, 0.917946, -0.296)
-script = ExtResource("1_wncax")
-
-[node name="CollisionShape3D" type="CollisionShape3D" parent="3D Scene/Player"]
-shape = SubResource("CapsuleShape3D_103d2")
-
-[node name="MeshInstance3D" type="MeshInstance3D" parent="3D Scene/Player"]
-visible = false
-mesh = SubResource("CapsuleMesh_5h32y")
-
-[node name="Head" type="Node3D" parent="3D Scene/Player"]
-transform = Transform3D(-4.26945e-08, -0.214445, 0.976736, -9.37371e-09, 0.976736, 0.214445, -1, 0, -4.37114e-08, -0.17374, 1.33684, 0)
-script = ExtResource("2_vmq46")
-
-[node name="Camera3D" type="Camera3D" parent="3D Scene/Player/Head"]
-transform = Transform3D(0.938861, -4.04465e-08, 0.0141095, 0.00302576, 0.917123, -0.201334, -0.0137813, 0.201357, 0.917019, -0.0431956, -0.093562, -0.0593482)
-
-[node name="RayCast3D" type="RayCast3D" parent="3D Scene/Player/Head/Camera3D"]
-target_position = Vector3(0, 0, -4)
-collision_mask = 3
-
-[node name="Hand" type="Node3D" parent="3D Scene/Player/Head"]
-transform = Transform3D(-0.095, 0, 0, 0, -0.095, 0, 0, 0, -0.095, 0, 0, -1.34749)
-
-[node name="MeshInstance3D" type="MeshInstance3D" parent="3D Scene/Player/Head/Hand"]
-visible = false
 
 [node name="RigidBody3D" type="RigidBody3D" parent="3D Scene" groups=["pickable"]]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 5.29006, 0.544352, -3.00761)
