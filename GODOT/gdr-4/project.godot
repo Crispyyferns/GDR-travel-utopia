@@ -10,7 +10,7 @@ config_version=5
 
 [application]
 
-config/name="GDR-3"
+config/name="GDR-4"
 run/main_scene="uid://di8s73o83s422"
 config/features=PackedStringArray("4.4", "Forward Plus")
 config/icon="res://icon.svg"
