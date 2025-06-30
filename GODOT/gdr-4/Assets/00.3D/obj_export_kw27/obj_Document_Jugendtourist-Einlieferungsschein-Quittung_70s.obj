@@ -1,0 +1,16 @@
+# Blender 4.4.0
+# www.blender.org
+mtllib obj_Document_Jugendtourist-Einlieferungsschein-Quittung_70s.mtl
+o obj_Document_Jugendtourist-Einlieferungsschein-Quittung_70s
+v -0.060462 -0.000000 0.032835
+v 0.060462 -0.000000 0.032835
+v -0.060462 0.000000 -0.032835
+v 0.060462 0.000000 -0.032835
+vn -0.0000 -1.0000 -0.0000
+vt 0.000742 0.686650
+vt 0.211972 0.686650
+vt 0.211972 0.322647
+vt 0.000742 0.322647
+s 0
+usemtl tex_Documents_Collection_70s
+f 1/1/1 3/2/1 4/3/1 2/4/1

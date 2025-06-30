@@ -1,0 +1,16 @@
+# Blender 4.4.0
+# www.blender.org
+mtllib obj_Booklet_25-Jahre-HalleanderSaale.mtl
+o obj_Booklet_25-Jahre-HalleanderSaale
+v -0.155119 0.000000 0.155119
+v 0.155119 0.000000 0.155119
+v -0.155119 0.000000 -0.155119
+v 0.155119 0.000000 -0.155119
+vn -0.0000 -1.0000 -0.0000
+vt 0.475341 0.518680
+vt 0.472894 0.743771
+vt 0.698916 0.740361
+vt 0.698916 0.515579
+s 0
+usemtl tex_Flyer_Collection_70s
+f 1/1/1 3/2/1 4/3/1 2/4/1

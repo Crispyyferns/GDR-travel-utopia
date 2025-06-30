@@ -1,59 +1,90 @@
-[gd_scene load_steps=93 format=3 uid="uid://bq5aw4t3xa4wn"]
+[gd_scene load_steps=139 format=3 uid="uid://bq5aw4t3xa4wn"]
 
 [ext_resource type="Script" uid="uid://dl33bqc6cyt77" path="res://Scripts/player.gd" id="1_wncax"]
 [ext_resource type="Script" uid="uid://chlarin68qmfo" path="res://Scripts/scene-1_70s.gd" id="1_x1vip"]
 [ext_resource type="Script" uid="uid://dr46d85byfqd1" path="res://Scripts/head.gd" id="2_vmq46"]
+[ext_resource type="ArrayMesh" uid="uid://bdta26d22mk8f" path="res://Assets/00.3D/obj_export_kw26/obj_Desk.obj" id="4_ufj43"]
 [ext_resource type="AudioStream" uid="uid://xajgnulylsfk" path="res://Assets/02.Sound/Puhdys - Lebenszeit.mp3" id="4_vmq46"]
-[ext_resource type="ArrayMesh" uid="uid://bdta26d22mk8f" path="res://Assets/00.3D/obj test/obj_Desk.obj" id="5_5h32y"]
-[ext_resource type="Texture2D" uid="uid://xtwjl64w01no" path="res://Assets/01.Textures/Baked/tex_Desk_darker_diffuse.png" id="6_d57ka"]
+[ext_resource type="Texture2D" uid="uid://dqwbni8yodls4" path="res://Assets/01.Textures/Baked/tex_Desk_darker_diffuse.png" id="6_d57ka"]
 [ext_resource type="Texture2D" uid="uid://ctwo8ncumelek" path="res://Assets/01.Textures/Baked/tex_Desk_Cover_diffuse.png" id="7_mr02p"]
-[ext_resource type="Texture2D" uid="uid://cqig7egifykgt" path="res://Assets/01.Textures/Baked/tex_Desk_Parts_diffuse.png" id="8_wllko"]
-[ext_resource type="ArrayMesh" uid="uid://bdfsis6bgtc3x" path="res://Assets/00.3D/obj test/obj_Desk_drawer.obj" id="9_po0u7"]
-[ext_resource type="ArrayMesh" uid="uid://bjjrn84ch8evm" path="res://Assets/00.3D/obj test/obj_Desk_rolling-drawer_shelves.obj" id="10_ecia6"]
-[ext_resource type="ArrayMesh" uid="uid://xgqge0n272ei" path="res://Assets/00.3D/obj test/obj_Wall.obj" id="10_mr02p"]
-[ext_resource type="ArrayMesh" uid="uid://c0cdm0kfafwb4" path="res://Assets/00.3D/obj test/obj_Desk_rolling-drawer_shelves_001.obj" id="11_j503t"]
-[ext_resource type="ArrayMesh" uid="uid://cbejnespmmp06" path="res://Assets/00.3D/obj_pictureframe_Sandmann.obj" id="14_ecia6"]
+[ext_resource type="ArrayMesh" uid="uid://bdfsis6bgtc3x" path="res://Assets/00.3D/obj_export_kw26/obj_Desk_drawer.obj" id="8_ufj43"]
+[ext_resource type="Texture2D" uid="uid://ddlrab8thi4y4" path="res://Assets/01.Textures/Baked/tex_Desk_Parts_diffuse.png" id="8_wllko"]
+[ext_resource type="ArrayMesh" uid="uid://bjjrn84ch8evm" path="res://Assets/00.3D/obj_export_kw26/obj_Desk_rolling-drawer_shelves.obj" id="9_j7nk8"]
+[ext_resource type="ArrayMesh" uid="uid://c0cdm0kfafwb4" path="res://Assets/00.3D/obj_export_kw26/obj_Desk_rolling-drawer_shelves_001.obj" id="10_dsw8n"]
+[ext_resource type="ArrayMesh" uid="uid://xgqge0n272ei" path="res://Assets/00.3D/obj_export_kw26/obj_Wall.obj" id="11_j7nk8"]
+[ext_resource type="ArrayMesh" uid="uid://ct0d2mrbu12e5" path="res://Assets/00.3D/obj_export_kw26/obj_Pictureframe_Sandmann.obj" id="13_ufj43"]
+[ext_resource type="ArrayMesh" uid="uid://duovfuxgh1o5u" path="res://Assets/00.3D/obj_export_kw26/Radio_Sternchen_60s.obj" id="15_j7nk8"]
 [ext_resource type="Texture2D" uid="uid://hdgh7juuh61r" path="res://Assets/01.Textures/Photo-Textures/Miscellaneous_Collection_noTime.png" id="15_j503t"]
-[ext_resource type="ArrayMesh" uid="uid://ckmaxo8nbunx7" path="res://Assets/00.3D/obj test/obj_Trabant_tiny.obj" id="15_y5s40"]
-[ext_resource type="ArrayMesh" uid="uid://dm6k82nxp13c" path="res://Assets/00.3D/obj test/obj_Shelf.obj" id="16_a6j3u"]
-[ext_resource type="ArrayMesh" uid="uid://bj2gte8y12l36" path="res://Assets/00.3D/obj test/obj_Lampe_Artas.obj" id="16_rhd54"]
-[ext_resource type="ArrayMesh" uid="uid://duovfuxgh1o5u" path="res://Assets/00.3D/obj test/Radio_Sternchen_60s.obj" id="16_y5s40"]
-[ext_resource type="ArrayMesh" uid="uid://gfd0movbj5hy" path="res://Assets/00.3D/obj test/obj_Pencil.obj" id="17_l6ymm"]
-[ext_resource type="ArrayMesh" uid="uid://dgkjqc3phtw5y" path="res://Assets/00.3D/obj test/obj_Pencil_007.obj" id="18_w4sxf"]
-[ext_resource type="ArrayMesh" uid="uid://c6725lm4bwxp3" path="res://Assets/00.3D/obj test/obj_Pinboard.obj" id="19_ouk33"]
-[ext_resource type="ArrayMesh" uid="uid://dbvyh6mcrjmd5" path="res://Assets/00.3D/obj test/obj_Pencil_008.obj" id="19_x6x6a"]
-[ext_resource type="ArrayMesh" uid="uid://b05l51dwqi0g1" path="res://Assets/00.3D/obj test/obj_Poster_002.obj" id="20_0cpxq"]
+[ext_resource type="ArrayMesh" uid="uid://urg4xu8ccdyt" path="res://Assets/00.3D/obj_export_kw27/obj_Book_Pionierkalender-1980_closed.obj" id="17_ufj43"]
 [ext_resource type="Texture2D" uid="uid://dpbmmsfvlxtg1" path="res://Assets/01.Textures/Baked/tex_Board_cork_diffuse.png" id="20_bmjck"]
+[ext_resource type="ArrayMesh" uid="uid://ckmaxo8nbunx7" path="res://Assets/00.3D/obj_export_kw26/obj_Trabant_tiny.obj" id="20_dsw8n"]
 [ext_resource type="Texture2D" uid="uid://dk8p7mf03cuws" path="res://Assets/01.Textures/Baked/tex_Board_cork_roughness.png" id="21_7amc5"]
-[ext_resource type="ArrayMesh" uid="uid://c1twjbmhpfube" path="res://Assets/00.3D/obj test/obj_Pin.obj" id="22_h7vim"]
+[ext_resource type="ArrayMesh" uid="uid://dm6k82nxp13c" path="res://Assets/00.3D/obj_export_kw26/obj_Shelf.obj" id="21_d12h7"]
+[ext_resource type="Material" uid="uid://bbjhwyo78krca" path="res://Assets/03.Materials/mat_Blue.tres" id="21_hi36m"]
+[ext_resource type="ArrayMesh" uid="uid://gfd0movbj5hy" path="res://Assets/00.3D/obj_export_kw26/obj_Pencil.obj" id="22_emdq1"]
+[ext_resource type="Material" uid="uid://by35qbwo2jn4u" path="res://Assets/03.Materials/mat_Metal.tres" id="22_lfqnm"]
 [ext_resource type="Texture2D" uid="uid://bolk2vydkbiac" path="res://Assets/01.Textures/Photo-Textures/28864.full.jpg" id="23_l6ymm"]
-[ext_resource type="ArrayMesh" uid="uid://dbpl0w0l12hnj" path="res://Assets/00.3D/obj test/obj_Flyer_WE-u-Sonderfahrten_1.obj" id="23_sxg0l"]
-[ext_resource type="ArrayMesh" uid="uid://b2vfmk6ux4xai" path="res://Assets/00.3D/obj test/Arm_Book_open.obj" id="24_x6x6a"]
+[ext_resource type="Material" uid="uid://7oyplv41nk2o" path="res://Assets/03.Materials/mat_Wood.tres" id="24_ufj43"]
 [ext_resource type="Texture2D" uid="uid://cs3cs01wa6lhr" path="res://Assets/01.Textures/Photo-Textures/Flyer_Collection_70s.png" id="24_xebjs"]
-[ext_resource type="ArrayMesh" uid="uid://fwygrr6e7u71" path="res://Assets/00.3D/obj test/Arm_Book_Pionierkalender-1978_closed.obj" id="25_0cpxq"]
 [ext_resource type="Material" uid="uid://bfytmn3tubepp" path="res://Assets/03.Materials/mat_Paper.tres" id="25_08dwc"]
-[ext_resource type="ArrayMesh" uid="uid://cr8ghshap4m02" path="res://Assets/00.3D/obj test/obj_Flyer_WE-u-Sonderfahrten_2.obj" id="25_ovkkn"]
-[ext_resource type="ArrayMesh" uid="uid://din6ikfv2icrp" path="res://Assets/00.3D/obj test/obj_Folder_004.obj" id="26_17yav"]
-[ext_resource type="ArrayMesh" uid="uid://kwwx6mxwsq86" path="res://Assets/00.3D/obj test/obj_Poster_002_002.obj" id="27_a3qu0"]
-[ext_resource type="ArrayMesh" uid="uid://crtvrcxump4nf" path="res://Assets/00.3D/obj test/obj_Letter_half-folded_001.obj" id="28_a4bf3"]
-[ext_resource type="ArrayMesh" uid="uid://dqy2hv641dm5" path="res://Assets/00.3D/obj test/obj_Letter_half-folded_002.obj" id="29_2nuox"]
-[ext_resource type="ArrayMesh" uid="uid://dcqmvsapg67l8" path="res://Assets/00.3D/obj test/obj_Paper_001.obj" id="31_w4sxf"]
-[ext_resource type="ArrayMesh" uid="uid://cy17gui575udt" path="res://Assets/00.3D/obj test/obj_Paper_002.obj" id="32_x6x6a"]
-[ext_resource type="ArrayMesh" uid="uid://dadru375128fh" path="res://Assets/00.3D/obj test/obj_Paper_stack.obj" id="33_0cpxq"]
-[ext_resource type="ArrayMesh" uid="uid://d33y58oamfsfi" path="res://Assets/00.3D/obj test/obj_Passport.obj" id="34_08dwc"]
-[ext_resource type="ArrayMesh" uid="uid://c1q3utbjvnmns" path="res://Assets/00.3D/obj test/Arm_Map_Autoatlas.obj" id="40_08dwc"]
-[ext_resource type="ArrayMesh" uid="uid://besw86gqhictk" path="res://Assets/00.3D/obj test/obj_Poster_001.obj" id="41_t6b0v"]
-[ext_resource type="ArrayMesh" uid="uid://ctexqlnloaedl" path="res://Assets/00.3D/obj test/obj_Postcard.obj" id="45_02x8x"]
-[ext_resource type="ArrayMesh" uid="uid://ckbqxt8jejavw" path="res://Assets/00.3D/obj test/obj_Postcard_001.obj" id="46_67k54"]
-[ext_resource type="ArrayMesh" uid="uid://cda3gmfgtlk1w" path="res://Assets/00.3D/obj test/obj_Postcard_002.obj" id="47_a3qu0"]
-[ext_resource type="ArrayMesh" uid="uid://6ehvl8gf63qb" path="res://Assets/00.3D/obj test/obj_Postcard_003.obj" id="48_x1vip"]
-[ext_resource type="ArrayMesh" uid="uid://bwcdwy48nv46f" path="res://Assets/00.3D/obj test/obj_Postcard_004.obj" id="49_7eoig"]
-[ext_resource type="ArrayMesh" uid="uid://b4vrwcfvbnhcw" path="res://Assets/00.3D/obj test/obj_Postcard_005.obj" id="50_3h3g1"]
-[ext_resource type="ArrayMesh" uid="uid://c8qnjlxc5ntu3" path="res://Assets/00.3D/obj test/obj_Postcard_006.obj" id="51_o38y6"]
-[ext_resource type="ArrayMesh" uid="uid://y2cto2da3ou4" path="res://Assets/00.3D/obj test/obj_Postcard_007.obj" id="52_ruo4n"]
+[ext_resource type="ArrayMesh" uid="uid://dgkjqc3phtw5y" path="res://Assets/00.3D/obj_export_kw26/obj_Pencil_007.obj" id="25_eaofq"]
+[ext_resource type="Material" uid="uid://bbg51vswsytpa" path="res://Assets/03.Materials/mat_Red.tres" id="25_j7nk8"]
+[ext_resource type="ArrayMesh" uid="uid://dbvyh6mcrjmd5" path="res://Assets/00.3D/obj_export_kw26/obj_Pencil_008.obj" id="28_shgk2"]
+[ext_resource type="ArrayMesh" uid="uid://b05l51dwqi0g1" path="res://Assets/00.3D/obj_export_kw26/obj_Poster_002.obj" id="29_iwmvm"]
+[ext_resource type="ArrayMesh" uid="uid://besw86gqhictk" path="res://Assets/00.3D/obj_export_kw26/obj_Poster_001.obj" id="31_t7fvn"]
+[ext_resource type="ArrayMesh" uid="uid://b2vfmk6ux4xai" path="res://Assets/00.3D/obj_export_kw26/Arm_Book_open.obj" id="33_quctf"]
+[ext_resource type="ArrayMesh" uid="uid://din6ikfv2icrp" path="res://Assets/00.3D/obj_export_kw26/obj_Folder_004.obj" id="34_sm84e"]
+[ext_resource type="ArrayMesh" uid="uid://dbpl0w0l12hnj" path="res://Assets/00.3D/obj_export_kw26/obj_Flyer_WE-u-Sonderfahrten_1.obj" id="35_rfs5q"]
+[ext_resource type="ArrayMesh" uid="uid://cr8ghshap4m02" path="res://Assets/00.3D/obj_export_kw26/obj_Flyer_WE-u-Sonderfahrten_2.obj" id="37_eu7pm"]
+[ext_resource type="ArrayMesh" uid="uid://buh3717hqaqiu" path="res://Assets/00.3D/obj_export_kw26/obj_Poster_002_001.obj" id="38_cw26l"]
+[ext_resource type="ArrayMesh" uid="uid://c6725lm4bwxp3" path="res://Assets/00.3D/obj_export_kw26/obj_Pinboard.obj" id="47_ufj43"]
+[ext_resource type="ArrayMesh" uid="uid://c1twjbmhpfube" path="res://Assets/00.3D/obj_export_kw26/obj_Pin.obj" id="50_j7nk8"]
+[ext_resource type="ArrayMesh" uid="uid://kwwx6mxwsq86" path="res://Assets/00.3D/obj_export_kw26/obj_Poster_002_002.obj" id="51_dsw8n"]
+[ext_resource type="ArrayMesh" uid="uid://fwygrr6e7u71" path="res://Assets/00.3D/obj_export_kw26/Arm_Book_Pionierkalender-1978_closed.obj" id="52_d12h7"]
 [ext_resource type="Texture2D" uid="uid://c7jvo3ce8xlpg" path="res://Assets/01.Textures/Photo-Textures/Calendar_Collection_70s.png" id="53_01uuu"]
-[ext_resource type="ArrayMesh" uid="uid://buh3717hqaqiu" path="res://Assets/00.3D/obj test/obj_Poster_002_001.obj" id="54_x1vip"]
+[ext_resource type="ArrayMesh" uid="uid://crtvrcxump4nf" path="res://Assets/00.3D/obj_export_kw26/obj_Letter_half-folded_001.obj" id="53_emdq1"]
+[ext_resource type="ArrayMesh" uid="uid://dqy2hv641dm5" path="res://Assets/00.3D/obj_export_kw26/obj_Letter_half-folded_002.obj" id="54_eaofq"]
+[ext_resource type="Material" uid="uid://dvqnse33c1jjp" path="res://Assets/03.Materials/mat_Green_Glass.tres" id="55_d12h7"]
+[ext_resource type="ArrayMesh" uid="uid://bj2gte8y12l36" path="res://Assets/00.3D/obj_export_kw26/obj_Lampe_Artas.obj" id="55_shgk2"]
+[ext_resource type="ArrayMesh" uid="uid://dcqmvsapg67l8" path="res://Assets/00.3D/obj_export_kw26/obj_Paper_001.obj" id="55_ufj43"]
+[ext_resource type="Material" uid="uid://dxncimv26r2rp" path="res://Assets/03.Materials/mat_Black_Metal.tres" id="56_emdq1"]
+[ext_resource type="ArrayMesh" uid="uid://cy17gui575udt" path="res://Assets/00.3D/obj_export_kw26/obj_Paper_002.obj" id="56_j7nk8"]
+[ext_resource type="ArrayMesh" uid="uid://dadru375128fh" path="res://Assets/00.3D/obj_export_kw26/obj_Paper_stack.obj" id="57_dsw8n"]
+[ext_resource type="Material" uid="uid://d0uq7a2ioyhhv" path="res://Assets/03.Materials/mat_Yellow_Emission.tres" id="57_eaofq"]
+[ext_resource type="ArrayMesh" uid="uid://d33y58oamfsfi" path="res://Assets/00.3D/obj_export_kw26/obj_Passport.obj" id="58_d12h7"]
+[ext_resource type="ArrayMesh" uid="uid://ddhcy1ef3l43i" path="res://Assets/00.3D/obj_export_kw27/obj_Booklet_25-Jahre-HalleanderSaale.obj" id="59_dsw8n"]
+[ext_resource type="ArrayMesh" uid="uid://ctexqlnloaedl" path="res://Assets/00.3D/obj_export_kw26/obj_Postcard.obj" id="59_emdq1"]
 [ext_resource type="Texture2D" uid="uid://c0o5dagqgt566" path="res://Assets/01.Textures/Photo-Textures/tex_Wallpaper_darker.png" id="59_g5m6h"]
+[ext_resource type="ArrayMesh" uid="uid://sqx8pmx7k7m5" path="res://Assets/00.3D/obj_export_kw27/obj_Booklet_Ferienhelfer_70s.obj" id="60_d12h7"]
+[ext_resource type="ArrayMesh" uid="uid://ckbqxt8jejavw" path="res://Assets/00.3D/obj_export_kw26/obj_Postcard_001.obj" id="60_eaofq"]
+[ext_resource type="ArrayMesh" uid="uid://d01ls1re7ip4m" path="res://Assets/00.3D/obj_export_kw27/obj_Book_Staatsbuergerkunde-1987_closed.obj" id="61_emdq1"]
+[ext_resource type="ArrayMesh" uid="uid://cda3gmfgtlk1w" path="res://Assets/00.3D/obj_export_kw26/obj_Postcard_002.obj" id="61_shgk2"]
+[ext_resource type="Texture2D" uid="uid://dgcvygf6osor8" path="res://Assets/01.Textures/Photo-Textures/Calendar-Book_Collection_80s.png" id="62_eaofq"]
+[ext_resource type="ArrayMesh" uid="uid://6ehvl8gf63qb" path="res://Assets/00.3D/obj_export_kw26/obj_Postcard_003.obj" id="62_iwmvm"]
+[ext_resource type="ArrayMesh" uid="uid://c5k0cphll836f" path="res://Assets/00.3D/obj_export_kw27/obj_Calender_Solidarit_tskommitteederDDR_1989.obj" id="63_shgk2"]
+[ext_resource type="ArrayMesh" uid="uid://bwcdwy48nv46f" path="res://Assets/00.3D/obj_export_kw26/obj_Postcard_004.obj" id="63_t7fvn"]
+[ext_resource type="ArrayMesh" uid="uid://mb2ippccxbpt" path="res://Assets/00.3D/obj_export_kw27/obj_Document_FDJ_70s.obj" id="64_iwmvm"]
+[ext_resource type="ArrayMesh" uid="uid://b4vrwcfvbnhcw" path="res://Assets/00.3D/obj_export_kw26/obj_Postcard_005.obj" id="64_quctf"]
+[ext_resource type="Texture2D" uid="uid://dq5e7o3y5e8fy" path="res://Assets/01.Textures/Photo-Textures/Documents_Collection_70s.png" id="65_lfqnm"]
+[ext_resource type="ArrayMesh" uid="uid://c8qnjlxc5ntu3" path="res://Assets/00.3D/obj_export_kw26/obj_Postcard_006.obj" id="65_sm84e"]
+[ext_resource type="ArrayMesh" uid="uid://dil35i7hcb5k8" path="res://Assets/00.3D/obj_export_kw27/obj_Document_Jugendtourist-Einlieferungsschein-Quittung_70s.obj" id="65_t7fvn"]
+[ext_resource type="ArrayMesh" uid="uid://gqmrvb3unf84" path="res://Assets/00.3D/obj_export_kw27/obj_Document_RBdDDR-Jugendtourist-Reiseprogramm-VRBulgarien_70s.obj" id="66_quctf"]
+[ext_resource type="ArrayMesh" uid="uid://y2cto2da3ou4" path="res://Assets/00.3D/obj_export_kw26/obj_Postcard_007.obj" id="66_rfs5q"]
+[ext_resource type="ArrayMesh" uid="uid://c1q3utbjvnmns" path="res://Assets/00.3D/obj_export_kw26/Arm_Map_Autoatlas.obj" id="67_eu7pm"]
+[ext_resource type="ArrayMesh" uid="uid://cygeha0xxe72g" path="res://Assets/00.3D/obj_export_kw27/obj_Document_Reiseb_roderDDR-BulgarischeSchwarzmeerk_ste_80s.obj" id="67_sm84e"]
+[ext_resource type="Texture2D" uid="uid://c0tct8fv2bmti" path="res://Assets/01.Textures/Photo-Textures/Flyer-Fotos_Collection_80s_2.png" id="68_rfs5q"]
+[ext_resource type="ArrayMesh" uid="uid://bjjkhy0f1bbud" path="res://Assets/00.3D/obj_export_kw27/obj_Flyer-Patch_SymbolAntiApartheidsbewegung_1978.obj" id="69_eu7pm"]
+[ext_resource type="ArrayMesh" uid="uid://cjpsxffn4e6pj" path="res://Assets/00.3D/obj_export_kw27/obj_Flyer_Ausflugsverkehr-1987_80s_OPEN.obj" id="70_cw26l"]
+[ext_resource type="Texture2D" uid="uid://cbfm0vm8rlydu" path="res://Assets/01.Textures/Photo-Textures/Flyer-Fotos_Collection_80s_1.png" id="71_ldby6"]
+[ext_resource type="ArrayMesh" uid="uid://baupjgq2q07iu" path="res://Assets/00.3D/obj_export_kw27/obj_Flyer_Geschenk-Reisenf_rB_rgerderDDR_70s_OPEN.obj" id="72_3b28h"]
+[ext_resource type="ArrayMesh" uid="uid://pq5y5l68tu5a" path="res://Assets/00.3D/obj_export_kw27/obj_Flyer_Jugendtourist-DDR_80s.obj" id="73_th26e"]
+[ext_resource type="ArrayMesh" uid="uid://cne10ffcclp44" path="res://Assets/00.3D/obj_export_kw27/obj_Flyer_Tankstellen-Berlin_80s.obj" id="74_cre1x"]
+[ext_resource type="ArrayMesh" uid="uid://e3l3ajiln4b0" path="res://Assets/00.3D/obj_export_kw27/obj_Flyer_Trabant-601_70s_OPEN.obj" id="75_ftcf2"]
+[ext_resource type="ArrayMesh" uid="uid://du7dqmo22555l" path="res://Assets/00.3D/obj_export_kw27/obj_Flyer_WE-u-Sonderfahrten_2_70s_OPEN.obj" id="76_j4ec3"]
+[ext_resource type="Material" uid="uid://p5oribelgftv" path="res://Assets/03.Materials/mat_White-Beige.tres" id="77_emdq1"]
+[ext_resource type="ArrayMesh" uid="uid://wuogoohp8f1q" path="res://Assets/00.3D/obj_export_kw27/obj_Lampe_VEB_NARVA_Kombinat_70er.obj" id="77_hpku1"]
+[ext_resource type="ArrayMesh" uid="uid://ccvyyjjcdh85g" path="res://Assets/00.3D/obj_export_kw27/Plane_010.obj" id="78_ua2yj"]
+[ext_resource type="ArrayMesh" uid="uid://tby7hf02lt5d" path="res://Assets/00.3D/obj_export_kw27/Plane_011.obj" id="79_qhhid"]
 
 [sub_resource type="ProceduralSkyMaterial" id="ProceduralSkyMaterial_udtmk"]
 sky_top_color = Color(0.224972, 0.479705, 0.615122, 1)
@@ -144,24 +175,12 @@ albedo_texture = ExtResource("59_g5m6h")
 [sub_resource type="StandardMaterial3D" id="StandardMaterial3D_28mpb"]
 albedo_texture = ExtResource("15_j503t")
 
-[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_1rg3t"]
-transparency = 1
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_shgk2"]
 cull_mode = 2
-albedo_texture = ExtResource("53_01uuu")
+albedo_texture = ExtResource("62_eaofq")
 
 [sub_resource type="StandardMaterial3D" id="StandardMaterial3D_w4sxf"]
 albedo_texture = ExtResource("23_l6ymm")
-
-[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_sv6sm"]
-cull_mode = 2
-albedo_texture = ExtResource("53_01uuu")
-
-[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_g6oh5"]
-albedo_texture = ExtResource("20_bmjck")
-roughness_texture = ExtResource("21_7amc5")
-
-[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_t6b0v"]
-albedo_color = Color(0.607558, 0.137895, 0.167734, 1)
 
 [sub_resource type="StandardMaterial3D" id="StandardMaterial3D_jmets"]
 cull_mode = 2
@@ -171,9 +190,79 @@ albedo_texture = ExtResource("24_xebjs")
 cull_mode = 2
 albedo_texture = ExtResource("24_xebjs")
 
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_vbbqu"]
+cull_mode = 2
+albedo_texture = ExtResource("24_xebjs")
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_l334t"]
+cull_mode = 2
+albedo_texture = ExtResource("71_ldby6")
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_75btn"]
+albedo_texture = ExtResource("71_ldby6")
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_8qmfl"]
+cull_mode = 2
+albedo_texture = ExtResource("71_ldby6")
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_rwkux"]
+cull_mode = 2
+albedo_texture = ExtResource("24_xebjs")
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_g6oh5"]
+albedo_texture = ExtResource("20_bmjck")
+roughness_texture = ExtResource("21_7amc5")
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_t6b0v"]
+albedo_color = Color(0.607558, 0.137895, 0.167734, 1)
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_sv6sm"]
+cull_mode = 2
+albedo_texture = ExtResource("53_01uuu")
+
 [sub_resource type="StandardMaterial3D" id="StandardMaterial3D_7lu8v"]
 cull_mode = 2
 albedo_texture = ExtResource("15_j503t")
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_jtstv"]
+cull_mode = 2
+albedo_texture = ExtResource("62_eaofq")
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_emdq1"]
+cull_mode = 2
+albedo_texture = ExtResource("65_lfqnm")
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_ufj43"]
+cull_mode = 2
+albedo_texture = ExtResource("62_eaofq")
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_eaofq"]
+cull_mode = 2
+albedo_texture = ExtResource("68_rfs5q")
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_12pjp"]
+cull_mode = 2
+albedo_texture = ExtResource("68_rfs5q")
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_j7nk8"]
+cull_mode = 2
+albedo_texture = ExtResource("65_lfqnm")
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_dsw8n"]
+cull_mode = 2
+albedo_texture = ExtResource("65_lfqnm")
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_d12h7"]
+cull_mode = 2
+albedo_texture = ExtResource("65_lfqnm")
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_182ij"]
+albedo_texture = ExtResource("68_rfs5q")
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_1rg3t"]
+transparency = 1
+cull_mode = 2
+albedo_texture = ExtResource("53_01uuu")
 
 [sub_resource type="Animation" id="Animation_c4g4b"]
 length = 0.001
@@ -278,12 +367,20 @@ metadata/_edit_use_anchors_ = true
 [node name="WorldEnvironment" type="WorldEnvironment" parent="."]
 environment = SubResource("Environment_bs7aw")
 
-[node name="OmniLight3D" type="OmniLight3D" parent="."]
+[node name="LIGHTS" type="Node3D" parent="."]
+
+[node name="OmniLight3D" type="OmniLight3D" parent="LIGHTS"]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 2.80235, 4.14186, 0)
 light_color = Color(0.87383, 0.79419, 0.601692, 1)
 light_energy = 0.601
 omni_range = 25.58
 omni_attenuation = 0.353
+
+[node name="SpotLight3D" type="SpotLight3D" parent="LIGHTS"]
+transform = Transform3D(0.940041, -0.0457849, -0.337975, 0.27722, 0.679824, 0.678961, 0.198678, -0.731944, 0.651755, -0.496142, 2.20393, 0.573642)
+light_color = Color(0.930857, 0.762101, 0.587885, 1)
+light_energy = 1.758
+shadow_enabled = true
 
 [node name="3D Scene" type="Node3D" parent="."]
 
@@ -339,10 +436,13 @@ mesh = SubResource("BoxMesh_mvsd4")
 [node name="Set_allgemein" type="Node3D" parent="3D Scene"]
 transform = Transform3D(0.00167556, 0, -0.999999, 0, 1, 0, 0.999999, 0, 0.00167556, 0, 0, -3.484)
 
-[node name="ObjDesk" type="MeshInstance3D" parent="3D Scene/Set_allgemein"]
-transform = Transform3D(0.00235461, 0, 1.40526, 0, 1.40527, 0, -1.40526, 0, 0.00235461, 4.37964, 0.820905, 0.215239)
-mesh = ExtResource("5_5h32y")
-skeleton = NodePath("../../..")
+[node name="Desk" type="Node3D" parent="3D Scene/Set_allgemein"]
+transform = Transform3D(1, 0, -2.32831e-10, 0, 1, 0, 2.32831e-10, 0, 1, 3.42119, 1.58569, 0.00573238)
+
+[node name="ObjDesk" type="MeshInstance3D" parent="3D Scene/Set_allgemein/Desk"]
+transform = Transform3D(0.00235461, 0, 1.40526, 0, 1.40527, 0, -1.40526, 0, 0.00235461, 0.958451, -0.764783, 0.209507)
+mesh = ExtResource("4_ufj43")
+skeleton = NodePath("../../../..")
 surface_material_override/0 = SubResource("StandardMaterial3D_y5s40")
 surface_material_override/1 = SubResource("StandardMaterial3D_a6j3u")
 surface_material_override/2 = SubResource("StandardMaterial3D_r6mkn")
@@ -351,253 +451,483 @@ surface_material_override/4 = SubResource("StandardMaterial3D_bmjck")
 surface_material_override/5 = SubResource("StandardMaterial3D_7amc5")
 surface_material_override/6 = SubResource("StandardMaterial3D_ar7jl")
 
-[node name="ObjDeskDrawer" type="MeshInstance3D" parent="3D Scene/Set_allgemein"]
-transform = Transform3D(0.00235461, 0, 1.40526, 0, 1.40527, 0, -1.40526, 0, 0.00235461, 2.46101, 1.31405, 0.0836589)
-mesh = ExtResource("9_po0u7")
-skeleton = NodePath("../../..")
+[node name="Desk_Drawer" type="Node3D" parent="3D Scene/Set_allgemein/Desk"]
+transform = Transform3D(0.999999, 0, -1.16415e-10, 0, 1, 0, 1.16415e-10, 0, 0.999999, -0.960179, -0.271637, 0.0779265)
+
+[node name="ObjDeskDrawer" type="MeshInstance3D" parent="3D Scene/Set_allgemein/Desk/Desk_Drawer"]
+transform = Transform3D(0.00235461, 0, 1.40526, 0, 1.40527, 0, -1.40526, 0, 0.00235461, 0, 0, 0)
+mesh = ExtResource("8_ufj43")
+skeleton = NodePath("../../../../..")
 surface_material_override/0 = SubResource("StandardMaterial3D_lpxdt")
 surface_material_override/1 = SubResource("StandardMaterial3D_fkfkq")
 
-[node name="ObjDeskRolling-drawerShelves" type="MeshInstance3D" parent="3D Scene/Set_allgemein"]
-transform = Transform3D(0.00235461, 0, 1.40526, 0, 1.40527, 0, -1.40526, 0, 0.00235461, 4.37964, 0.820905, 0.215239)
-mesh = ExtResource("10_ecia6")
-skeleton = NodePath("../../..")
+[node name="Desk_Shelf_1" type="Node3D" parent="3D Scene/Set_allgemein/Desk/Desk_Drawer"]
+transform = Transform3D(1, 0, 2.32831e-10, 0, 1, 0, -2.32831e-10, 0, 1, 0.00856626, -0.3365, 0.12838)
+
+[node name="ObjDeskRolling-drawerShelves" type="MeshInstance3D" parent="3D Scene/Set_allgemein/Desk/Desk_Drawer/Desk_Shelf_1"]
+transform = Transform3D(0.00235461, 0, 1.40526, 0, 1.40527, 0, -1.40526, 0, 0.00235461, 1.91006, -0.156645, 0.00320047)
+mesh = ExtResource("9_j7nk8")
+skeleton = NodePath("../../../../../..")
 surface_material_override/0 = SubResource("StandardMaterial3D_27dt2")
 
-[node name="ObjDeskRolling-drawerShelves001" type="MeshInstance3D" parent="3D Scene/Set_allgemein"]
-transform = Transform3D(0.00235461, 0, 1.40526, 0, 1.40527, 0, -1.40526, 0, 0.00235461, 4.37964, 0.820905, 0.215239)
-mesh = ExtResource("11_j503t")
-skeleton = NodePath("../../..")
+[node name="Desk_Shelf_2" type="Node3D" parent="3D Scene/Set_allgemein/Desk/Desk_Drawer"]
+transform = Transform3D(1, 0, 2.32831e-10, 0, 1, 0, -2.32831e-10, 0, 1, -0.00228739, -0.543769, 0.128362)
+
+[node name="ObjDeskRolling-drawerShelves001" type="MeshInstance3D" parent="3D Scene/Set_allgemein/Desk/Desk_Drawer/Desk_Shelf_2"]
+transform = Transform3D(0.00235461, 0, 1.40526, 0, 1.40527, 0, -1.40526, 0, 0.00235461, 1.92092, 0.0506236, 0.00321862)
+mesh = ExtResource("10_dsw8n")
+skeleton = NodePath("../../../../../..")
 surface_material_override/0 = SubResource("StandardMaterial3D_23dw1")
 
-[node name="ObjWall" type="MeshInstance3D" parent="3D Scene/Set_allgemein"]
-transform = Transform3D(-1.605, -2.03028e-07, 8.87485e-15, 0, -5.87918e-08, -1.345, 2.42377e-07, -1.345, 5.87918e-08, 3.23073, 2.547, 0.838439)
-mesh = ExtResource("10_mr02p")
+[node name="Wall" type="Node3D" parent="3D Scene/Set_allgemein"]
+transform = Transform3D(1, 0, 1.16415e-10, 1.75251e-18, 1, 0, 2.32831e-10, 0, 1, 3.23073, 2.547, 0.838439)
+
+[node name="ObjWall" type="MeshInstance3D" parent="3D Scene/Set_allgemein/Wall"]
+transform = Transform3D(-1.605, -2.02795e-07, 8.87485e-15, 2.81278e-18, -5.87918e-08, -1.345, 2.42842e-07, -1.345, 5.87918e-08, 2.38419e-07, 0, 5.96046e-08)
+mesh = ExtResource("11_j7nk8")
+skeleton = NodePath("../..")
 surface_material_override/0 = SubResource("StandardMaterial3D_wllko")
 
-[node name="ObjPictureframeSandmann" type="MeshInstance3D" parent="3D Scene/Set_allgemein"]
-transform = Transform3D(0.00167556, 0, 0.999998, 0, 1, 0, -0.999998, 0, 0.00167556, 0.759712, 3.63312, 0.810447)
-mesh = ExtResource("14_ecia6")
-skeleton = NodePath("../../..")
+[node name="ObjWall2" type="MeshInstance3D" parent="3D Scene/Set_allgemein/Wall"]
+transform = Transform3D(-6.98492e-08, -1.345, 5.87918e-08, 1.22785e-25, -5.87918e-08, -1.345, 1.605, -5.84405e-08, 2.53964e-15, 4.34908, 0, -3.70769)
+mesh = ExtResource("11_j7nk8")
+skeleton = NodePath("../..")
+surface_material_override/0 = SubResource("StandardMaterial3D_wllko")
+
+[node name="ObjWall5" type="MeshInstance3D" parent="3D Scene/Set_allgemein/Wall"]
+transform = Transform3D(6.47269e-08, -5.16254e-15, 2.29072, -1.28667e-07, -1.345, -4.01451e-18, 1.47177, -1.17584e-07, -1.01747e-07, -0.0114898, 2.37492, -4.05323)
+mesh = ExtResource("11_j7nk8")
+skeleton = NodePath("../..")
+surface_material_override/0 = ExtResource("25_08dwc")
+
+[node name="ObjWall3" type="MeshInstance3D" parent="3D Scene/Set_allgemein/Wall"]
+transform = Transform3D(0.278705, 1.32457, -5.78986e-08, -4.88434e-19, -5.87918e-08, -1.345, -1.58062, 0.233557, -1.02091e-08, -3.70484, 0, -4.24882)
+mesh = ExtResource("11_j7nk8")
+skeleton = NodePath("../..")
+surface_material_override/0 = SubResource("StandardMaterial3D_wllko")
+
+[node name="Framed-Picture_Sandmann" type="Node3D" parent="3D Scene/Set_allgemein"]
+transform = Transform3D(1, 0, -1.16415e-10, 0, 1, 0, 1.16415e-10, 0, 1, 0.759712, 3.63312, 0.810447)
+
+[node name="ObjPictureframeSandmann" type="MeshInstance3D" parent="3D Scene/Set_allgemein/Framed-Picture_Sandmann"]
+transform = Transform3D(0.00167556, 0, 0.999998, 0, 1, 0, -0.999998, 0, 0.00167556, 0, 0, 5.96046e-08)
+mesh = ExtResource("13_ufj43")
+skeleton = NodePath("../../../..")
 surface_material_override/0 = SubResource("StandardMaterial3D_28mpb")
 
-[node name="RadioSternchen60s" type="MeshInstance3D" parent="3D Scene/Set_allgemein"]
-transform = Transform3D(1.09817, 0, 0.695712, 0, 1.3, 0, -0.695712, 0, 1.09817, 0.958427, 1.60678, 0.0637615)
-mesh = ExtResource("16_y5s40")
-skeleton = NodePath("../../..")
+[node name="Radio_Sternchen_60s" type="Node3D" parent="3D Scene/Set_allgemein"]
+transform = Transform3D(1, 0, 1.59489e-08, 0, 1, 0, -1.59489e-08, 0, 1, 1.14338, 3.06057, 0.352101)
 
-[node name="AudioStreamPlayer3D" type="AudioStreamPlayer3D" parent="3D Scene/Set_allgemein/RadioSternchen60s"]
-transform = Transform3D(1, 0, 1.11022e-16, 0, 1, 0, -1.11022e-16, 0, 1, 0, 0.973884, 0.278264)
+[node name="RadioSternchen60s" type="MeshInstance3D" parent="3D Scene/Set_allgemein/Radio_Sternchen_60s"]
+transform = Transform3D(1.09817, 0, 0.695712, 0, 1.3, 0, -0.695712, 0, 1.09817, -0.184953, -1.45379, -0.288339)
+mesh = ExtResource("15_j7nk8")
+skeleton = NodePath("../../../..")
+
+[node name="AudioStreamPlayer3D" type="AudioStreamPlayer3D" parent="3D Scene/Set_allgemein/Radio_Sternchen_60s/RadioSternchen60s"]
+transform = Transform3D(0.186276, 0, -0.746337, 0, 0.769231, 0, 0.746337, 0, 0.186276, 0, 1.08183, 0.278264)
 stream = ExtResource("4_vmq46")
 autoplay = true
 max_distance = 10.0
 parameters/looping = true
 
-[node name="ObjTrabantTiny" type="MeshInstance3D" parent="3D Scene/Set_allgemein"]
-transform = Transform3D(-0.528705, 0, 0.848804, 0, 1, 0, -0.848804, 0, -0.528705, 0.860672, 1.54364, 0.425048)
-mesh = ExtResource("15_y5s40")
+[node name="Book_Pionierkalender_1980" type="Node3D" parent="3D Scene/Set_allgemein"]
+transform = Transform3D(1, 0, -1.38534e-08, 0, 1, 0, 1.38534e-08, 0, 1, 0.88557, 2.53261, 0.391989)
 
-[node name="Walls" type="Node3D" parent="3D Scene/Set_allgemein"]
-
-[node name="ObjWall2" type="MeshInstance3D" parent="3D Scene/Set_allgemein/Walls"]
-transform = Transform3D(-6.96164e-08, -1.345, 5.87918e-08, 0, -5.87918e-08, -1.345, 1.605, -5.89062e-08, 2.56045e-15, 7.57981, 2.547, -2.86925)
-mesh = ExtResource("10_mr02p")
-skeleton = NodePath("../..")
-surface_material_override/0 = SubResource("StandardMaterial3D_wllko")
-
-[node name="ObjWall5" type="MeshInstance3D" parent="3D Scene/Set_allgemein/Walls"]
-transform = Transform3D(6.47269e-08, -5.16254e-15, 2.29072, -1.28667e-07, -1.345, 0, 1.47177, -1.17584e-07, -1.01048e-07, 3.21924, 4.92192, -3.21479)
-visible = false
-mesh = ExtResource("10_mr02p")
-skeleton = NodePath("../..")
-surface_material_override/0 = ExtResource("25_08dwc")
-
-[node name="ObjWall3" type="MeshInstance3D" parent="3D Scene/Set_allgemein/Walls"]
-transform = Transform3D(0.278705, 1.32457, -5.78986e-08, 0, -5.87918e-08, -1.345, -1.58062, 0.233557, -1.02091e-08, -0.474114, 2.547, -3.41038)
-mesh = ExtResource("10_mr02p")
-skeleton = NodePath("../..")
-surface_material_override/0 = SubResource("StandardMaterial3D_wllko")
-
-[node name="ObjShelf" type="MeshInstance3D" parent="3D Scene/Set_allgemein/Walls"]
-transform = Transform3D(0.00202743, 0, 1.21, 0, 1.21, 0, -1.21, 0, 0.00202743, 0.933542, 0.0434284, 0.492136)
-mesh = ExtResource("16_a6j3u")
-skeleton = NodePath("../..")
-
-[node name="ObjPencil" type="MeshInstance3D" parent="3D Scene/Set_allgemein"]
-transform = Transform3D(0.00167556, 0.999997, 0.00181515, 3.49246e-10, 0.00181516, -0.999997, -0.999998, 0.00167556, 3.04105e-06, 2.69196, 1.74751, 0.148818)
-mesh = ExtResource("17_l6ymm")
-
-[node name="ObjPencil007" type="MeshInstance3D" parent="3D Scene/Set_allgemein"]
-transform = Transform3D(0.00167556, -0.999956, -0.00918027, -3.43789e-10, -0.0091803, 0.999957, -0.999997, -0.00167549, -1.53823e-05, 2.63636, 1.75025, 0.267331)
-mesh = ExtResource("18_w4sxf")
-
-[node name="ObjPencil008" type="MeshInstance3D" parent="3D Scene/Set_allgemein"]
-transform = Transform3D(0.00167556, -0.999956, -0.00918027, -3.43789e-10, -0.0091803, 0.999957, -0.999997, -0.00167549, -1.53823e-05, 2.65582, 1.75043, 0.267364)
-mesh = ExtResource("19_x6x6a")
-
-[node name="ObjPoster002" type="MeshInstance3D" parent="3D Scene/Set_allgemein"]
-transform = Transform3D(3.17801e-15, -7.26432e-08, 1.66, -1.66, -7.25609e-08, 8.35366e-18, 7.25609e-08, -1.66, -7.26432e-08, 4.87746, 2.60071, 0.807237)
-mesh = ExtResource("20_0cpxq")
-surface_material_override/0 = SubResource("StandardMaterial3D_1rg3t")
-
-[node name="ObjPoster001" type="MeshInstance3D" parent="3D Scene/Set_allgemein"]
-transform = Transform3D(-0.00015281, 6.74091e-06, 1.81, -1.80966, 0.0350634, -0.000152912, -0.0350634, -1.80966, 3.77884e-06, 1.80268, 3.57827, 0.800094)
-mesh = ExtResource("41_t6b0v")
-surface_material_override/0 = SubResource("StandardMaterial3D_w4sxf")
-
-[node name="ArmBookOpen" type="MeshInstance3D" parent="3D Scene/Set_allgemein"]
-transform = Transform3D(2.47231e-06, -0.999979, -0.00647514, 8.85371e-05, -0.00647517, 0.999978, -0.999999, -3.04542e-06, 8.85192e-05, 3.97025, 1.78504, 0.391165)
-mesh = ExtResource("24_x6x6a")
+[node name="ObjBookPionierkalender-1980Closed" type="MeshInstance3D" parent="3D Scene/Set_allgemein/Book_Pionierkalender_1980"]
+transform = Transform3D(0.366046, 0, 0.930596, 0, 1, 0, -0.930596, 0, 0.366046, 0, 0, 0)
+mesh = ExtResource("17_ufj43")
+skeleton = NodePath("../../Radio_Sternchen_60s/RadioSternchen60s")
+surface_material_override/0 = SubResource("StandardMaterial3D_shgk2")
 surface_material_override/1 = ExtResource("25_08dwc")
 
-[node name="ArmBookPionierkalender-1978Closed" type="MeshInstance3D" parent="3D Scene/Set_allgemein"]
-transform = Transform3D(-0.129282, -1.1225, -0.0136121, 0.0021624, 0.013453, -1.12992, 1.12258, -0.129298, 0.000608908, 2.57984, 0.95416, -0.138877)
-mesh = ExtResource("25_0cpxq")
+[node name="Trabant" type="Node3D" parent="3D Scene/Set_allgemein"]
+transform = Transform3D(-0.528705, 0, 0.848804, 0, 1, 0, -0.848804, 0, -0.528705, 0.860672, 1.56789, 0.425048)
+
+[node name="ObjTrabantTiny" type="MeshInstance3D" parent="3D Scene/Set_allgemein/Trabant"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, -0.0242494, 0)
+mesh = ExtResource("20_dsw8n")
+skeleton = NodePath("../..")
+
+[node name="Shelf" type="Node3D" parent="3D Scene/Set_allgemein"]
+transform = Transform3D(0.00202743, 0, 1.21, 0, 1.21, 0, -1.21, 0, 0.00202743, 0.933542, 0.0434284, 0.492136)
+
+[node name="ObjShelf" type="MeshInstance3D" parent="3D Scene/Set_allgemein/Shelf"]
+transform = Transform3D(1, 0, 2.77556e-17, 0, 1, 0, -2.77556e-17, 0, 1, -2.98023e-08, 0, 0)
+mesh = ExtResource("21_d12h7")
+skeleton = NodePath("../..")
+
+[node name="Pencil" type="Node3D" parent="3D Scene/Set_allgemein"]
+transform = Transform3D(0.00167556, 0.999997, 0.00181515, 3.49246e-10, 0.00181516, -0.999997, -0.999998, 0.00167556, 3.04105e-06, 2.69196, 1.74751, 0.148818)
+
+[node name="ObjPencil" type="MeshInstance3D" parent="3D Scene/Set_allgemein/Pencil"]
+transform = Transform3D(1, 2.22045e-16, -2.51535e-17, 0, 1, 1.16415e-10, -6.50521e-18, 0, 1, 0, 0, 0)
+mesh = ExtResource("22_emdq1")
+skeleton = NodePath("../..")
+surface_material_override/0 = ExtResource("21_hi36m")
+surface_material_override/1 = ExtResource("22_lfqnm")
+
+[node name="Pen" type="Node3D" parent="3D Scene/Set_allgemein"]
+transform = Transform3D(0.00167556, -0.999956, -0.00918027, -3.43789e-10, -0.0091803, 0.999957, -0.999997, -0.00167549, -1.53823e-05, 2.63636, 1.75025, 0.267331)
+
+[node name="ObjPencil007" type="MeshInstance3D" parent="3D Scene/Set_allgemein/Pen"]
+transform = Transform3D(1, -2.22045e-16, 3.46945e-18, 2.22045e-16, 1, 0, 2.08167e-17, 9.31323e-10, 1, 0, 0, 0)
+mesh = ExtResource("25_eaofq")
+skeleton = NodePath("../..")
+surface_material_override/0 = ExtResource("24_ufj43")
+surface_material_override/1 = ExtResource("25_j7nk8")
+
+[node name="Pen-Cap" type="MeshInstance3D" parent="3D Scene/Set_allgemein/Pen"]
+transform = Transform3D(1, -2.22045e-16, 3.46945e-18, 2.22045e-16, 1, 0, 2.08167e-17, 9.31323e-10, 1, -3.8743e-07, -0.0194609, 1.43051e-06)
+mesh = ExtResource("28_shgk2")
+skeleton = NodePath("../..")
+surface_material_override/0 = ExtResource("25_j7nk8")
+
+[node name="DDR_Karte_1980" type="Node3D" parent="3D Scene/Set_allgemein"]
+transform = Transform3D(-0.00015281, 6.74091e-06, 1.81, -1.80966, 0.0350634, -0.000152912, -0.0350634, -1.80966, 3.77907e-06, 1.80268, 3.57827, 0.800094)
+
+[node name="DDR_Karte_1979" type="MeshInstance3D" parent="3D Scene/Set_allgemein/DDR_Karte_1980"]
+transform = Transform3D(1, 1.65954e-09, 7.27596e-12, 1.65946e-09, 1, 1.16415e-10, 0, 0, 1, 0, -5.96046e-08, 0)
+mesh = ExtResource("31_t7fvn")
+skeleton = NodePath("../..")
+surface_material_override/0 = SubResource("StandardMaterial3D_w4sxf")
+
+[node name="Book-plain_open" type="Node3D" parent="3D Scene/Set_allgemein"]
+transform = Transform3D(-0.322081, -0.946692, -0.00610158, 8.85371e-05, -0.00647517, 0.999978, -0.946711, 0.322074, 0.00216934, 3.86353, 1.78504, 0.589378)
+
+[node name="ArmBookOpen" type="MeshInstance3D" parent="3D Scene/Set_allgemein/Book-plain_open"]
+transform = Transform3D(1, 0, 2.32831e-10, 2.98023e-08, 1, -4.65661e-10, 4.65661e-10, 4.65661e-10, 1, 0, 0, 0)
+mesh = ExtResource("33_quctf")
+skeleton = NodePath("../..")
+surface_material_override/1 = ExtResource("25_08dwc")
+
+[node name="Folders" type="Node3D" parent="3D Scene/Set_allgemein"]
+transform = Transform3D(-0.0761796, 0, -0.997093, 0, 1, 0, 0.997093, 0, -0.0761796, 0.818544, 2.20835, 0.367062)
+
+[node name="ObjFolder004" type="MeshInstance3D" parent="3D Scene/Set_allgemein/Folders"]
+transform = Transform3D(1, 0, 7.45058e-09, 0, 1, 0, -7.45058e-09, 0, 1, 0.0101346, 0, 0.13564)
+mesh = ExtResource("34_sm84e")
+skeleton = NodePath("../../../..")
+surface_material_override/1 = ExtResource("25_08dwc")
+
+[node name="ObjFolder005" type="MeshInstance3D" parent="3D Scene/Set_allgemein/Folders"]
+transform = Transform3D(0.996292, 0, -0.0860427, 0, 1, 0, 0.0860427, 0, 0.996292, 0.00441015, 0, 0.0590241)
+mesh = ExtResource("34_sm84e")
+skeleton = NodePath("../../../..")
+surface_material_override/1 = ExtResource("25_08dwc")
+
+[node name="ObjFolder006" type="MeshInstance3D" parent="3D Scene/Set_allgemein/Folders"]
+transform = Transform3D(0.986625, -0.0237628, -0.161268, -0.0123526, 0.975574, -0.219323, 0.162541, 0.218382, 0.962232, 0.0155731, -0.00843, -0.0490983)
+mesh = ExtResource("34_sm84e")
+skeleton = NodePath("../../../..")
+surface_material_override/1 = ExtResource("25_08dwc")
+
+[node name="ObjFolder007" type="MeshInstance3D" parent="3D Scene/Set_allgemein/Folders"]
+transform = Transform3D(0.968343, -0.0115387, -0.249359, -0.0849378, 0.924096, -0.372603, 0.234731, 0.381988, 0.893861, -0.0172791, 0.00844002, -0.165043)
+mesh = ExtResource("34_sm84e")
+skeleton = NodePath("../../../..")
+surface_material_override/1 = ExtResource("25_08dwc")
+
+[node name="Flyers" type="Node3D" parent="3D Scene/Set_allgemein"]
+transform = Transform3D(0.989629, -8.6516e-08, -0.143648, -8.74228e-08, -1, 0, -0.143648, 1.2558e-08, -0.989629, 3.89725, 1.7409, -0.0580186)
+
+[node name="ObjFlyerWe-u-sonderfahrten1" type="MeshInstance3D" parent="3D Scene/Set_allgemein/Flyers"]
+transform = Transform3D(1, 7.10543e-15, 1.49012e-08, 0, 1, -8.88178e-16, -1.49012e-08, 0, 1, 4.17233e-07, 0, -6.33299e-08)
+mesh = ExtResource("35_rfs5q")
+skeleton = NodePath("../../../..")
+surface_material_override/0 = SubResource("StandardMaterial3D_jmets")
+
+[node name="ObjFlyerWe-u-sonderfahrten2" type="MeshInstance3D" parent="3D Scene/Set_allgemein/Flyers"]
+transform = Transform3D(-0.989387, -8.74227e-08, 0.145306, 8.64949e-08, -1, -1.2703e-08, 0.145306, 4.70734e-14, 0.989387, 0.200672, -0.00213993, -0.0198083)
+mesh = ExtResource("37_eu7pm")
+skeleton = NodePath("../../../..")
+surface_material_override/0 = SubResource("StandardMaterial3D_lxul1")
+
+[node name="Flyer_Fernsehturm-Berlin_70er" type="MeshInstance3D" parent="3D Scene/Set_allgemein/Flyers"]
+transform = Transform3D(-0.00257648, 0.231022, 1.57312, 1.5899, 0.0177324, -1.37527e-07, -0.0175442, 1.57303, -0.231036, -1.04414, -1.01861, -0.716136)
+mesh = ExtResource("38_cw26l")
+skeleton = NodePath("../../../..")
+
+[node name="ObjBooklet25-jahre-halleanderSaale" type="MeshInstance3D" parent="3D Scene/Set_allgemein/Flyers"]
+transform = Transform3D(-0.989351, 0.145233, 0.00953577, 0.00498917, -0.0316376, 0.999487, 0.14546, 0.988891, 0.0305761, -1.88229, -0.95121, -0.605302)
+mesh = ExtResource("59_dsw8n")
+skeleton = NodePath("../../../..")
+surface_material_override/0 = SubResource("StandardMaterial3D_vbbqu")
+
+[node name="ObjFlyerAusflugsverkehr-198780sOpen" type="MeshInstance3D" parent="3D Scene/Set_allgemein/Flyers"]
+transform = Transform3D(0.993403, -0.00262732, 0.114641, -0.0122967, 0.991532, 0.129279, -0.11401, -0.129836, 0.984959, -0.229359, -0.0524921, -0.610241)
+mesh = ExtResource("70_cw26l")
+skeleton = NodePath("../../../..")
+surface_material_override/0 = SubResource("StandardMaterial3D_l334t")
+
+[node name="ObjFlyerGeschenk-reisenfRBRgerderDdr70sOpen" type="MeshInstance3D" parent="3D Scene/Set_allgemein/Flyers"]
+transform = Transform3D(0.975096, -0.00275934, 0.221763, 0.00124687, 0.999975, 0.00695992, -0.221777, -0.00651009, 0.975075, -1.54903, -0.0104057, -0.386806)
+mesh = ExtResource("72_3b28h")
+skeleton = NodePath("../../../..")
+
+[node name="ObjFlyerJugendtourist-ddr80s" type="MeshInstance3D" parent="3D Scene/Set_allgemein/Flyers"]
+transform = Transform3D(0.10781, 0.00195271, -0.994169, -0.00854996, 0.999963, 0.00103691, 0.994135, 0.00838832, 0.107823, -0.367835, -0.00625467, -0.00378732)
+mesh = ExtResource("73_th26e")
+skeleton = NodePath("../../../..")
+surface_material_override/0 = SubResource("StandardMaterial3D_75btn")
+
+[node name="ObjFlyerTrabant-60170sOpen" type="MeshInstance3D" parent="3D Scene/Set_allgemein/Flyers"]
+transform = Transform3D(-0.988789, 0.0444674, 0.142545, -0.0449443, -0.998989, -0.000125519, 0.142396, -0.00653071, 0.989788, -0.790532, -0.0298486, -0.51433)
+mesh = ExtResource("75_ftcf2")
+skeleton = NodePath("../../../..")
+
+[node name="ObjFlyerTankstellen-berlin80s" type="MeshInstance3D" parent="3D Scene/Set_allgemein/Flyers"]
+transform = Transform3D(1.96467, 0.233684, -0.0766772, -0.0752814, -0.0162754, -1.9785, -0.234138, 1.96609, -0.00726449, -0.937912, -0.762583, -0.751211)
+mesh = ExtResource("74_cre1x")
+skeleton = NodePath("../../../..")
+surface_material_override/0 = SubResource("StandardMaterial3D_8qmfl")
+
+[node name="ObjFlyerWe-u-sonderfahrten270sOpen" type="MeshInstance3D" parent="3D Scene/Set_allgemein/Flyers"]
+transform = Transform3D(0.932654, -0.0352379, 0.359046, 0.0309767, 0.999365, 0.017616, -0.359439, -0.00530753, 0.933153, -1.28891, -0.0299108, 0.288985)
+mesh = ExtResource("76_j4ec3")
+skeleton = NodePath("../../../..")
+surface_material_override/0 = SubResource("StandardMaterial3D_rwkux")
+
+[node name="Pin-Board" type="Node3D" parent="3D Scene/Set_allgemein"]
+transform = Transform3D(0.00210283, 0, 1.41, 0, 1.255, 0, -1.255, 0, 0.00236254, 3.31082, 2.92091, 0.831782)
+
+[node name="ObjPinboard" type="MeshInstance3D" parent="3D Scene/Set_allgemein/Pin-Board"]
+transform = Transform3D(1, 0, 1.85522e-10, 0, 1, 0, 0, 0, 1, -5.96046e-08, 0, 1.11759e-07)
+mesh = ExtResource("47_ufj43")
+skeleton = NodePath("../../../..")
+surface_material_override/1 = SubResource("StandardMaterial3D_g6oh5")
+
+[node name="Pin" type="Node3D" parent="3D Scene/Set_allgemein/Pin-Board"]
+transform = Transform3D(-0.161951, 1.26056, 2.09864e-10, -1.26056, -0.161951, 0, 0, 0, 1.13121, -0.0257825, -0.19208, 0.401828)
+
+[node name="ObjPin" type="MeshInstance3D" parent="3D Scene/Set_allgemein/Pin-Board/Pin"]
+transform = Transform3D(1, -1.49012e-08, 0, 1.49012e-08, 1, 0, 0, 0, 1, 0, 0, 2.98023e-08)
+mesh = ExtResource("50_j7nk8")
+skeleton = NodePath("../../../../..")
+surface_material_override/0 = SubResource("StandardMaterial3D_t6b0v")
+
+[node name="Posters_70s" type="Node3D" parent="3D Scene/Set_allgemein"]
+transform = Transform3D(2.95256e-05, 0.002664, 1.59, -1.5899, 0.0176214, 1.86265e-09, -0.0176213, -1.5899, 0.00266413, 2.6299, 2.92025, 0.820269)
+
+[node name="ObjPoster002002" type="MeshInstance3D" parent="3D Scene/Set_allgemein/Posters_70s"]
+transform = Transform3D(1, -1.86265e-09, 1.32968e-09, -2.79397e-09, 1, -2.79716e-09, -1.08682e-10, -1.09826e-08, 1, 0.162977, -0.00180644, 0)
+mesh = ExtResource("51_dsw8n")
+skeleton = NodePath("../..")
+
+[node name="Book_Pionierkalender_1978" type="Node3D" parent="3D Scene/Set_allgemein"]
+transform = Transform3D(-0.129282, -1.1225, -0.0136121, 0.0021624, 0.013453, -1.12992, 1.12258, -0.129298, 0.000608909, 2.46756, 0.974519, -0.139065)
+
+[node name="ArmBookPionierkalender-1978Closed" type="MeshInstance3D" parent="3D Scene/Set_allgemein/Book_Pionierkalender_1978"]
+transform = Transform3D(1, -2.23517e-08, -2.32831e-10, -7.45058e-09, 1, 1.86265e-09, 1.16415e-10, 9.31323e-10, 1, -0.0112365, -0.0989323, 0.0168187)
+mesh = ExtResource("52_d12h7")
+skeleton = NodePath("../..")
 surface_material_override/0 = SubResource("StandardMaterial3D_sv6sm")
 surface_material_override/1 = ExtResource("25_08dwc")
 
-[node name="ObjPoster002002" type="MeshInstance3D" parent="3D Scene/Set_allgemein"]
-transform = Transform3D(2.95254e-05, 0.00266398, 1.59, -1.5899, 0.0176214, -3.00707e-10, -0.0176213, -1.5899, 0.00266414, 2.6299, 2.92025, 0.820269)
-mesh = ExtResource("27_a3qu0")
+[node name="Letters" type="Node3D" parent="3D Scene/Set_allgemein"]
+transform = Transform3D(1.37452, 0.0307391, 0.0192156, -0.0352773, 0.966434, 0.977439, 0.00834542, -0.977591, 0.966886, 3.83086, 2.82104, 0.64493)
 
-[node name="ObjPinboard" type="MeshInstance3D" parent="3D Scene"]
-transform = Transform3D(1.255, 0, 0, 0, 1.255, 0, 0, 0, 1.41, -0.826234, 3.18006, -0.171789)
-mesh = ExtResource("19_ouk33")
-skeleton = NodePath("../..")
-surface_material_override/1 = SubResource("StandardMaterial3D_g6oh5")
+[node name="ObjLetterHalf-folded001" type="MeshInstance3D" parent="3D Scene/Set_allgemein/Letters"]
+transform = Transform3D(1, 1.86265e-09, 9.31323e-10, 1.86265e-09, 1, -5.21832e-08, 0, 7.33417e-09, 1, 0.0048355, -0.13247, -0.133978)
+mesh = ExtResource("53_emdq1")
+skeleton = NodePath("../../../..")
 
-[node name="ObjPin" type="MeshInstance3D" parent="3D Scene"]
-transform = Transform3D(-0.203248, 1.582, 0, -1.582, -0.203248, 0, 0, 0, 1.595, -0.858591, 2.939, 0.394788)
-mesh = ExtResource("22_h7vim")
-skeleton = NodePath("../..")
-surface_material_override/0 = SubResource("StandardMaterial3D_t6b0v")
+[node name="ObjLetterHalf-folded002" type="MeshInstance3D" parent="3D Scene/Set_allgemein/Letters"]
+transform = Transform3D(-0.557225, 0.369244, 0.286508, 0.322129, 0.626458, -0.180856, -0.338614, -0.0116664, -0.643529, -1.03421, -0.170112, -0.199454)
+mesh = ExtResource("54_eaofq")
+skeleton = NodePath("../../../..")
 
-[node name="ObjFlyerWe-u-sonderfahrten1" type="MeshInstance3D" parent="3D Scene"]
-transform = Transform3D(0.145306, -1.2703e-08, 0.989387, -8.74228e-08, -1, 0, 0.989387, -8.64949e-08, -0.145306, 0.0645486, 1.7409, 0.413151)
-mesh = ExtResource("23_sxg0l")
-skeleton = NodePath("../..")
-surface_material_override/0 = SubResource("StandardMaterial3D_jmets")
+[node name="Lampe_Artas_80er" type="Node3D" parent="3D Scene/Set_allgemein"]
+transform = Transform3D(0.00195203, 0, 1.165, 0, 1.165, 0, -1.165, 0, 0.00195203, 2.44895, 1.18771, -0.337509)
 
-[node name="ObjFlyerWe-u-sonderfahrten2" type="MeshInstance3D" parent="3D Scene"]
-transform = Transform3D(-4.37114e-08, 0, 1, 0, 1, 0, -1, 0, -4.37114e-08, 0.0741094, 1.74304, 0.614571)
-mesh = ExtResource("25_ovkkn")
-skeleton = NodePath("../..")
-surface_material_override/0 = SubResource("StandardMaterial3D_lxul1")
+[node name="ObjLampeArtas" type="MeshInstance3D" parent="3D Scene/Set_allgemein/Lampe_Artas_80er"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, -1.07132, -0.229879)
+mesh = ExtResource("55_shgk2")
+skeleton = NodePath("../../../..")
+surface_material_override/0 = ExtResource("55_d12h7")
+surface_material_override/1 = ExtResource("56_emdq1")
+surface_material_override/2 = ExtResource("22_lfqnm")
+surface_material_override/3 = ExtResource("57_eaofq")
 
-[node name="ObjFolder004" type="MeshInstance3D" parent="3D Scene"]
-transform = Transform3D(-0.99722, 0, 0.0745088, 0, 1, 0, -0.0745088, 0, -0.99722, -0.36569, 2.20835, -2.80086)
-mesh = ExtResource("26_17yav")
-skeleton = NodePath("../..")
-surface_material_override/1 = ExtResource("25_08dwc")
+[node name="Paper" type="Node3D" parent="3D Scene/Set_allgemein"]
+transform = Transform3D(0.999603, -0.0281485, 1.23041e-09, 0, -4.37114e-08, -1, 0.0281485, 0.999603, -4.36941e-08, 2.47577, 1.51298, -0.115445)
 
-[node name="ObjFolder005" type="MeshInstance3D" parent="3D Scene"]
-transform = Transform3D(-0.987111, 0, 0.160036, 0, 1, 0, -0.160036, 0, -0.987111, -0.36569, 2.20835, -2.72403)
-mesh = ExtResource("26_17yav")
-skeleton = NodePath("../..")
-surface_material_override/1 = ExtResource("25_08dwc")
+[node name="ObjPaper001" type="MeshInstance3D" parent="3D Scene/Set_allgemein/Paper"]
+transform = Transform3D(1, 3.72529e-09, -1.11022e-16, -3.72529e-09, 1, -7.34829e-15, 1.11022e-16, -7.29625e-15, 1, 2.38419e-07, -2.98023e-08, 0)
+mesh = ExtResource("55_ufj43")
+skeleton = NodePath("../../../..")
 
-[node name="ObjFolder006" type="MeshInstance3D" parent="3D Scene"]
-transform = Transform3D(-0.971771, 0.0399681, 0.232514, -0.0123526, 0.975574, -0.219323, -0.235601, -0.216004, -0.947541, -0.384878, 2.19992, -2.61704)
-mesh = ExtResource("26_17yav")
-skeleton = NodePath("../..")
-surface_material_override/1 = ExtResource("25_08dwc")
+[node name="ObjPaper002" type="MeshInstance3D" parent="3D Scene/Set_allgemein/Paper"]
+transform = Transform3D(0.980223, 0.197897, -8.65035e-09, -0.197897, 0.980223, 8.64501e-10, 8.65033e-09, 8.64472e-10, 1, -0.0289894, -0.0419113, -0.00428998)
+mesh = ExtResource("56_j7nk8")
+skeleton = NodePath("../../../..")
 
-[node name="ObjFolder007" type="MeshInstance3D" parent="3D Scene"]
-transform = Transform3D(-0.948161, 0.0399681, 0.315266, -0.0849378, 0.924096, -0.372603, -0.306228, -0.380066, -0.872797, -0.360756, 2.21679, -2.49897)
-mesh = ExtResource("26_17yav")
-skeleton = NodePath("../..")
-surface_material_override/1 = ExtResource("25_08dwc")
+[node name="ObjPaperStack" type="MeshInstance3D" parent="3D Scene/Set_allgemein/Paper"]
+transform = Transform3D(-0.997632, -0.0687815, 3.00653e-09, 0.0687815, -0.997632, 8.73194e-08, -3.00654e-09, 8.73193e-08, 1, -0.0180783, -0.0129279, 0.02441)
+mesh = ExtResource("57_dsw8n")
+skeleton = NodePath("../../../..")
 
-[node name="ObjLampeArtas" type="MeshInstance3D" parent="3D Scene"]
-transform = Transform3D(1.165, 0, 0, 0, 1.165, 0, 0, 0, 1.165, 0.295958, -0.0603753, -1.30343)
-mesh = ExtResource("16_rhd54")
-skeleton = NodePath("../..")
+[node name="Passport" type="Node3D" parent="3D Scene/Set_allgemein"]
+transform = Transform3D(0.11769, -0.00388008, 1.41511, -0.0225253, -1.41982, -0.00201963, 1.41494, -0.0222803, -0.117737, 2.40096, 1.5208, -0.222615)
 
-[node name="ObjLetterHalf-folded001" type="MeshInstance3D" parent="3D Scene"]
-transform = Transform3D(-0.00604233, 0.977642, -0.966853, -0.0352773, 0.966434, 0.977439, 1.37453, 0.0291011, 0.0208357, -0.638511, 2.82104, 0.347935)
-mesh = ExtResource("28_a4bf3")
-skeleton = NodePath("../..")
+[node name="ObjPassport" type="MeshInstance3D" parent="3D Scene/Set_allgemein/Passport"]
+transform = Transform3D(1, 6.8394e-10, 0, -9.02219e-10, 1, 0, 0, 0, 1, 0, 0, 0)
+mesh = ExtResource("58_d12h7")
+skeleton = NodePath("../../../..")
 
-[node name="ObjLetterHalf-folded002" type="MeshInstance3D" parent="3D Scene"]
-transform = Transform3D(0.645684, 0.6215, 0.443655, 0, 0.581001, -0.813903, -0.763604, 0.525524, 0.375143, -0.447077, 1.79601, -1.08273)
-mesh = ExtResource("29_2nuox")
-skeleton = NodePath("../..")
+[node name="Postcards_70s" type="Node3D" parent="3D Scene/Set_allgemein"]
+transform = Transform3D(-1.5, 0.00251327, -6.5567e-08, 6.55671e-08, 2.86603e-15, -1.5, -0.00251327, -1.5, -1.09862e-10, 3.33071, 3.20204, 0.826361)
 
-[node name="ObjPaper001" type="MeshInstance3D" parent="3D Scene"]
-transform = Transform3D(-0.0264736, -0.999649, 4.36961e-08, 0, -4.37114e-08, -1, 0.999649, -0.0264736, 1.1572e-09, 0.119593, 1.51298, -1.00843)
-mesh = ExtResource("31_w4sxf")
-skeleton = NodePath("../..")
+[node name="Postcards_80s" type="Node3D" parent="3D Scene/Set_allgemein"]
+transform = Transform3D(-1.5, 0.00251327, -6.5567e-08, 6.55671e-08, 2.86603e-15, -1.5, -0.00251327, -1.5, -1.09862e-10, 3.33071, 3.20204, 0.826361)
 
-[node name="ObjPaper002" type="MeshInstance3D" parent="3D Scene"]
-transform = Transform3D(0.171877, -0.985118, 4.30609e-08, -1.10983e-16, -4.37114e-08, -1, 0.985118, 0.171877, -7.513e-09, 0.162257, 1.51727, -1.0363)
-mesh = ExtResource("32_x6x6a")
-skeleton = NodePath("../..")
+[node name="ObjPostcard" type="MeshInstance3D" parent="3D Scene/Set_allgemein/Postcards_80s"]
+transform = Transform3D(1, -2.1598e-10, -3.55271e-15, 2.1598e-10, 1, 2.11758e-22, -3.55271e-15, -9.44124e-18, 1, -0.45556, 1.19209e-07, 0.172766)
+mesh = ExtResource("59_emdq1")
+skeleton = NodePath("../../../..")
 
-[node name="ObjPaperStack" type="MeshInstance3D" parent="3D Scene"]
-transform = Transform3D(-0.0423464, 0.999103, -4.36722e-08, 1.04255e-15, -4.37114e-08, -1, -0.999103, -0.0423464, 1.85102e-09, 0.132995, 1.48857, -1.02616)
-mesh = ExtResource("33_0cpxq")
-skeleton = NodePath("../..")
+[node name="ObjPostcard001" type="MeshInstance3D" parent="3D Scene/Set_allgemein/Postcards_80s"]
+transform = Transform3D(-4.37114e-08, -4.39274e-08, -1, -4.37114e-08, 1, -4.39274e-08, 1, 4.37114e-08, -4.37114e-08, -0.0452933, -0.00106251, 0.144827)
+mesh = ExtResource("60_eaofq")
+skeleton = NodePath("../../../..")
 
-[node name="ObjPassport" type="MeshInstance3D" parent="3D Scene"]
-transform = Transform3D(-1.41474, 0.0222738, 0.120108, -0.0225253, -1.41982, -0.00201963, 0.120061, -0.00391741, 1.41491, 0.226638, 1.5208, -1.08342)
-mesh = ExtResource("34_08dwc")
-skeleton = NodePath("../..")
+[node name="ObjPostcard002" type="MeshInstance3D" parent="3D Scene/Set_allgemein/Postcards_80s"]
+transform = Transform3D(1, -2.1598e-10, -3.55271e-15, 2.1598e-10, 1, 2.11758e-22, -3.55271e-15, -9.44124e-18, 1, -0.357154, 0.000924706, 0.204526)
+mesh = ExtResource("61_shgk2")
+skeleton = NodePath("../../../..")
 
-[node name="ArmMapAutoatlas" type="MeshInstance3D" parent="3D Scene"]
-transform = Transform3D(-0.0223945, -0.144569, -0.989241, 0.992679, -0.120683, -0.00483553, -0.118686, -0.982108, 0.146213, 0.0973971, 0.787048, -1.21408)
-mesh = ExtResource("40_08dwc")
-skeleton = NodePath("../..")
+[node name="ObjPostcard003" type="MeshInstance3D" parent="3D Scene/Set_allgemein/Postcards_80s"]
+transform = Transform3D(1, -2.1598e-10, -3.55271e-15, 2.1598e-10, 1, 2.11758e-22, -3.55271e-15, -9.44124e-18, 1, -0.266582, 0.00107145, 0.1788)
+mesh = ExtResource("62_iwmvm")
+skeleton = NodePath("../../../..")
+
+[node name="ObjPostcard004" type="MeshInstance3D" parent="3D Scene/Set_allgemein/Postcards_80s"]
+transform = Transform3D(-4.37114e-08, -4.39274e-08, -1, -4.37114e-08, 1, -4.39274e-08, 1, 4.37114e-08, -4.37114e-08, -0.0631551, -0.000196576, 0.406686)
+mesh = ExtResource("63_t7fvn")
+skeleton = NodePath("../../../..")
+
+[node name="ObjPostcard005" type="MeshInstance3D" parent="3D Scene/Set_allgemein/Postcards_80s"]
+transform = Transform3D(-4.37114e-08, -4.39274e-08, -1, -4.37114e-08, 1, -4.39274e-08, 1, 4.37114e-08, -4.37114e-08, -0.411139, -0.00106251, -0.0358934)
+mesh = ExtResource("64_quctf")
+skeleton = NodePath("../../../..")
+
+[node name="ObjPostcard006" type="MeshInstance3D" parent="3D Scene/Set_allgemein/Postcards_80s"]
+transform = Transform3D(-4.37114e-08, -4.39274e-08, -1, -4.37114e-08, 1, -4.39274e-08, 1, 4.37114e-08, -4.37114e-08, -0.12264, -0.00106251, 0.3082)
+mesh = ExtResource("65_sm84e")
+skeleton = NodePath("../../../..")
+
+[node name="ObjPostcard007" type="MeshInstance3D" parent="3D Scene/Set_allgemein/Postcards_80s"]
+transform = Transform3D(-4.37114e-08, -4.39274e-08, -1, -4.37114e-08, 1, -4.39274e-08, 1, 4.37114e-08, -4.37114e-08, 0.413397, -0.00106257, -0.0264204)
+mesh = ExtResource("66_rfs5q")
+skeleton = NodePath("../../../..")
+
+[node name="Atlas-Karte-Auto" type="Node3D" parent="3D Scene/Set_allgemein"]
+transform = Transform3D(-0.118723, -0.982348, 0.144555, 0.992679, -0.120683, -0.00483553, 0.0221956, 0.142923, 0.989484, 2.36318, 0.787048, -0.0934375)
+
+[node name="ArmMapAutoatlas" type="MeshInstance3D" parent="3D Scene/Set_allgemein/Atlas-Karte-Auto"]
+transform = Transform3D(1, 7.45058e-09, -1.86265e-09, 0, 1, 0, 3.72529e-09, 1.49012e-08, 1, 0.0110494, 0.0914314, -0.013612)
+mesh = ExtResource("67_eu7pm")
+skeleton = NodePath("../../../..")
 surface_material_override/0 = SubResource("StandardMaterial3D_7lu8v")
 
-[node name="ObjPoster001" type="MeshInstance3D" parent="3D Scene"]
-transform = Transform3D(-4.37114e-08, 1, 0, -1, -4.37114e-08, 0, 0, 0, 1, -0.815731, 3.70967, 1.23584)
-mesh = ExtResource("41_t6b0v")
-skeleton = NodePath("../..")
+[node name="Book_Ferienhelfer_70s" type="Node3D" parent="3D Scene/Set_allgemein"]
+transform = Transform3D(0.00238767, 0, 1.425, 0, 1.425, 0, -1.425, 0, 0.00238767, 2.49108, 1.53064, -0.287747)
 
-[node name="ObjPostcard" type="MeshInstance3D" parent="3D Scene"]
-transform = Transform3D(-6.55671e-08, 1.5, 0, 6.55671e-08, 2.86603e-15, -1.5, -1.5, -6.55671e-08, -6.55671e-08, -0.820779, 3.20204, 0.531432)
-mesh = ExtResource("45_02x8x")
-skeleton = NodePath("../..")
+[node name="ObjBookletFerienhelfer70s" type="MeshInstance3D" parent="3D Scene/Set_allgemein/Book_Ferienhelfer_70s"]
+transform = Transform3D(1, 0, 1.6339e-10, 0, 1, 0, -1.6339e-10, 0, 1, 1.49012e-08, 0, 1.19209e-07)
+mesh = ExtResource("60_d12h7")
+skeleton = NodePath("../../../..")
 
-[node name="ObjPostcard001" type="MeshInstance3D" parent="3D Scene"]
-transform = Transform3D(-6.55671e-08, 1.5, 0, -1.5, -6.55671e-08, 0, 0, 0, 1.5, -0.822373, 3.24395, -0.0839682)
-mesh = ExtResource("46_67k54")
-skeleton = NodePath("../..")
+[node name="Book_Staatsbürgerkunde_80s" type="Node3D" parent="3D Scene/Set_allgemein"]
+transform = Transform3D(-0.0273459, 0.000192006, 0.999625, 5.14516e-12, -1, 0.000192078, 0.999625, 5.25255e-06, 0.0273458, 2.47091, 0.613975, -0.148871)
 
-[node name="ObjPostcard002" type="MeshInstance3D" parent="3D Scene"]
-transform = Transform3D(-6.55671e-08, 1.5, 0, 6.55671e-08, 2.86603e-15, -1.5, -1.5, -6.55671e-08, -6.55671e-08, -0.819392, 3.1544, 0.383823)
-mesh = ExtResource("47_a3qu0")
-skeleton = NodePath("../..")
+[node name="ObjBookStaatsbuergerkunde-1987Closed" type="MeshInstance3D" parent="3D Scene/Set_allgemein/Book_Staatsbürgerkunde_80s"]
+transform = Transform3D(1, 4.54747e-13, 1.86265e-09, 0, 1, 1.45519e-11, -1.86265e-09, 0, 1, 0, 0, 0)
+mesh = ExtResource("61_emdq1")
+skeleton = NodePath("../../../..")
+surface_material_override/0 = SubResource("StandardMaterial3D_jtstv")
+surface_material_override/1 = ExtResource("25_08dwc")
 
-[node name="ObjPostcard003" type="MeshInstance3D" parent="3D Scene"]
-transform = Transform3D(-6.55671e-08, 1.5, 0, 6.55671e-08, 2.86603e-15, -1.5, -1.5, -6.55671e-08, -6.55671e-08, -0.819172, 3.19299, 0.247965)
-mesh = ExtResource("48_x1vip")
-skeleton = NodePath("../..")
+[node name="Anti-Apartheid" type="Node3D" parent="3D Scene/Set_allgemein"]
+transform = Transform3D(-1.39492e-05, 0.0016755, 0.999998, -0.999965, -0.00832509, 0, 0.00832507, -0.999963, 0.00167556, 3.57372, 3.46484, 0.829711)
 
-[node name="ObjPostcard004" type="MeshInstance3D" parent="3D Scene"]
-transform = Transform3D(-6.55671e-08, 1.5, 0, -1.5, -6.55671e-08, 0, 0, 0, 1.5, -0.821074, 2.85116, -0.0571756)
-mesh = ExtResource("49_7eoig")
-skeleton = NodePath("../..")
+[node name="ObjFlyer-patchSymbolAntiApartheidsbewegung1978" type="MeshInstance3D" parent="3D Scene/Set_allgemein/Anti-Apartheid"]
+transform = Transform3D(1, 0, 9.69168e-13, -9.31323e-10, 1, -1.16411e-10, 9.09495e-13, 0, 1, 0.220886, 0.00183886, 2.38419e-07)
+mesh = ExtResource("69_eu7pm")
+skeleton = NodePath("../../../..")
+surface_material_override/0 = SubResource("StandardMaterial3D_emdq1")
 
-[node name="ObjPostcard005" type="MeshInstance3D" parent="3D Scene"]
-transform = Transform3D(-6.55671e-08, 1.5, 0, -1.5, -6.55671e-08, 0, 0, 0, 1.5, -0.822373, 3.51503, 0.464801)
-mesh = ExtResource("50_3h3g1")
-skeleton = NodePath("../..")
+[node name="ObjCalenderSolidaritTskommitteederDdr1989" type="MeshInstance3D" parent="3D Scene/Set_allgemein/Anti-Apartheid"]
+transform = Transform3D(0.0638433, -0.0249084, 1.43336, 0.000586669, 1.43478, 0.024907, -1.43358, -0.000522134, 0.0638439, 0.715742, 0.00618321, -0.429785)
+mesh = ExtResource("63_shgk2")
+skeleton = NodePath("../../../..")
+surface_material_override/0 = SubResource("StandardMaterial3D_ufj43")
 
-[node name="ObjPostcard006" type="MeshInstance3D" parent="3D Scene"]
-transform = Transform3D(-6.55671e-08, 1.5, 0, -1.5, -6.55671e-08, 0, 0, 0, 1.5, -0.822373, 2.99889, 0.032052)
-mesh = ExtResource("51_o38y6")
-skeleton = NodePath("../..")
+[node name="Lampe_Narva_70er" type="Node3D" parent="3D Scene/Set_allgemein"]
+transform = Transform3D(0.504071, 0, 1.23618, 0, 1.335, 0, -1.23618, 0, 0.504071, 4.23817, 1.79168, 0.568875)
 
-[node name="ObjPostcard007" type="MeshInstance3D" parent="3D Scene"]
-transform = Transform3D(-6.55671e-08, 1.5, 0, -1.5, -6.55671e-08, 0, 0, 0, 1.5, -0.822373, 3.50082, -0.772003)
-mesh = ExtResource("52_ruo4n")
-skeleton = NodePath("../..")
+[node name="ObjLampeVebNarvaKombinat70Er" type="MeshInstance3D" parent="3D Scene/Set_allgemein/Lampe_Narva_70er"]
+transform = Transform3D(1, 0, 5.96046e-08, 0, 1, 0, -5.96046e-08, 0, 1, -0.0111222, 0.258589, -0.0182741)
+mesh = ExtResource("77_hpku1")
+skeleton = NodePath("../../../..")
+surface_material_override/0 = ExtResource("25_j7nk8")
+surface_material_override/1 = ExtResource("22_lfqnm")
+surface_material_override/2 = ExtResource("77_emdq1")
+surface_material_override/3 = ExtResource("56_emdq1")
+surface_material_override/4 = ExtResource("57_eaofq")
 
-[node name="ObjPoster002001" type="MeshInstance3D" parent="3D Scene"]
-transform = Transform3D(-0.0177324, 1.5899, 0, -1.5899, -0.0177324, 0, 0, 0, 1.59, -0.795707, 3.01866, -0.515847)
-mesh = ExtResource("54_x1vip")
-skeleton = NodePath("../..")
+[node name="Poster" type="Node3D" parent="3D Scene/Set_allgemein"]
+transform = Transform3D(0.00192689, 0, 1.15, 0, 1.15, 0, -1.15, 0, 0.00192689, 2.48483, 0.405792, -0.0960858)
+
+[node name="Poster_Sozialistsiches-Vaterland-DDR" type="MeshInstance3D" parent="3D Scene/Set_allgemein/Poster"]
+transform = Transform3D(1, 0, 1.38778e-17, 0, 1, 0, -1.38778e-17, 0, 1, 0, 0, 1.78814e-07)
+mesh = ExtResource("79_qhhid")
+skeleton = NodePath("../../../..")
+surface_material_override/0 = SubResource("StandardMaterial3D_eaofq")
+
+[node name="Poster_Film_Ernst-Thälmann" type="MeshInstance3D" parent="3D Scene/Set_allgemein/Poster"]
+transform = Transform3D(-0.00460695, 1.54347, 1.56247e-10, -1.54347, -0.00460695, 0, 4.66365e-13, 4.62147e-11, 1.54348, -0.805641, 1.69523, -0.583776)
+mesh = ExtResource("78_ua2yj")
+skeleton = NodePath("../../../..")
+surface_material_override/0 = SubResource("StandardMaterial3D_12pjp")
+
+[node name="Documents" type="Node3D" parent="3D Scene/Set_allgemein"]
+transform = Transform3D(-0.999932, 0.000718776, 0.0115922, -0.0115998, -0.0117511, -0.999864, -0.000582458, -0.99993, 0.0117586, 2.64809, 3.28896, 0.825111)
+
+[node name="ObjDocumentFdj70s" type="MeshInstance3D" parent="3D Scene/Set_allgemein/Documents"]
+transform = Transform3D(1, -1.74623e-10, -9.31323e-10, -5.82077e-11, 1, 1.24601e-10, -1.86265e-09, -7.75799e-10, 1, 0.0030061, 0.00304526, 0.259114)
+mesh = ExtResource("64_iwmvm")
+skeleton = NodePath("../../../..")
+surface_material_override/0 = SubResource("StandardMaterial3D_j7nk8")
+
+[node name="ObjDocumentJugendtourist-einlieferungsschein-quittung70s" type="MeshInstance3D" parent="3D Scene/Set_allgemein/Documents"]
+transform = Transform3D(-0.00152472, -0.0161817, -1.39491, 1.3949, -0.0163928, -0.00133455, -0.0163762, -1.39481, 0.0161985, -0.368265, 0.832821, 1.52823)
+mesh = ExtResource("65_t7fvn")
+skeleton = NodePath("../../../..")
+surface_material_override/0 = SubResource("StandardMaterial3D_dsw8n")
+
+[node name="ObjDocumentRBdDdr-jugendtourist-reiseprogramm-vrBulgarien70s" type="MeshInstance3D" parent="3D Scene/Set_allgemein/Documents"]
+transform = Transform3D(0.0530218, -0.0186757, -1.60902, 1.60901, -0.0189192, 0.0532411, -0.0195253, -1.60978, 0.0180411, -0.475805, 0.798866, 1.53461)
+mesh = ExtResource("66_quctf")
+skeleton = NodePath("../../../..")
+surface_material_override/0 = SubResource("StandardMaterial3D_d12h7")
+
+[node name="ObjDocumentReisebRoderDdr-bulgarischeSchwarzmeerkSte80s" type="MeshInstance3D" parent="3D Scene/Set_allgemein/Documents"]
+transform = Transform3D(0.0756112, -0.0115998, 0.99707, -0.997078, -0.0117511, 0.0754752, 0.0108412, -0.999864, -0.0124544, 0.385017, 0.742643, 1.53264)
+mesh = ExtResource("67_sm84e")
+skeleton = NodePath("../../../..")
+surface_material_override/0 = SubResource("StandardMaterial3D_182ij")
+
+[node name="Calendar" type="Node3D" parent="3D Scene/Set_allgemein"]
+transform = Transform3D(-1.43358, 0.00188219, 0.0638655, -0.063846, 0.0129628, -1.43352, -0.00245719, -1.43494, -0.0128662, 3.14394, 3.00822, 0.828767)
+
+[node name="Calendar_IFA2" type="Node3D" parent="3D Scene/Set_allgemein/Calendar"]
+transform = Transform3D(0.0514681, 0.00198085, -1.15565, -0.0104498, 1.15675, 0.00151736, 1.1556, 0.0103719, 0.0514838, -1.29403, 0.0161098, 0.107085)
+
+[node name="Calendar_IFA" type="MeshInstance3D" parent="3D Scene/Set_allgemein/Calendar/Calendar_IFA2"]
+transform = Transform3D(1, -5.48655e-15, -6.93889e-18, 5.17156e-15, 1, 0, 1.38778e-17, 0, 1, 0, -8.9407e-08, 2.98023e-07)
+mesh = ExtResource("29_iwmvm")
+skeleton = NodePath("../../..")
+surface_material_override/0 = SubResource("StandardMaterial3D_1rg3t")
 
 [node name="CanvasLayer" type="CanvasLayer" parent="."]
 process_mode = 3

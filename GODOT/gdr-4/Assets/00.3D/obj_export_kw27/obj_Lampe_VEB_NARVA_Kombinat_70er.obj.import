@@ -1,0 +1,25 @@
+[remap]
+
+importer="wavefront_obj"
+importer_version=1
+type="Mesh"
+uid="uid://wuogoohp8f1q"
+path="res://.godot/imported/obj_Lampe_VEB_NARVA_Kombinat_70er.obj-d7abee02d529646de7c988f5eb7eb27e.mesh"
+
+[deps]
+
+files=["res://.godot/imported/obj_Lampe_VEB_NARVA_Kombinat_70er.obj-d7abee02d529646de7c988f5eb7eb27e.mesh"]
+
+source_file="res://Assets/00.3D/obj_export_kw27/obj_Lampe_VEB_NARVA_Kombinat_70er.obj"
+dest_files=["res://.godot/imported/obj_Lampe_VEB_NARVA_Kombinat_70er.obj-d7abee02d529646de7c988f5eb7eb27e.mesh", "res://.godot/imported/obj_Lampe_VEB_NARVA_Kombinat_70er.obj-d7abee02d529646de7c988f5eb7eb27e.mesh"]
+
+[params]
+
+generate_tangents=true
+generate_lods=true
+generate_shadow_mesh=true
+generate_lightmap_uv2=false
+generate_lightmap_uv2_texel_size=0.2
+scale_mesh=Vector3(1, 1, 1)
+offset_mesh=Vector3(0, 0, 0)
+force_disable_mesh_compression=false

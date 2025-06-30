@@ -1,0 +1,25 @@
+[remap]
+
+importer="wavefront_obj"
+importer_version=1
+type="Mesh"
+uid="uid://d33y58oamfsfi"
+path="res://.godot/imported/obj_Passport.obj-a75f9e15e0c0cc4f1174a5a2ce34f03e.mesh"
+
+[deps]
+
+files=["res://.godot/imported/obj_Passport.obj-a75f9e15e0c0cc4f1174a5a2ce34f03e.mesh"]
+
+source_file="res://Assets/00.3D/obj_export_kw26/obj_Passport.obj"
+dest_files=["res://.godot/imported/obj_Passport.obj-a75f9e15e0c0cc4f1174a5a2ce34f03e.mesh", "res://.godot/imported/obj_Passport.obj-a75f9e15e0c0cc4f1174a5a2ce34f03e.mesh"]
+
+[params]
+
+generate_tangents=true
+generate_lods=true
+generate_shadow_mesh=true
+generate_lightmap_uv2=false
+generate_lightmap_uv2_texel_size=0.2
+scale_mesh=Vector3(1, 1, 1)
+offset_mesh=Vector3(0, 0, 0)
+force_disable_mesh_compression=false

@@ -1,0 +1,12 @@
+# Blender 4.4.0 MTL File: 'KW_Reise-Utopie_GDR_GameObjects_SoSe2026_MMVR.blend'
+# www.blender.org
+
+newmtl tex_Flyers-Fotos_Collection_80s_1
+Ns 167.355392
+Ka 1.000000 1.000000 1.000000
+Ks 0.500000 0.500000 0.500000
+Ke 0.000000 0.000000 0.000000
+Ni 1.200000
+illum 2
+map_Kd C:/Users/alexa/Desktop/UNI/Semester 6/Reise-Utopien/GDR-travel-utopia/BLENDER/Textures/Photo-Textures/Flyer-Fotos_Collection_80s_1.png
+map_d C:/Users/alexa/Desktop/UNI/Semester 6/Reise-Utopien/GDR-travel-utopia/BLENDER/Textures/Photo-Textures/Flyer-Fotos_Collection_80s_1.png

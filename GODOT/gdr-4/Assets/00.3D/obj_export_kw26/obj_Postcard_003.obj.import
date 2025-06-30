@@ -1,0 +1,25 @@
+[remap]
+
+importer="wavefront_obj"
+importer_version=1
+type="Mesh"
+uid="uid://6ehvl8gf63qb"
+path="res://.godot/imported/obj_Postcard_003.obj-9317ef5d8db9fbd31f65479d333ffaec.mesh"
+
+[deps]
+
+files=["res://.godot/imported/obj_Postcard_003.obj-9317ef5d8db9fbd31f65479d333ffaec.mesh"]
+
+source_file="res://Assets/00.3D/obj_export_kw26/obj_Postcard_003.obj"
+dest_files=["res://.godot/imported/obj_Postcard_003.obj-9317ef5d8db9fbd31f65479d333ffaec.mesh", "res://.godot/imported/obj_Postcard_003.obj-9317ef5d8db9fbd31f65479d333ffaec.mesh"]
+
+[params]
+
+generate_tangents=true
+generate_lods=true
+generate_shadow_mesh=true
+generate_lightmap_uv2=false
+generate_lightmap_uv2_texel_size=0.2
+scale_mesh=Vector3(1, 1, 1)
+offset_mesh=Vector3(0, 0, 0)
+force_disable_mesh_compression=false

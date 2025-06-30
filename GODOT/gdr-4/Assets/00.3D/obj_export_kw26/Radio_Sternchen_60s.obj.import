@@ -1,0 +1,25 @@
+[remap]
+
+importer="wavefront_obj"
+importer_version=1
+type="Mesh"
+uid="uid://duovfuxgh1o5u"
+path="res://.godot/imported/Radio_Sternchen_60s.obj-81f0bce5004b81a1cc50a979a79ff7fa.mesh"
+
+[deps]
+
+files=["res://.godot/imported/Radio_Sternchen_60s.obj-81f0bce5004b81a1cc50a979a79ff7fa.mesh"]
+
+source_file="res://Assets/00.3D/obj_export_kw26/Radio_Sternchen_60s.obj"
+dest_files=["res://.godot/imported/Radio_Sternchen_60s.obj-81f0bce5004b81a1cc50a979a79ff7fa.mesh", "res://.godot/imported/Radio_Sternchen_60s.obj-81f0bce5004b81a1cc50a979a79ff7fa.mesh"]
+
+[params]
+
+generate_tangents=true
+generate_lods=true
+generate_shadow_mesh=true
+generate_lightmap_uv2=false
+generate_lightmap_uv2_texel_size=0.2
+scale_mesh=Vector3(1, 1, 1)
+offset_mesh=Vector3(0, 0, 0)
+force_disable_mesh_compression=false
