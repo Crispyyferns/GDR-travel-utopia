@@ -1,9 +1,8 @@
-[gd_scene load_steps=144 format=4 uid="uid://bq5aw4t3xa4wn"]
+[gd_scene load_steps=140 format=3 uid="uid://bq5aw4t3xa4wn"]
 
 [ext_resource type="Script" uid="uid://dl33bqc6cyt77" path="res://Scripts/player.gd" id="1_wncax"]
 [ext_resource type="Script" uid="uid://chlarin68qmfo" path="res://Scripts/scene-1_70s.gd" id="1_x1vip"]
 [ext_resource type="Script" uid="uid://dr46d85byfqd1" path="res://Scripts/head.gd" id="2_vmq46"]
-[ext_resource type="Script" uid="uid://bd046eokvcnu2" path="res://addons/phantom_camera/scripts/phantom_camera_host/phantom_camera_host.gd" id="4_eaofq"]
 [ext_resource type="ArrayMesh" uid="uid://bdta26d22mk8f" path="res://Assets/00.3D/obj_export_kw26/obj_Desk.obj" id="4_ufj43"]
 [ext_resource type="AudioStream" uid="uid://xajgnulylsfk" path="res://Assets/02.Sound/Puhdys - Lebenszeit.mp3" id="4_vmq46"]
 [ext_resource type="Texture2D" uid="uid://dqwbni8yodls4" path="res://Assets/01.Textures/Baked/tex_Desk_darker_diffuse.png" id="6_d57ka"]
@@ -122,8 +121,6 @@ data = PackedVector3Array(1, 0, 1, -1, 0, 1, 1, 0, -1, -1, 0, 1, -1, 0, -1, 1, 0
 
 [sub_resource type="CapsuleMesh" id="CapsuleMesh_5h32y"]
 
-[sub_resource type="SphereMesh" id="SphereMesh_jesec"]
-
 [sub_resource type="BoxShape3D" id="BoxShape3D_kesv7"]
 
 [sub_resource type="BoxMesh" id="BoxMesh_mvsd4"]
@@ -236,25 +233,9 @@ albedo_texture = ExtResource("62_eaofq")
 cull_mode = 2
 albedo_texture = ExtResource("65_lfqnm")
 
-[sub_resource type="BoxShape3D" id="BoxShape3D_emdq1"]
-size = Vector3(0.095, 0.02, 0.13)
-
 [sub_resource type="StandardMaterial3D" id="StandardMaterial3D_iwmvm"]
 cull_mode = 2
 albedo_texture = ExtResource("62_eaofq")
-
-[sub_resource type="ArrayMesh" id="ArrayMesh_quctf"]
-_surfaces = [{
-"aabb": AABB(-0.0433381, -0.005, -0.0633016, 0.0864263, 0.009075, 0.126674),
-"attribute_data": PackedByteArray("qMe2O0fpMj9UVlM8xNB+P6hSUz5H6TI/gNNLPsTQfj8W39A+R69+PxqkYD4tJTM/qyXVPi0lMz+ox7Y7R+kyP6hSUz5H6TI/qFJTPkfpMj+ox7Y7R+kyP6hSUz5H6TI/qFJTPkfpMj+A00s+xNB+P4DTSz7E0H4/VFZTPMTQfj+ox7Y7R+kyP6jHtjtH6TI/qFJTPiLBfD+ox7Y7IsF8Pw1T0z5Z3n0/Cf5nPhoYMT8apGA+RKJ8P1RWUzy22TA/qMe2OyLBfD+ox7Y7IsF8P1bUUD7K/n0/qFJTPiLBfD9W1FA+yv59P+TzCjyx+H0/gNNLPrbZMD9UVlM8ttkwP1UX8DsEcjE/DYzUPkSifD8J/mc+R69+P22OYz5R2H0/knjRPhoYMT+uZWI+wK8xP4DTSz622TA/gNNLPrbZMD9UVlM8ttkwP1UX8DsEcjE/VRfwOwRyMT9W1FA+yv59P6hSUz4iwXw/VFZTPMTQfj/k8wo8sfh9P+TzCjyx+H0/gNNLPkfpMj9gr1A+go8xP1RWUzxH6TI/VFZTPCLBfD+A00s+IsF8P5J40T4tJTM/lNrTPgzNMT8W39A+RKJ8Pwn+Zz5Eonw/Cf5nPi0lMz9gr1A+go8xP2CvUD6CjzE/YK9QPoKPMT9gr1A+go8xP4DTSz622TA/gNNLPrbZMD9UVlM8ttkwP1RWUzy22TA/5PMKPLH4fT/k8wo8sfh9P6hSUz4iwXw/qFJTPiLBfD9VF/A7BHIxP1UX8DsEcjE/VFZTPMTQfj9UVlM8xNB+P1bUUD7K/n0/gNNLPsTQfj9W1FA+yv59P4DTSz7E0H4/qMe2OyLBfD+ox7Y7IsF8Pw=="),
-"format": 34359742487,
-"index_count": 180,
-"index_data": PackedByteArray("HgAxADAAMQACADAAHgAwADIAHwAeADIAHwAyAAAAIAAfAAAAAAAyABMAMgAzABMAMgAwADMAEwAzAB0AMwABAB0AMAA0ADMAMwA0AAEAMAACADQANAADAAEAAgASADQANAASAAMAEgAcAAMABgA2ADUANgAkADUABgA1ADcAIQAGADcAIQA3AAQAFAAhAAQABAA3ACIANwA4ACIANwA1ADgAIgA4ACMAOAAWACMANQA5ADgAOAA5ABYANQAkADkAOQAFABYAJAAVADkAOQAVAAUAFQAlAAUAJwAmADoAJgA7ADoAPAA9AAgAPQAJAAgAGwAsACsALAAaACsAKAAXAD4AFwA/AD4AKgApAEAAKQBBAEAADwAtAC4ALQAvAC4AQgBDABgAQwAZABgADAALAEQACwBFAEQABwAKAEYACgBHAEYADgANAEgADQBJAEgASgBMAEsATABNAEsATgBPABEATwAQABEA"),
-"primitive": 3,
-"uv_scale": Vector4(0, 0, 0, 0),
-"vertex_count": 80,
-"vertex_data": PackedByteArray("B8EvvVtyYrugNX69e1EovRSFVruKyYE9NCMwPSVxXLt9PXy9eP0uPWQQWbvJ1oA9eP0uPXdxHDvJ1oA9B8EvvW7TJTugNX69NCMwPTjSHzt9PXy9B8EvvVtyYrugNX69NCMwPSVxXLt9PXy9NCMwPTjSHzt9PXy9B8EvvW7TJTugNX69NCMwPTjSHzt9PXy9NCMwPSVxXLt9PXy9eP0uPXdxHDvJ1oA9eP0uPWQQWbvJ1oA9e1EovRSFVruKyYE9B8EvvW7TJTugNX69B8EvvVtyYrugNX695SowPQ72W7tDHHw97WEwvfljWLvKOXs9/kYsPTCvHTsKo4E9drIvvQugIzvQBoG97WEwvQzFGzvKOXs9drIvvQugIzvQBoG97WEwvfljWLvKOXs97WEwvQzFGzvKOXs9/kYsPTCvHTsKo4E95SowPQ72W7tDHHw9/kYsPR5OWrsKo4E9W3svvTUBYLv7Fn89aG0pPf0sW7tLpIG9drIvvfg+YLvQBoG9VYMxva9ZS7t3kn+95SowPSFXHztDHHw9e1EovSfmGTuKyYE9W3svvUhiIzv7Fn89aG0pPRCOHjtLpIG9VYMxvcK6Djt3kn+9aG0pPRCOHjtLpIG9aG0pPf0sW7tLpIG9drIvvfg+YLvQBoG9VYMxvcK6Djt3kn+9VYMxva9ZS7t3kn+9/kYsPR5OWrsKo4E95SowPSFXHztDHHw9e1EovSfmGTuKyYE9W3svvTUBYLv7Fn89W3svvUhiIzv7Fn89FxIwPQrXo7sbRoG9Pn0wPS6qV7uKLX+98Q4wvQrXo7sbRoG98Q4wvQrXo7sbRoE9FxIwPQrXo7sbRoE9FxIwPZSHhTsbRoG9Pn0wPUELGzuKLX+9FxIwPZSHhTsbRoE98Q4wvZSHhTsbRoE98Q4wvZSHhTsbRoG9Pn0wPS6qV7uKLX+9Pn0wPUELGzuKLX+9Pn0wPS6qV7uKLX+9Pn0wPUELGzuKLX+9aG0pPf0sW7tLpIG9aG0pPRCOHjtLpIG9drIvvfg+YLvQBoG9drIvvQugIzvQBoG9W3svvTUBYLv7Fn89W3svvUhiIzv7Fn895SowPQ72W7tDHHw95SowPSFXHztDHHw9VYMxva9ZS7t3kn+9VYMxvcK6Djt3kn+9e1EovRSFVruKyYE9e1EovSfmGTuKyYE9/kYsPR5OWrsKo4E9eP0uPWQQWbvJ1oA9/kYsPTCvHTsKo4E9eP0uPXdxHDvJ1oA97WEwvfljWLvKOXs97WEwvQzFGzvKOXs9AIAAAP///j8AgAAA////PwCAAAD///8/AIAAAP///j8AgP////8AwACA//////+/AID//////7/N4P9/////P4Mr/3////8/gyv/f////z/N4P9/////PwAAAID///+/AAAAgP///7//////////v/////////+////5yv///7///wCA////v///AID///+/AIAAAP///j8AgAAA////PwCA/////wrAAID//////78AgP//////v/9//3////8///8nsv///7///yey////vwAAWKz///+/AABYrP///78AgAAA///1PwCAAAD///8/AIAAAPv//z8AgAAA///+PwCAAAD///k/AID/////AMAAgP///v//vwCA///9//+/AID///v//78AgP////8BwFxS/3////8/XFL/f////z//f/9/////P0Sk/3////8/RKT/f////z8AAFis////vwAAWKz///+////5yv///7////nK////v///+cr///+/AIAAAP3//z8AgAAA+f//PwCAAAD///8/AIAAAP///z8AgAAA////PwCA///9//+/AID///r//78AgP//////vwCA///+//+/AID//////79cUv9/////P1xS/3////8/gyv/f////z+DK/9/////P/9//3////8//3//f////z9EpP9/////P0Sk/3////8///8nsv///7///yey////vwAAAID///+/AAAAgP///7/N4P9/////P83g/3////8//////////7//////////vwAA8c7///+/AADxzv///78AAPHO////vwAA8c7///+///8AgP///7///wCA////vw==")
-}]
 
 [sub_resource type="StandardMaterial3D" id="StandardMaterial3D_eaofq"]
 cull_mode = 2
@@ -443,17 +424,11 @@ transform = Transform3D(0.938861, -4.04465e-08, 0.0141095, 0.00302576, 0.917123,
 target_position = Vector3(0, 0, -4)
 collision_mask = 3
 
-[node name="PhantomCameraHost" type="Node" parent="3D Scene/Player/Head/Camera3D"]
-process_priority = 300
-process_physics_priority = 300
-script = ExtResource("4_eaofq")
-metadata/_custom_type_script = "uid://bd046eokvcnu2"
-
 [node name="Hand" type="Node3D" parent="3D Scene/Player/Head"]
 transform = Transform3D(-0.095, 0, 0, 0, -0.095, 0, 0, 0, -0.095, 0, 0, -1.34749)
 
 [node name="MeshInstance3D" type="MeshInstance3D" parent="3D Scene/Player/Head/Hand"]
-mesh = SubResource("SphereMesh_jesec")
+visible = false
 
 [node name="RigidBody3D" type="RigidBody3D" parent="3D Scene" groups=["pickable"]]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 5.29006, 0.544352, -3.00761)
@@ -893,21 +868,11 @@ mesh = ExtResource("69_eu7pm")
 skeleton = NodePath("../../../..")
 surface_material_override/0 = SubResource("StandardMaterial3D_emdq1")
 
-[node name="RigidBody3D" type="RigidBody3D" parent="3D Scene/Set_allgemein/Anti-Apartheid"]
-transform = Transform3D(0.0638433, -0.0249084, 1.43336, 0.000586669, 1.43478, 0.024907, -1.43358, -0.000522134, 0.0638439, 0.715742, 0.00618321, -0.429785)
-
-[node name="CollisionShape3D" type="CollisionShape3D" parent="3D Scene/Set_allgemein/Anti-Apartheid/RigidBody3D"]
-transform = Transform3D(1, 0, 0, -2.91038e-11, 1, 6.38465e-10, -3.72529e-09, -8.4583e-10, 1, 0, 0, 0)
-shape = SubResource("BoxShape3D_emdq1")
-
-[node name="MeshInstance3D" type="MeshInstance3D" parent="3D Scene/Set_allgemein/Anti-Apartheid/RigidBody3D" groups=["pickable"]]
-transform = Transform3D(0.999998, 0.00162899, -1.64621e-05, -0.0016285, 0.99933, -0.0365726, -4.31314e-05, 0.0365726, 0.999331, 1.19209e-07, 0.0029667, 2.68221e-05)
+[node name="obj_Calender_Solidarit_tskommitteederDDR_1989" type="MeshInstance3D" parent="3D Scene/Set_allgemein/Anti-Apartheid" groups=["pickable"]]
+transform = Transform3D(0.0638219, 0.0276339, 1.43331, -0.00175095, 1.43473, -0.0275833, -1.43358, -0.000522132, 0.0638439, 0.715706, 0.0104405, -0.429785)
 mesh = ExtResource("63_shgk2")
+skeleton = NodePath("")
 surface_material_override/0 = SubResource("StandardMaterial3D_iwmvm")
-
-[node name="MeshInstance3D" type="MeshInstance3D" parent="3D Scene/Set_allgemein/Anti-Apartheid/RigidBody3D/MeshInstance3D"]
-visible = false
-mesh = SubResource("ArrayMesh_quctf")
 
 [node name="Lampe_Narva_70er" type="Node3D" parent="3D Scene/Set_allgemein"]
 transform = Transform3D(0.504071, 0, 1.23618, 0, 1.335, 0, -1.23618, 0, 0.504071, 4.23817, 1.79168, 0.568875)
