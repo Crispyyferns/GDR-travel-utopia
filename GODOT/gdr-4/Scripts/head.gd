@@ -1,7 +1,7 @@
 extends Node3D
 
-@onready var cam = $"."
-@onready var ch3d = $".."
+@onready var cam_main = $"." #Hauptkamera
+@onready var ch3d = $".." #Character3D
 @onready var raycast = $Camera3D/RayCast3D
 @onready var hand = $Hand
 
@@ -18,7 +18,7 @@ func _ready():
 
 func _process(delta):
 
-	cam.rotation_degrees.x = v.x
+	cam_main.rotation_degrees.x = v.x
 	ch3d.rotation_degrees.y = v.y
 
 	var object = raycast.get_collider()
@@ -44,3 +44,9 @@ func _unhandled_input(event: InputEvent) -> void:
 		Input.set_mouse_mode(Input.MOUSE_MODE_CAPTURED)
 	elif event.is_action_pressed("ui_cancel"):
 		Input.set_mouse_mode(Input.MOUSE_MODE_VISIBLE)
+
+	if event.is_action_pressed("mouse_left"):
+		if raycast.is_colliding():
+			var hit = raycast.get_collider()
+			if hit.has_method("lock_camera"):
+				hit.lock_camera(cam_main) #übergibt die aktuelle Kamera
