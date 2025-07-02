@@ -24,6 +24,8 @@ mesh = SubResource("CapsuleMesh_5ixxa")
 [node name="Head" type="Node3D" parent="Player"]
 transform = Transform3D(-4.26945e-08, -0.214445, 0.976736, -9.37371e-09, 0.976736, 0.214445, -1, 0, -4.37114e-08, -0.17374, 1.33684, 0)
 script = ExtResource("2_gntrk")
+raycast_path = NodePath("Camera3D/RayCast3D")
+main_camera_path = NodePath("Camera3D")
 
 [node name="Camera3D" type="Camera3D" parent="Player/Head"]
 transform = Transform3D(0.938861, -4.04465e-08, 0.0141095, 0.00302576, 0.917123, -0.201334, -0.0137813, 0.201357, 0.917019, -0.0431956, -0.093562, -0.0593482)
@@ -38,13 +40,14 @@ transform = Transform3D(-0.095, 0, 0, 0, -0.095, 0, 0, 0, -0.095, 0, 0, -1.34749
 [node name="MeshInstance3D" type="MeshInstance3D" parent="Player/Head/Hand"]
 visible = false
 
-[node name="UserInterface" type="Control" parent="."]
+[node name="UserInterface" type="Control" parent="Player"]
 layout_mode = 3
 anchors_preset = 0
 offset_right = 1922.0
 offset_bottom = 1082.0
+metadata/_edit_use_anchors_ = true
 
-[node name="CenterContainer" type="CenterContainer" parent="UserInterface"]
+[node name="CenterContainer" type="CenterContainer" parent="Player/UserInterface"]
 layout_mode = 1
 anchors_preset = 8
 anchor_left = 0.5
@@ -58,3 +61,4 @@ offset_bottom = 20.0
 grow_horizontal = 2
 grow_vertical = 2
 script = ExtResource("3_gntrk")
+metadata/_edit_use_anchors_ = true
