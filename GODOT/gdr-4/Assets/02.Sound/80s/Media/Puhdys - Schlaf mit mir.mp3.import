@@ -1,0 +1,19 @@
+[remap]
+
+importer="mp3"
+type="AudioStreamMP3"
+uid="uid://djcebvb3q7hrb"
+path="res://.godot/imported/Puhdys - Schlaf mit mir.mp3-a37670076642cc499f96885631bbe8c5.mp3str"
+
+[deps]
+
+source_file="res://Assets/02.Sound/80s/Media/Puhdys - Schlaf mit mir.mp3"
+dest_files=["res://.godot/imported/Puhdys - Schlaf mit mir.mp3-a37670076642cc499f96885631bbe8c5.mp3str"]
+
+[params]
+
+loop=false
+loop_offset=0
+bpm=0
+beat_count=0
+bar_beats=4

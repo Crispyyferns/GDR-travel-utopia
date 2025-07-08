@@ -11,6 +11,6 @@ func _unhandled_input(event: InputEvent) -> void:
 
 	if event is InputEventMouseButton:
 		if Input.is_action_just_pressed("mouse_wheel_up"):
-			TransitionManager.play_transition_and_switch("res://Object_Viewer_test_2.tscn")
+			TransitionManager.play_transition_and_switch("res://Scenes/Scene-2_80s.tscn")
 		elif Input.is_action_just_pressed("mouse_wheel_down"):
-			TransitionManager.play_transition_and_switch("res://Object_Viewer_test_3.tscn")
+			TransitionManager.play_transition_and_switch("res://Scenes/Scene-1_70s.tscn")

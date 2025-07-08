@@ -1,0 +1,19 @@
+[remap]
+
+importer="mp3"
+type="AudioStreamMP3"
+uid="uid://br21d6owk5xen"
+path="res://.godot/imported/Prinzip - Mama.mp3-298ca1decd66d507255b0fb60fd51730.mp3str"
+
+[deps]
+
+source_file="res://Assets/02.Sound/80s/Media/Prinzip - Mama.mp3"
+dest_files=["res://.godot/imported/Prinzip - Mama.mp3-298ca1decd66d507255b0fb60fd51730.mp3str"]
+
+[params]
+
+loop=false
+loop_offset=0
+bpm=0
+beat_count=0
+bar_beats=4

@@ -1,0 +1,24 @@
+[remap]
+
+importer="wav"
+type="AudioStreamWAV"
+uid="uid://dev2paquy3vlg"
+path="res://.godot/imported/Puhdys - Geh zu ihr-glued.wav-2a2c465905d6136e27f0cbe3d4825419.sample"
+
+[deps]
+
+source_file="res://Assets/02.Sound/70s/Media/Puhdys - Geh zu ihr-glued.wav"
+dest_files=["res://.godot/imported/Puhdys - Geh zu ihr-glued.wav-2a2c465905d6136e27f0cbe3d4825419.sample"]
+
+[params]
+
+force/8_bit=false
+force/mono=false
+force/max_rate=false
+force/max_rate_hz=44100
+edit/trim=false
+edit/normalize=false
+edit/loop_mode=0
+edit/loop_begin=0
+edit/loop_end=-1
+compress/mode=2

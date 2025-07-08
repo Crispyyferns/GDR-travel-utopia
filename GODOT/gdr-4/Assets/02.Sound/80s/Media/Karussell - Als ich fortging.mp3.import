@@ -1,0 +1,19 @@
+[remap]
+
+importer="mp3"
+type="AudioStreamMP3"
+uid="uid://d0pk0tm1fnnsa"
+path="res://.godot/imported/Karussell - Als ich fortging.mp3-9c8ee569ad6e789a2ca7c1553c3bd807.mp3str"
+
+[deps]
+
+source_file="res://Assets/02.Sound/80s/Media/Karussell - Als ich fortging.mp3"
+dest_files=["res://.godot/imported/Karussell - Als ich fortging.mp3-9c8ee569ad6e789a2ca7c1553c3bd807.mp3str"]
+
+[params]
+
+loop=false
+loop_offset=0
+bpm=0
+beat_count=0
+bar_beats=4

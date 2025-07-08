@@ -1,0 +1,19 @@
+[remap]
+
+importer="mp3"
+type="AudioStreamMP3"
+uid="uid://skos2cqtwakw"
+path="res://.godot/imported/Paso Doble - Computerliebe (Die Module spielen verrückt).mp3-6c95827c10eb4fcfbc3ae53c80743e62.mp3str"
+
+[deps]
+
+source_file="res://Assets/02.Sound/80s/Media/Paso Doble - Computerliebe (Die Module spielen verrückt).mp3"
+dest_files=["res://.godot/imported/Paso Doble - Computerliebe (Die Module spielen verrückt).mp3-6c95827c10eb4fcfbc3ae53c80743e62.mp3str"]
+
+[params]
+
+loop=false
+loop_offset=0
+bpm=0
+beat_count=0
+bar_beats=4
