@@ -1,0 +1,19 @@
+[remap]
+
+importer="mp3"
+type="AudioStreamMP3"
+uid="uid://b2456l1s2wmyp"
+path="res://.godot/imported/Puhdys - Wenn ein Mensch lebt.mp3-df53456273cda9655639314e9111ba3f.mp3str"
+
+[deps]
+
+source_file="res://Assets/02.Sound/70s/Puhdys - Wenn ein Mensch lebt.mp3"
+dest_files=["res://.godot/imported/Puhdys - Wenn ein Mensch lebt.mp3-df53456273cda9655639314e9111ba3f.mp3str"]
+
+[params]
+
+loop=false
+loop_offset=0
+bpm=0
+beat_count=0
+bar_beats=4

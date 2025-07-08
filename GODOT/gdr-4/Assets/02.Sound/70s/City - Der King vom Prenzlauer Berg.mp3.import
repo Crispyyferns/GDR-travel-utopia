@@ -1,0 +1,19 @@
+[remap]
+
+importer="mp3"
+type="AudioStreamMP3"
+uid="uid://b3gf06kwuqj03"
+path="res://.godot/imported/City - Der King vom Prenzlauer Berg.mp3-a3611b3a0fc047afb8725b21ef9f829e.mp3str"
+
+[deps]
+
+source_file="res://Assets/02.Sound/70s/City - Der King vom Prenzlauer Berg.mp3"
+dest_files=["res://.godot/imported/City - Der King vom Prenzlauer Berg.mp3-a3611b3a0fc047afb8725b21ef9f829e.mp3str"]
+
+[params]
+
+loop=false
+loop_offset=0
+bpm=0
+beat_count=0
+bar_beats=4

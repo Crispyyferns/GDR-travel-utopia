@@ -1,53 +1,45 @@
 [gd_scene load_steps=6 format=3 uid="uid://dmwm17s5dovv1"]
 
-[ext_resource type="Script" uid="uid://dl33bqc6cyt77" path="res://Scripts/player.gd" id="1_kyqiw"]
+[ext_resource type="Script" uid="uid://ctr8yldlwhxm6" path="res://Scripts/player.gd" id="1_gntrk"]
 [ext_resource type="Script" uid="uid://dr46d85byfqd1" path="res://Scripts/head.gd" id="2_gntrk"]
-[ext_resource type="Script" uid="uid://b3e0ym81e75am" path="res://Scenes/center_container.gd" id="3_gntrk"]
+[ext_resource type="Script" uid="uid://b3e0ym81e75am" path="res://Scripts/center_container.gd" id="3_gntrk"]
 
 [sub_resource type="CapsuleShape3D" id="CapsuleShape3D_dewec"]
 
 [sub_resource type="CapsuleMesh" id="CapsuleMesh_5ixxa"]
 
-[node name="Player" type="Node3D"]
+[node name="Player" type="CharacterBody3D"]
+script = ExtResource("1_gntrk")
 
-[node name="Player" type="CharacterBody3D" parent="."]
+[node name="CollisionShape3D" type="CollisionShape3D" parent="."]
 transform = Transform3D(1.065, 0, 0, 0, 1.065, 0, 0, 0, 1.065, 0.901979, 0.917946, -0.296)
-script = ExtResource("1_kyqiw")
-
-[node name="CollisionShape3D" type="CollisionShape3D" parent="Player"]
 shape = SubResource("CapsuleShape3D_dewec")
 
-[node name="MeshInstance3D" type="MeshInstance3D" parent="Player"]
+[node name="MeshInstance3D" type="MeshInstance3D" parent="."]
+transform = Transform3D(1.065, 0, 0, 0, 1.065, 0, 0, 0, 1.065, 0.901979, 0.917946, -0.296)
 visible = false
 mesh = SubResource("CapsuleMesh_5ixxa")
+skeleton = NodePath("")
 
-[node name="Head" type="Node3D" parent="Player"]
-transform = Transform3D(-4.26945e-08, -0.214445, 0.976736, -9.37371e-09, 0.976736, 0.214445, -1, 0, -4.37114e-08, -0.17374, 1.33684, 0)
+[node name="Head" type="Node3D" parent="."]
+transform = Transform3D(-4.54696e-08, -0.228384, 1.04022, -9.983e-09, 1.04022, 0.228384, -1.065, 0, -4.65526e-08, 0.716946, 1.9173, -0.296)
 script = ExtResource("2_gntrk")
-raycast_path = NodePath("Camera3D/RayCast3D")
-main_camera_path = NodePath("Camera3D")
 
-[node name="Camera3D" type="Camera3D" parent="Player/Head"]
+[node name="Camera3DPlayer" type="Camera3D" parent="Head"]
 transform = Transform3D(0.938861, -4.04465e-08, 0.0141095, 0.00302576, 0.917123, -0.201334, -0.0137813, 0.201357, 0.917019, -0.0431956, -0.093562, -0.0593482)
+current = true
 
-[node name="RayCast3D" type="RayCast3D" parent="Player/Head/Camera3D"]
-target_position = Vector3(0, 0, -4)
-collision_mask = 3
+[node name="RayCast3D" type="RayCast3D" parent="Head/Camera3DPlayer"]
+target_position = Vector3(0, 0, -100)
 
-[node name="Hand" type="Node3D" parent="Player/Head"]
-transform = Transform3D(-0.095, 0, 0, 0, -0.095, 0, 0, 0, -0.095, 0, 0, -1.34749)
-
-[node name="MeshInstance3D" type="MeshInstance3D" parent="Player/Head/Hand"]
-visible = false
-
-[node name="UserInterface" type="Control" parent="Player"]
+[node name="UserInterface" type="Control" parent="."]
 layout_mode = 3
 anchors_preset = 0
 offset_right = 1922.0
 offset_bottom = 1082.0
 metadata/_edit_use_anchors_ = true
 
-[node name="CenterContainer" type="CenterContainer" parent="Player/UserInterface"]
+[node name="CenterContainer" type="CenterContainer" parent="UserInterface"]
 layout_mode = 1
 anchors_preset = 8
 anchor_left = 0.5

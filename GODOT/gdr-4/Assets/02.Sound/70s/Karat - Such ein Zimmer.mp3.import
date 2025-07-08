@@ -1,0 +1,19 @@
+[remap]
+
+importer="mp3"
+type="AudioStreamMP3"
+uid="uid://bi2lew0v3dc83"
+path="res://.godot/imported/Karat - Such ein Zimmer.mp3-638054cf6ff264efd60cee860097628e.mp3str"
+
+[deps]
+
+source_file="res://Assets/02.Sound/70s/Karat - Such ein Zimmer.mp3"
+dest_files=["res://.godot/imported/Karat - Such ein Zimmer.mp3-638054cf6ff264efd60cee860097628e.mp3str"]
+
+[params]
+
+loop=false
+loop_offset=0
+bpm=0
+beat_count=0
+bar_beats=4

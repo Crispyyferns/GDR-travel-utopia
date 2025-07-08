@@ -1,0 +1,19 @@
+[remap]
+
+importer="mp3"
+type="AudioStreamMP3"
+uid="uid://xajgnulylsfk"
+path="res://.godot/imported/Puhdys - Lebenszeit.mp3-6ddc1cb1213eed636be87f4386d6e50d.mp3str"
+
+[deps]
+
+source_file="res://Assets/02.Sound/70s/Puhdys - Lebenszeit.mp3"
+dest_files=["res://.godot/imported/Puhdys - Lebenszeit.mp3-6ddc1cb1213eed636be87f4386d6e50d.mp3str"]
+
+[params]
+
+loop=true
+loop_offset=0.0
+bpm=0.0
+beat_count=0
+bar_beats=4

@@ -1,0 +1,19 @@
+[remap]
+
+importer="mp3"
+type="AudioStreamMP3"
+uid="uid://caaddgl2wnh73"
+path="res://.godot/imported/Silly - Mont Klamott.mp3-db6942135e9653d67eb53a934443a115.mp3str"
+
+[deps]
+
+source_file="res://Assets/02.Sound/80s/Silly - Mont Klamott.mp3"
+dest_files=["res://.godot/imported/Silly - Mont Klamott.mp3-db6942135e9653d67eb53a934443a115.mp3str"]
+
+[params]
+
+loop=false
+loop_offset=0
+bpm=0
+beat_count=0
+bar_beats=4

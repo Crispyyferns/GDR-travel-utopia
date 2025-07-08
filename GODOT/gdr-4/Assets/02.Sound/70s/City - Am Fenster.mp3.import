@@ -1,0 +1,19 @@
+[remap]
+
+importer="mp3"
+type="AudioStreamMP3"
+uid="uid://hjks87adx6qa"
+path="res://.godot/imported/City - Am Fenster.mp3-586c105dfaac7a0ca4d41fdc15239ddc.mp3str"
+
+[deps]
+
+source_file="res://Assets/02.Sound/70s/City - Am Fenster.mp3"
+dest_files=["res://.godot/imported/City - Am Fenster.mp3-586c105dfaac7a0ca4d41fdc15239ddc.mp3str"]
+
+[params]
+
+loop=false
+loop_offset=0
+bpm=0
+beat_count=0
+bar_beats=4

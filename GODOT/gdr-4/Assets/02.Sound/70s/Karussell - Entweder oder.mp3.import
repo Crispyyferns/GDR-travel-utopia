@@ -1,0 +1,19 @@
+[remap]
+
+importer="mp3"
+type="AudioStreamMP3"
+uid="uid://c3ju0fe0uadbv"
+path="res://.godot/imported/Karussell - Entweder oder.mp3-3527110ce2d0f55ab00ff27f29ace1a6.mp3str"
+
+[deps]
+
+source_file="res://Assets/02.Sound/70s/Karussell - Entweder oder.mp3"
+dest_files=["res://.godot/imported/Karussell - Entweder oder.mp3-3527110ce2d0f55ab00ff27f29ace1a6.mp3str"]
+
+[params]
+
+loop=false
+loop_offset=0
+bpm=0
+beat_count=0
+bar_beats=4

@@ -1,9 +1,17 @@
 shader_type canvas_item;
-uniform sampler2D SCREEN_TEXTURE: hint_screen_texture, filter_linear_mipmap;
 
-uniform float lod: hint_range(0.0, 5) = 0.0;
+uniform float time;
+uniform float intensity = 1.0;
+uniform float opacity : hint_range(0.0, 1.0) = 1.0;
 
-void fragment(){
-	vec4 color = texture(SCREEN_TEXTURE, SCREEN_UV, lod);
-	COLOR = color;
+float rand(vec2 co) {
+	return fract(sin(dot(co.xy ,vec2(12.9898, 78.233))) * 43758.5453);
+}
+
+void fragment() {
+	vec2 uv = SCREEN_UV * vec2(128.0); // scale up noise
+	float noise = rand(uv + time * 10.0); // animate noise
+	COLOR.rgb = vec3(noise) * intensity;
+	COLOR.a = 1.0;
+	COLOR.a = opacity;
 }

@@ -1,0 +1,19 @@
+[remap]
+
+importer="mp3"
+type="AudioStreamMP3"
+uid="uid://dlq5e7kvi0pqk"
+path="res://.godot/imported/Berluc - No Bomb.mp3-30d4d5301ae989bbafc78a6dbc98f82a.mp3str"
+
+[deps]
+
+source_file="res://Assets/02.Sound/80s/Berluc - No Bomb.mp3"
+dest_files=["res://.godot/imported/Berluc - No Bomb.mp3-30d4d5301ae989bbafc78a6dbc98f82a.mp3str"]
+
+[params]
+
+loop=false
+loop_offset=0
+bpm=0
+beat_count=0
+bar_beats=4
