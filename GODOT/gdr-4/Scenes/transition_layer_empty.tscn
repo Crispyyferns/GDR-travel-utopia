@@ -1,0 +1,38 @@
+[gd_scene load_steps=6 format=3 uid="uid://hdw74tfbohqb"]
+
+[ext_resource type="Shader" uid="uid://ksvcn4fnj5ki" path="res://Scripts/Shaders/noise_overlay.gdshader" id="1_1epwj"]
+[ext_resource type="Script" uid="uid://ck2jutj54gjfu" path="res://Scenes/noise_overlay.gd" id="2_gxccp"]
+[ext_resource type="AudioStream" uid="uid://btxp1teqeur3x" path="res://Assets/02.Sound/746438__mk-la__fm-radio-white-noise.wav" id="3_503rf"]
+[ext_resource type="FontFile" uid="uid://l2wvvac4xuy6" path="res://Assets/05. Typefaces/fundamental/Fundamental Brigade Condensed.ttf" id="4_omxbj"]
+
+[sub_resource type="ShaderMaterial" id="ShaderMaterial_4gl7c"]
+shader = ExtResource("1_1epwj")
+shader_parameter/time = 0.0
+shader_parameter/intensity = 1.1
+shader_parameter/opacity = 1.0
+
+[node name="Transition_Layer" type="CanvasLayer"]
+
+[node name="NoiseOverlay" type="ColorRect" parent="."]
+material = SubResource("ShaderMaterial_4gl7c")
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+color = Color(0, 0, 0, 1)
+script = ExtResource("2_gxccp")
+
+[node name="StaticPlayer" type="AudioStreamPlayer3D" parent="."]
+stream = ExtResource("3_503rf")
+
+[node name="LoadingLabel" type="Label" parent="."]
+offset_left = 275.0
+offset_top = 220.0
+offset_right = 1651.0
+offset_bottom = 786.0
+theme_override_fonts/font = ExtResource("4_omxbj")
+theme_override_font_sizes/font_size = 66
+horizontal_alignment = 1
+vertical_alignment = 1
+autowrap_mode = 3

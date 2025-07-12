@@ -11,13 +11,14 @@ config_version=5
 [application]
 
 config/name="GDR-4"
-run/main_scene="uid://di8s73o83s422"
+run/main_scene="uid://r031oipayujx"
 config/features=PackedStringArray("4.4", "Forward Plus")
 config/icon="res://icon.svg"
 
 [autoload]
 
-TransitionManager="*res://Scenes/transition_manager.gd"
+TransitionManager_to80s="*res://Scenes/transition_manager_to80s.gd"
+TransitionManager_Empty="*res://Scenes/transition_manager_empty.gd"
 PhantomCameraManager="*res://addons/phantom_camera/scripts/managers/phantom_camera_manager.gd"
 
 [display]

@@ -1,11 +1,11 @@
-[gd_scene load_steps=121 format=3 uid="uid://bq5aw4t3xa4wn"]
+[gd_scene load_steps=122 format=3 uid="uid://bq5aw4t3xa4wn"]
 
 [ext_resource type="Script" uid="uid://chlarin68qmfo" path="res://Scripts/scene-1_70s_MAIN.gd" id="1_x1vip"]
 [ext_resource type="Script" uid="uid://ctr8yldlwhxm6" path="res://Scripts/player.gd" id="2_quctf"]
 [ext_resource type="Script" uid="uid://b6y3gfe13mn6r" path="res://Scenes/scene_manager.gd" id="2_t7fvn"]
 [ext_resource type="Script" uid="uid://dp3k23l4m61lk" path="res://Scripts/test_head.gd" id="3_quctf"]
 [ext_resource type="Script" uid="uid://blfwpsepfaxbk" path="res://Scenes/volume_scene_switcher.gd" id="3_sm84e"]
-[ext_resource type="Script" uid="uid://bvsesppwfy0mx" path="res://Scenes/transition_manager.gd" id="4_eu7pm"]
+[ext_resource type="Script" uid="uid://bvsesppwfy0mx" path="res://Scenes/transition_manager_to80s.gd" id="4_eu7pm"]
 [ext_resource type="Script" uid="uid://b3e0ym81e75am" path="res://Scripts/center_container.gd" id="4_rfs5q"]
 [ext_resource type="ArrayMesh" uid="uid://bdta26d22mk8f" path="res://Assets/00.3D/obj_export_kw26/obj_Desk.obj" id="4_ufj43"]
 [ext_resource type="Texture2D" uid="uid://dqwbni8yodls4" path="res://Assets/01.Textures/Baked/tex_Desk_darker_diffuse.png" id="6_d57ka"]
@@ -13,6 +13,7 @@
 [ext_resource type="FontFile" uid="uid://6h5le2uybata" path="res://Assets/05. Typefaces/fundamental/Fundamental Brigade.ttf" id="7_kyfal"]
 [ext_resource type="Texture2D" uid="uid://ctwo8ncumelek" path="res://Assets/01.Textures/Baked/tex_Desk_Cover_diffuse.png" id="7_mr02p"]
 [ext_resource type="ArrayMesh" uid="uid://bdfsis6bgtc3x" path="res://Assets/00.3D/obj_export_kw26/obj_Desk_drawer.obj" id="8_ufj43"]
+[ext_resource type="PackedScene" uid="uid://bjt3gc82sfdq2" path="res://Scenes/pause_menu.tscn" id="8_va8tw"]
 [ext_resource type="Texture2D" uid="uid://ddlrab8thi4y4" path="res://Assets/01.Textures/Baked/tex_Desk_Parts_diffuse.png" id="8_wllko"]
 [ext_resource type="ArrayMesh" uid="uid://bjjrn84ch8evm" path="res://Assets/00.3D/obj_export_kw26/obj_Desk_rolling-drawer_shelves.obj" id="9_j7nk8"]
 [ext_resource type="ArrayMesh" uid="uid://c0cdm0kfafwb4" path="res://Assets/00.3D/obj_export_kw26/obj_Desk_rolling-drawer_shelves_001.obj" id="10_dsw8n"]
@@ -252,7 +253,7 @@ albedo_texture = ExtResource("68_rfs5q")
 script = ExtResource("1_x1vip")
 main_camera = NodePath("---- Player ----/Head/Camera3DPlayer")
 raycast = NodePath("---- Player ----/Head/Camera3DPlayer/RayCast3DPlayer")
-ui = NodePath("Complete UIs/UI")
+ui = NodePath("Complete UIs/Info_UI")
 
 [node name="WorldEnvironment" type="WorldEnvironment" parent="."]
 environment = SubResource("Environment_bs7aw")
@@ -266,24 +267,24 @@ script = ExtResource("2_t7fvn")
 script = ExtResource("3_sm84e")
 object_viewer_path = NodePath("../..")
 
-[node name="TransitionManager" type="Node" parent="Complete Managers"]
+[node name="TransitionManager_to80s" type="Node" parent="Complete Managers"]
 script = ExtResource("4_eu7pm")
 
 [node name="Complete UIs" type="Node" parent="."]
 
-[node name="UI" type="CanvasLayer" parent="Complete UIs" node_paths=PackedStringArray("name_label", "description_label")]
+[node name="Info_UI" type="CanvasLayer" parent="Complete UIs" node_paths=PackedStringArray("name_label", "description_label")]
 script = ExtResource("88_iwmvm")
 name_label = NodePath("Info_Panel/Name_Label")
 description_label = NodePath("Info_Panel/Description_Label")
 
-[node name="Info_Panel" type="Panel" parent="Complete UIs/UI"]
+[node name="Info_Panel" type="Panel" parent="Complete UIs/Info_UI"]
 anchors_preset = 15
 anchor_right = 1.0
 anchor_bottom = 1.0
 grow_horizontal = 2
 grow_vertical = 2
 
-[node name="Name_Label" type="Label" parent="Complete UIs/UI/Info_Panel"]
+[node name="Name_Label" type="Label" parent="Complete UIs/Info_UI/Info_Panel"]
 layout_mode = 1
 anchors_preset = 10
 anchor_right = 1.0
@@ -299,7 +300,7 @@ vertical_alignment = 3
 autowrap_mode = 3
 uppercase = true
 
-[node name="Description_Label" type="Label" parent="Complete UIs/UI/Info_Panel"]
+[node name="Description_Label" type="Label" parent="Complete UIs/Info_UI/Info_Panel"]
 layout_mode = 1
 anchors_preset = 14
 anchor_top = 0.5
@@ -316,7 +317,7 @@ theme_override_font_sizes/font_size = 33
 text = "Test Label Description wowo wowow lotrs of very lovely great amazing tecttst dasm ist guuit ajssdkakdjasjddsjfdlsa<jfs<fjsdal<asdfdsfdslfdsafdshifSFLDSHADFAhfswfphswjfidsajö"
 autowrap_mode = 3
 
-[node name="Rotate_Button" type="Button" parent="Complete UIs/UI/Info_Panel"]
+[node name="Rotate_Button" type="Button" parent="Complete UIs/Info_UI/Info_Panel"]
 visible = false
 layout_mode = 1
 anchors_preset = 4
@@ -328,7 +329,7 @@ offset_right = 144.0
 offset_bottom = 4.0
 grow_vertical = 2
 
-[node name="Zoom_Button" type="Button" parent="Complete UIs/UI/Info_Panel"]
+[node name="Zoom_Button" type="Button" parent="Complete UIs/Info_UI/Info_Panel"]
 visible = false
 layout_mode = 1
 anchors_preset = 4
@@ -340,7 +341,7 @@ offset_right = 143.0
 offset_bottom = 66.0
 grow_vertical = 2
 
-[node name="Close_Button" type="Button" parent="Complete UIs/UI/Info_Panel"]
+[node name="Close_Button" type="Button" parent="Complete UIs/Info_UI/Info_Panel"]
 visible = false
 layout_mode = 1
 anchors_preset = 4
@@ -351,6 +352,12 @@ offset_top = 85.0
 offset_right = 146.0
 offset_bottom = 127.0
 grow_vertical = 2
+
+[node name="Pause_UI" type="CanvasLayer" parent="Complete UIs"]
+layer = 10
+
+[node name="PauseMenu" parent="Complete UIs/Pause_UI" instance=ExtResource("8_va8tw")]
+z_index = 10
 
 [node name="---- Lights ----" type="Node3D" parent="."]
 
@@ -897,6 +904,6 @@ surface_material_override/2 = ExtResource("77_emdq1")
 surface_material_override/3 = ExtResource("56_emdq1")
 surface_material_override/4 = ExtResource("57_eaofq")
 
-[connection signal="pressed" from="Complete UIs/UI/Info_Panel/Rotate_Button" to="Complete UIs/UI" method="_on_rotate_button_pressed"]
-[connection signal="pressed" from="Complete UIs/UI/Info_Panel/Zoom_Button" to="Complete UIs/UI" method="_on_zoom_button_pressed"]
-[connection signal="pressed" from="Complete UIs/UI/Info_Panel/Close_Button" to="Complete UIs/UI" method="_on_close_button_pressed"]
+[connection signal="pressed" from="Complete UIs/Info_UI/Info_Panel/Rotate_Button" to="Complete UIs/Info_UI" method="_on_rotate_button_pressed"]
+[connection signal="pressed" from="Complete UIs/Info_UI/Info_Panel/Zoom_Button" to="Complete UIs/Info_UI" method="_on_zoom_button_pressed"]
+[connection signal="pressed" from="Complete UIs/Info_UI/Info_Panel/Close_Button" to="Complete UIs/Info_UI" method="_on_close_button_pressed"]

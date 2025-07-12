@@ -63,8 +63,6 @@ text = "Impressum"
 flat = true
 
 [node name="TransitionManager" type="Node" parent="."]
-process_mode = 3
 script = ExtResource("4_yl13b")
-max_intensity = 0.5
 
 [connection signal="pressed" from="Start" to="." method="_on_play_pressed"]

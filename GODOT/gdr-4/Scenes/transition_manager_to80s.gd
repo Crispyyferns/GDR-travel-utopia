@@ -4,7 +4,7 @@ extends Node
 #  Smooth radio‑static fade‑in → loading pause → scene switch → fade‑out
 #-------------------------------------------------------------
 
-const TRANSITION_LAYER_SCENE := preload("res://Scenes/transition_layer.tscn")
+const TRANSITION_LAYER_SCENE_to80s := preload("res://Scenes/transition_layer_to80s.tscn")
 
 @export var transition_duration : float = 1.0   # fade‑in / fade‑out seconds
 @export var loading_duration    : float = 5.0   # “loading” hold
@@ -21,7 +21,7 @@ var time_passed    : float = 0.0
 # -------------------------------------------------------------
 func _ready() -> void:
 	# Instance the visual layer once and keep it alive
-	layer = TRANSITION_LAYER_SCENE.instantiate()
+	layer = TRANSITION_LAYER_SCENE_to80s.instantiate()
 	get_tree().root.add_child.call_deferred(layer)
 
 	# Get references *after* instancing

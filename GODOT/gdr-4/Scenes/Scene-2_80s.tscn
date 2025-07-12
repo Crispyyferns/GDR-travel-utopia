@@ -3,7 +3,7 @@
 [ext_resource type="Script" uid="uid://chlarin68qmfo" path="res://Scripts/scene-1_70s_MAIN.gd" id="1_n2tod"]
 [ext_resource type="Script" uid="uid://b6y3gfe13mn6r" path="res://Scenes/scene_manager.gd" id="2_angvt"]
 [ext_resource type="Script" uid="uid://blfwpsepfaxbk" path="res://Scenes/volume_scene_switcher.gd" id="3_etmm5"]
-[ext_resource type="Script" uid="uid://bvsesppwfy0mx" path="res://Scenes/transition_manager.gd" id="4_8qwpf"]
+[ext_resource type="Script" uid="uid://bvsesppwfy0mx" path="res://Scenes/transition_manager_to80s.gd" id="4_8qwpf"]
 [ext_resource type="Script" uid="uid://dumv3ao65w4in" path="res://Scripts/ui.gd" id="5_2f8rt"]
 [ext_resource type="FontFile" uid="uid://bcrkm5tj15wl7" path="res://Assets/05. Typefaces/fundamental/Fundamental 3D Brigade.ttf" id="6_etmm5"]
 [ext_resource type="Script" uid="uid://ctr8yldlwhxm6" path="res://Scripts/player.gd" id="6_jyfha"]
