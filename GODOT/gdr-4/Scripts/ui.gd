@@ -25,13 +25,13 @@ func hide_info() -> void:
 	visible = false
 
 
-func _on_rotate_button_pressed():
+#func _on_rotate_button_pressed():
 	pass # Replace with function body.
 
 
-func _on_zoom_button_pressed():
+#func _on_zoom_button_pressed():
 	pass # Replace with function body.
 
 
-func _on_close_button_pressed():
+#func _on_close_button_pressed():
 	pass # Replace with function body.

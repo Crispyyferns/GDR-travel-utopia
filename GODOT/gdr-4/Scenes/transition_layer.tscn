@@ -1,13 +1,14 @@
-[gd_scene load_steps=5 format=3 uid="uid://ct7to7bi17ehk"]
+[gd_scene load_steps=6 format=3 uid="uid://ct7to7bi17ehk"]
 
 [ext_resource type="Shader" uid="uid://ksvcn4fnj5ki" path="res://Scripts/Shaders/noise_overlay.gdshader" id="1_0f3qh"]
 [ext_resource type="Script" uid="uid://ck2jutj54gjfu" path="res://Scenes/noise_overlay.gd" id="2_4gl7c"]
 [ext_resource type="AudioStream" uid="uid://btxp1teqeur3x" path="res://Assets/02.Sound/746438__mk-la__fm-radio-white-noise.wav" id="3_fte1a"]
+[ext_resource type="FontFile" uid="uid://l2wvvac4xuy6" path="res://Assets/05. Typefaces/fundamental/Fundamental Brigade Condensed.ttf" id="4_5qgvc"]
 
 [sub_resource type="ShaderMaterial" id="ShaderMaterial_4gl7c"]
 shader = ExtResource("1_0f3qh")
 shader_parameter/time = 0.0
-shader_parameter/intensity = 1.0
+shader_parameter/intensity = 1.1
 shader_parameter/opacity = 1.0
 
 [node name="Transition_Layer" type="CanvasLayer"]
@@ -26,8 +27,15 @@ script = ExtResource("2_4gl7c")
 stream = ExtResource("3_fte1a")
 
 [node name="LoadingLabel" type="Label" parent="."]
-offset_left = 537.0
-offset_top = 286.0
-offset_right = 614.0
-offset_bottom = 309.0
-text = "LOADING"
+offset_left = 275.0
+offset_top = 220.0
+offset_right = 1651.0
+offset_bottom = 786.0
+theme_override_fonts/font = ExtResource("4_5qgvc")
+theme_override_font_sizes/font_size = 66
+text = "-- Info Loading Screen --
+Bis zum Ende der DDR erhöhte sich die Subventionsquote für Reisende erheblich.
+Wo eine Person 1976 noch 43 Prozent der Reisekosten selbst aufbringen musste, waren es gegen 1988 nur noch etwa 25 Prozent."
+horizontal_alignment = 1
+vertical_alignment = 1
+autowrap_mode = 3
