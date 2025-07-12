@@ -31,10 +31,12 @@ offset_left = 275.0
 offset_top = 220.0
 offset_right = 1651.0
 offset_bottom = 786.0
+theme_override_colors/font_color = Color(1, 1, 1, 1)
+theme_override_colors/font_shadow_color = Color(0, 0, 0, 1)
+theme_override_colors/font_outline_color = Color(0, 0, 0, 1)
 theme_override_fonts/font = ExtResource("4_adg28")
 theme_override_font_sizes/font_size = 66
-text = "-- Info Loading Screen --
-Bis zum Ende der DDR erhöhte sich die Subventionsquote für Reisende erheblich.
+text = "Bis zum Ende der DDR erhöhte sich die Subventionsquote für Reisende erheblich.
 Wo eine Person 1976 noch 43 Prozent der Reisekosten selbst aufbringen musste, waren es gegen 1988 nur noch etwa 25 Prozent."
 horizontal_alignment = 1
 vertical_alignment = 1

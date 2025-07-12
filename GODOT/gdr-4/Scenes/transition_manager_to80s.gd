@@ -58,23 +58,28 @@ func play_transition_and_switch(scene_path: String) -> void:
 	switching = true
 	time_passed = 0.0
 
-	# Show transition layer and noise overlay
+		# Show transition layer and noise overlay
 	layer.visible = true
 	noise_overlay.visible = true
 	loading_label.visible = true
-	loading_label.modulate.a = 0.0
-	static_player.volume_db = -80.0
+	loading_label.modulate.a = 0.0  # start fully transparent
+
+	static_player.volume_db = 10.0
 	static_player.play()
 
-	# FADE‑IN --------------------------------------------------
+	# FADE-IN ------------------------------------------
 	var tw = create_tween()
 	tw.parallel().tween_property(noise_overlay.material, "shader_parameter/intensity",
-								 max_intensity, transition_duration)
+		max_intensity, transition_duration)
 	tw.parallel().tween_property(static_player, "volume_db",
-								 0.0,            transition_duration)
+		0.0,            transition_duration)
+
+	# Delay loading label fade-in by 1.5 seconds
 	tw.parallel().tween_property(loading_label, "modulate:a",
-								 1.0,            transition_duration)
+		1.0, transition_duration).set_delay(1.5)
+
 	await tw.finished
+
 
 	# HOLD ----------------------------------------------------
 	await get_tree().create_timer(loading_duration).timeout

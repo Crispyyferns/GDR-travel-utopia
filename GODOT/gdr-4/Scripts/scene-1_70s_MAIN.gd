@@ -33,10 +33,8 @@ func _ready() -> void:
 	
 	original_cam_xform = main_camera.global_transform
 	raycast.enabled    = true
+	ui = get_node("Complete UIs/Info_UI")
 
-	# UI signal hookups
-	ui.zoom_pressed .connect(_on_zoom_pressed)
-	ui.close_pressed.connect(_reset_camera)
 
 
 # ───────────────────────────────
@@ -116,7 +114,6 @@ func _select_object(obj: StaticBody3D) -> void:
 	_start_tween_to(target_cam)
 	last_target = obj
 	ui.show_info(obj.object_name, obj.description)
-
 
 func _start_tween_to(target_cam: Camera3D) -> void:
 	if tween: tween.kill()

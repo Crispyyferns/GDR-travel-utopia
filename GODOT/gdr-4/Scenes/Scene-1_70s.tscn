@@ -1,4 +1,4 @@
-[gd_scene load_steps=122 format=3 uid="uid://bq5aw4t3xa4wn"]
+[gd_scene load_steps=124 format=3 uid="uid://bq5aw4t3xa4wn"]
 
 [ext_resource type="Script" uid="uid://chlarin68qmfo" path="res://Scripts/scene-1_70s_MAIN.gd" id="1_x1vip"]
 [ext_resource type="Script" uid="uid://ctr8yldlwhxm6" path="res://Scripts/player.gd" id="2_quctf"]
@@ -9,6 +9,7 @@
 [ext_resource type="Script" uid="uid://b3e0ym81e75am" path="res://Scripts/center_container.gd" id="4_rfs5q"]
 [ext_resource type="ArrayMesh" uid="uid://bdta26d22mk8f" path="res://Assets/00.3D/obj_export_kw26/obj_Desk.obj" id="4_ufj43"]
 [ext_resource type="Texture2D" uid="uid://dqwbni8yodls4" path="res://Assets/01.Textures/Baked/tex_Desk_darker_diffuse.png" id="6_d57ka"]
+[ext_resource type="Shader" uid="uid://buow1arxmwt8a" path="res://Scenes/Object_Inspector_Sillh.gdshader" id="6_kyfal"]
 [ext_resource type="FontFile" uid="uid://bcrkm5tj15wl7" path="res://Assets/05. Typefaces/fundamental/Fundamental 3D Brigade.ttf" id="6_va8tw"]
 [ext_resource type="FontFile" uid="uid://6h5le2uybata" path="res://Assets/05. Typefaces/fundamental/Fundamental Brigade.ttf" id="7_kyfal"]
 [ext_resource type="Texture2D" uid="uid://ctwo8ncumelek" path="res://Assets/01.Textures/Baked/tex_Desk_Cover_diffuse.png" id="7_mr02p"]
@@ -87,6 +88,13 @@ background_mode = 2
 sky = SubResource("Sky_fvdug")
 tonemap_mode = 2
 glow_enabled = true
+
+[sub_resource type="ShaderMaterial" id="ShaderMaterial_rhd54"]
+shader = ExtResource("6_kyfal")
+shader_parameter/lod = 0.323
+shader_parameter/hole_center = Vector2(0.5, 0.565)
+shader_parameter/hole_radius = Vector2(0.59, 0.835)
+shader_parameter/feather = 0.5
 
 [sub_resource type="CapsuleShape3D" id="CapsuleShape3D_eu7pm"]
 
@@ -249,11 +257,10 @@ albedo_texture = ExtResource("24_xebjs")
 cull_mode = 2
 albedo_texture = ExtResource("68_rfs5q")
 
-[node name="Scene-1_70s" type="Node3D" node_paths=PackedStringArray("main_camera", "raycast", "ui")]
+[node name="Scene-1_70s" type="Node3D" node_paths=PackedStringArray("main_camera", "raycast")]
 script = ExtResource("1_x1vip")
 main_camera = NodePath("---- Player ----/Head/Camera3DPlayer")
 raycast = NodePath("---- Player ----/Head/Camera3DPlayer/RayCast3DPlayer")
-ui = NodePath("Complete UIs/Info_UI")
 
 [node name="WorldEnvironment" type="WorldEnvironment" parent="."]
 environment = SubResource("Environment_bs7aw")
@@ -274,18 +281,25 @@ script = ExtResource("4_eu7pm")
 
 [node name="Info_UI" type="CanvasLayer" parent="Complete UIs" node_paths=PackedStringArray("name_label", "description_label")]
 script = ExtResource("88_iwmvm")
-name_label = NodePath("Info_Panel/Name_Label")
-description_label = NodePath("Info_Panel/Description_Label")
+name_label = NodePath("Name_Label")
+description_label = NodePath("Description_Label")
 
-[node name="Info_Panel" type="Panel" parent="Complete UIs/Info_UI"]
-anchors_preset = 15
-anchor_right = 1.0
-anchor_bottom = 1.0
+[node name="ColorRect" type="ColorRect" parent="Complete UIs/Info_UI"]
+material = SubResource("ShaderMaterial_rhd54")
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -960.0
+offset_top = -540.0
+offset_right = 960.0
+offset_bottom = 540.0
 grow_horizontal = 2
 grow_vertical = 2
+metadata/_edit_use_anchors_ = true
 
-[node name="Name_Label" type="Label" parent="Complete UIs/Info_UI/Info_Panel"]
-layout_mode = 1
+[node name="Name_Label" type="Label" parent="Complete UIs/Info_UI"]
 anchors_preset = 10
 anchor_right = 1.0
 offset_left = 108.0
@@ -299,9 +313,9 @@ text = "Test Headline"
 vertical_alignment = 3
 autowrap_mode = 3
 uppercase = true
+metadata/_edit_use_anchors_ = true
 
-[node name="Description_Label" type="Label" parent="Complete UIs/Info_UI/Info_Panel"]
-layout_mode = 1
+[node name="Description_Label" type="Label" parent="Complete UIs/Info_UI"]
 anchors_preset = 14
 anchor_top = 0.5
 anchor_right = 1.0
@@ -316,10 +330,10 @@ theme_override_fonts/font = ExtResource("7_kyfal")
 theme_override_font_sizes/font_size = 33
 text = "Test Label Description wowo wowow lotrs of very lovely great amazing tecttst dasm ist guuit ajssdkakdjasjddsjfdlsa<jfs<fjsdal<asdfdsfdslfdsafdshifSFLDSHADFAhfswfphswjfidsajö"
 autowrap_mode = 3
+metadata/_edit_use_anchors_ = true
 
-[node name="Rotate_Button" type="Button" parent="Complete UIs/Info_UI/Info_Panel"]
+[node name="Rotate_Button" type="Button" parent="Complete UIs/Info_UI"]
 visible = false
-layout_mode = 1
 anchors_preset = 4
 anchor_top = 0.5
 anchor_bottom = 0.5
@@ -329,9 +343,8 @@ offset_right = 144.0
 offset_bottom = 4.0
 grow_vertical = 2
 
-[node name="Zoom_Button" type="Button" parent="Complete UIs/Info_UI/Info_Panel"]
+[node name="Zoom_Button" type="Button" parent="Complete UIs/Info_UI"]
 visible = false
-layout_mode = 1
 anchors_preset = 4
 anchor_top = 0.5
 anchor_bottom = 0.5
@@ -341,9 +354,8 @@ offset_right = 143.0
 offset_bottom = 66.0
 grow_vertical = 2
 
-[node name="Close_Button" type="Button" parent="Complete UIs/Info_UI/Info_Panel"]
+[node name="Close_Button" type="Button" parent="Complete UIs/Info_UI"]
 visible = false
-layout_mode = 1
 anchors_preset = 4
 anchor_top = 0.5
 anchor_bottom = 0.5
@@ -358,6 +370,7 @@ layer = 10
 
 [node name="PauseMenu" parent="Complete UIs/Pause_UI" instance=ExtResource("8_va8tw")]
 z_index = 10
+metadata/_edit_use_anchors_ = true
 
 [node name="---- Lights ----" type="Node3D" parent="."]
 
@@ -437,7 +450,7 @@ transform = Transform3D(0.00167556, 0, 0.999998, 0, 1, 0, -0.999998, 0, 0.001675
 [node name="-- 70s Scene --" type="Node3D" parent="---- Complete Set ----/--- Interactables ---"]
 transform = Transform3D(1, 0, -1.11022e-16, 0, 1, 0, 1.11022e-16, 0, 1, 0, 0, 0)
 
-[node name="DDR_Karte_1979" type="StaticBody3D" parent="---- Complete Set ----/--- Interactables ---/-- 70s Scene --"]
+[node name="DDR_Karte_1979" type="StaticBody3D" parent="---- Complete Set ----/--- Interactables ---/-- 70s Scene --" groups=["interactable"]]
 transform = Transform3D(0.0350631, 1.80966, 0.00302898, -1.80966, 0.0350634, -0.000152912, -0.000211561, -0.00302545, 1.81, -0.797073, 3.57827, -1.67998)
 script = ExtResource("58_shgk2")
 local_view_camera = NodePath("Camera3D")
@@ -455,7 +468,7 @@ shape = SubResource("ConcavePolygonShape3D_th26e")
 [node name="Camera3D" type="Camera3D" parent="---- Complete Set ----/--- Interactables ---/-- 70s Scene --/DDR_Karte_1979"]
 transform = Transform3D(-0.022373, -0.551257, -0.0292609, -0.00117266, -0.0292374, 0.55171, -0.552031, 0.0224037, 1.39232e-05, -0.0411305, 0.514747, -0.0054853)
 
-[node name="Flyer_Sonderfahrten_70s" type="StaticBody3D" parent="---- Complete Set ----/--- Interactables ---/-- 70s Scene --"]
+[node name="Flyer_Sonderfahrten_70s" type="StaticBody3D" parent="---- Complete Set ----/--- Interactables ---/-- 70s Scene --" groups=["interactable"]]
 transform = Transform3D(-0.252741, 0.0150823, 0.931992, -0.00806466, -0.965645, 0.0134398, 0.932079, -0.00426543, 0.252833, -0.377914, 1.75408, -0.369584)
 script = ExtResource("58_shgk2")
 local_view_camera = NodePath("Camera3D")
@@ -473,7 +486,7 @@ shape = SubResource("ConcavePolygonShape3D_cw26l")
 [node name="Camera3D" type="Camera3D" parent="---- Complete Set ----/--- Interactables ---/-- 70s Scene --/Flyer_Sonderfahrten_70s"]
 transform = Transform3D(-1.02681, 0.104775, -0.082621, 0.0834344, 0.00382492, -1.03207, -0.104129, -1.03012, -0.0122356, -0.0295538, -0.231708, -0.0126741)
 
-[node name="Pionierkalender_1978" type="StaticBody3D" parent="---- Complete Set ----/--- Interactables ---/-- 70s Scene --"]
+[node name="Pionierkalender_1978" type="StaticBody3D" parent="---- Complete Set ----/--- Interactables ---/-- 70s Scene --" groups=["interactable"]]
 transform = Transform3D(-1.10951, 0.214221, 0.000427211, 0.0021624, 0.013453, -1.12992, -0.214211, -1.10943, -0.013619, 0.329689, 0.95416, -0.796203)
 script = ExtResource("58_shgk2")
 local_view_camera = NodePath("Camera3D")
@@ -492,7 +505,7 @@ shape = SubResource("BoxShape3D_cw26l")
 [node name="Camera3D" type="Camera3D" parent="---- Complete Set ----/--- Interactables ---/-- 70s Scene --/Pionierkalender_1978"]
 transform = Transform3D(-0.197995, 0.780373, -0.36736, 0.861349, 0.159283, -0.125877, -0.044881, -0.385727, -0.7952, -0.156832, 0.0971271, -0.233303)
 
-[node name="Patch_AntiApartheidsbewegung_1978" type="StaticBody3D" parent="---- Complete Set ----/--- Interactables ---/-- 70s Scene --"]
+[node name="Patch_AntiApartheidsbewegung_1978" type="StaticBody3D" parent="---- Complete Set ----/--- Interactables ---/-- 70s Scene --" groups=["interactable"]]
 transform = Transform3D(-0.00832508, 0.999965, -1.74623e-09, -0.999965, -0.00832509, -2.38524e-18, -3.00133e-11, 2.32831e-10, 1, -0.823722, 3.24395, 0.0911068)
 script = ExtResource("58_shgk2")
 local_view_camera = NodePath("Camera3D")
@@ -511,7 +524,7 @@ shape = SubResource("ConcavePolygonShape3D_ftcf2")
 [node name="Camera3D" type="Camera3D" parent="---- Complete Set ----/--- Interactables ---/-- 70s Scene --/Patch_AntiApartheidsbewegung_1978"]
 transform = Transform3D(-0.00861118, -0.996987, -0.077092, 0.00050108, -0.0770992, 0.997024, -0.999963, 0.00854692, 0.00116349, 0.00366545, 0.194496, -2.38419e-07)
 
-[node name="Einlieferungschein" type="StaticBody3D" parent="---- Complete Set ----/--- Interactables ---/-- 70s Scene --"]
+[node name="Einlieferungschein" type="StaticBody3D" parent="---- Complete Set ----/--- Interactables ---/-- 70s Scene --" groups=["interactable"]]
 transform = Transform3D(1.39289, -6.89179e-08, -0.0765828, 4.84288e-08, 1.395, 2.42144e-08, 0.0765825, -9.87202e-08, 1.3929, -0.00544775, 1.75542, -0.449341)
 script = ExtResource("58_shgk2")
 
@@ -524,7 +537,7 @@ mesh = ExtResource("65_t7fvn")
 skeleton = NodePath("../../../../..")
 surface_material_override/0 = SubResource("StandardMaterial3D_dsw8n")
 
-[node name="Document_Jugendtourist_Bulgarien_70s" type="StaticBody3D" parent="---- Complete Set ----/--- Interactables ---/-- 70s Scene --"]
+[node name="Document_Jugendtourist_Bulgarien_70s" type="StaticBody3D" parent="---- Complete Set ----/--- Interactables ---/-- 70s Scene --" groups=["interactable"]]
 transform = Transform3D(1.60907, 6.51926e-08, 0.0547842, -3.35276e-08, 1.61, 1.86265e-08, -0.0547842, -7.63685e-08, 1.60907, -0.0393578, 1.75069, -0.341702)
 script = ExtResource("58_shgk2")
 local_view_camera = NodePath("Camera3D")
@@ -542,7 +555,7 @@ shape = SubResource("ConcavePolygonShape3D_ldby6")
 [node name="Camera3D" type="Camera3D" parent="---- Complete Set ----/--- Interactables ---/-- 70s Scene --/Document_Jugendtourist_Bulgarien_70s"]
 transform = Transform3D(0.0209563, -0.62016, 0.0273879, -0.0040613, 0.027266, 0.620506, -0.620751, -0.0211147, -0.00313506, 0.000467744, 0.152259, -0.0137383)
 
-[node name="Calendar_IFA2" type="StaticBody3D" parent="---- Complete Set ----/--- Interactables ---/-- 70s Scene --"]
+[node name="Calendar_IFA2" type="StaticBody3D" parent="---- Complete Set ----/--- Interactables ---/-- 70s Scene --" groups=["interactable"]]
 transform = Transform3D(-1.68569e-07, 1.66, 0.00278151, -1.66, -7.54371e-08, 2.45869e-07, -1.78814e-07, -0.00278151, 1.66, -0.799064, 2.93754, 1.52325)
 script = ExtResource("58_shgk2")
 local_view_camera = NodePath("Camera3D")
@@ -562,7 +575,7 @@ shape = SubResource("ConcavePolygonShape3D_rfs5q")
 [node name="Camera3D" type="Camera3D" parent="---- Complete Set ----/--- Interactables ---/-- 70s Scene --/Calendar_IFA2"]
 transform = Transform3D(0.0061999, -0.600714, -0.0447503, 0.00175953, -0.0447343, 0.600742, -0.602372, -0.00631363, 0.00129417, -0.0673643, 0.530973, 0.000889599)
 
-[node name="Flyer_Geschenkreisen_70S" type="StaticBody3D" parent="---- Complete Set ----/--- Interactables ---/-- 70s Scene --"]
+[node name="Flyer_Geschenkreisen_70S" type="StaticBody3D" parent="---- Complete Set ----/--- Interactables ---/-- 70s Scene --" groups=["interactable"]]
 transform = Transform3D(0.3313, -0.0303536, 0.943037, -0.00910139, -0.999539, -0.0289748, 0.943482, 0.00101635, -0.331424, -0.0843192, 1.75108, 0.551213)
 script = ExtResource("58_shgk2")
 local_view_camera = NodePath("Camera3D")
@@ -627,8 +640,8 @@ transform = Transform3D(1.40958, -4.59637e-11, 0.209054, -0.00413733, 1.42472, 0
 mesh = ExtResource("60_d12h7")
 skeleton = NodePath("../../../..")
 
-[node name="Radio_Sternchen_60s" type="StaticBody3D" parent="---- Complete Set ----/--- Interactables ---" groups=["radio_focus"]]
-transform = Transform3D(0.697551, 0, -1.097, 0, 1.3, 0, 1.097, 0, 0.697551, -0.062156, 1.60678, -2.52547)
+[node name="Radio_Sternchen_60s" type="StaticBody3D" parent="---- Complete Set ----/--- Interactables ---" groups=["interactable", "radio_focus"]]
+transform = Transform3D(1.21417, 0, 0.464523, 0, 1.3, 0, -0.464523, 0, 1.21417, -0.689803, 0.338041, -0.0655352)
 script = ExtResource("58_shgk2")
 local_view_camera = NodePath("Radio_Camera3D")
 object_name = ""
@@ -904,6 +917,6 @@ surface_material_override/2 = ExtResource("77_emdq1")
 surface_material_override/3 = ExtResource("56_emdq1")
 surface_material_override/4 = ExtResource("57_eaofq")
 
-[connection signal="pressed" from="Complete UIs/Info_UI/Info_Panel/Rotate_Button" to="Complete UIs/Info_UI" method="_on_rotate_button_pressed"]
-[connection signal="pressed" from="Complete UIs/Info_UI/Info_Panel/Zoom_Button" to="Complete UIs/Info_UI" method="_on_zoom_button_pressed"]
-[connection signal="pressed" from="Complete UIs/Info_UI/Info_Panel/Close_Button" to="Complete UIs/Info_UI" method="_on_close_button_pressed"]
+[connection signal="pressed" from="Complete UIs/Info_UI/Rotate_Button" to="Complete UIs/Info_UI" method="_on_rotate_button_pressed"]
+[connection signal="pressed" from="Complete UIs/Info_UI/Zoom_Button" to="Complete UIs/Info_UI" method="_on_zoom_button_pressed"]
+[connection signal="pressed" from="Complete UIs/Info_UI/Close_Button" to="Complete UIs/Info_UI" method="_on_close_button_pressed"]

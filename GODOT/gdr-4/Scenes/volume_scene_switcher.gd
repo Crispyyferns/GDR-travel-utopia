@@ -14,3 +14,6 @@ func _unhandled_input(event: InputEvent) -> void:
 			TransitionManager_to80s.play_transition_and_switch("res://Scenes/Scene-2_80s.tscn")
 		elif Input.is_action_just_pressed("mouse_wheel_down"):
 			TransitionManager_to80s.play_transition_and_switch("res://Scenes/Scene-1_70s.tscn")
+
+	#if target == null or not target.is_in_group("interactables"): return
+	

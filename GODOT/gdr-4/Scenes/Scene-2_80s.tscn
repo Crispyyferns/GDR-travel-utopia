@@ -1,15 +1,17 @@
-[gd_scene load_steps=147 format=3 uid="uid://6w4qr70jud2g"]
+[gd_scene load_steps=150 format=3 uid="uid://6w4qr70jud2g"]
 
 [ext_resource type="Script" uid="uid://chlarin68qmfo" path="res://Scripts/scene-1_70s_MAIN.gd" id="1_n2tod"]
 [ext_resource type="Script" uid="uid://b6y3gfe13mn6r" path="res://Scenes/scene_manager.gd" id="2_angvt"]
 [ext_resource type="Script" uid="uid://blfwpsepfaxbk" path="res://Scenes/volume_scene_switcher.gd" id="3_etmm5"]
 [ext_resource type="Script" uid="uid://bvsesppwfy0mx" path="res://Scenes/transition_manager_to80s.gd" id="4_8qwpf"]
 [ext_resource type="Script" uid="uid://dumv3ao65w4in" path="res://Scripts/ui.gd" id="5_2f8rt"]
+[ext_resource type="Shader" uid="uid://buow1arxmwt8a" path="res://Scenes/Object_Inspector_Sillh.gdshader" id="6_2gm8y"]
 [ext_resource type="FontFile" uid="uid://bcrkm5tj15wl7" path="res://Assets/05. Typefaces/fundamental/Fundamental 3D Brigade.ttf" id="6_etmm5"]
 [ext_resource type="Script" uid="uid://ctr8yldlwhxm6" path="res://Scripts/player.gd" id="6_jyfha"]
 [ext_resource type="FontFile" uid="uid://6h5le2uybata" path="res://Assets/05. Typefaces/fundamental/Fundamental Brigade.ttf" id="7_8qwpf"]
 [ext_resource type="Script" uid="uid://dp3k23l4m61lk" path="res://Scripts/test_head.gd" id="7_c0m3c"]
 [ext_resource type="Script" uid="uid://b3e0ym81e75am" path="res://Scripts/center_container.gd" id="8_hhsk7"]
+[ext_resource type="PackedScene" uid="uid://bjt3gc82sfdq2" path="res://Scenes/pause_menu.tscn" id="9_57gqt"]
 [ext_resource type="Script" uid="uid://bun5h6ar0ohp8" path="res://Scripts/viewer_target.gd" id="9_81uw5"]
 [ext_resource type="ArrayMesh" uid="uid://besw86gqhictk" path="res://Assets/00.3D/obj_export_kw26/obj_Poster_001.obj" id="10_vkkjp"]
 [ext_resource type="Texture2D" uid="uid://bolk2vydkbiac" path="res://Assets/01.Textures/Photo-Textures/28864.full.jpg" id="11_5loc4"]
@@ -102,6 +104,13 @@ background_mode = 2
 sky = SubResource("Sky_fvdug")
 tonemap_mode = 2
 glow_enabled = true
+
+[sub_resource type="ShaderMaterial" id="ShaderMaterial_n2tod"]
+shader = ExtResource("6_2gm8y")
+shader_parameter/lod = 0.323
+shader_parameter/hole_center = Vector2(0.5, 0.565)
+shader_parameter/hole_radius = Vector2(0.59, 0.835)
+shader_parameter/feather = 0.5
 
 [sub_resource type="CapsuleShape3D" id="CapsuleShape3D_eu7pm"]
 
@@ -302,7 +311,7 @@ albedo_texture = ExtResource("44_8h0w5")
 script = ExtResource("1_n2tod")
 main_camera = NodePath("---- Player ----/Head/Camera3DPlayer")
 raycast = NodePath("---- Player ----/Head/Camera3DPlayer/RayCast3DPlayer")
-ui = NodePath("Complete UIs/UI")
+ui = NodePath("Complete UIs/Info_UI")
 
 [node name="WorldEnvironment" type="WorldEnvironment" parent="."]
 environment = SubResource("Environment_bs7aw")
@@ -322,21 +331,27 @@ loading_duration = 3.0
 
 [node name="Complete UIs" type="Node" parent="."]
 
-[node name="UI" type="CanvasLayer" parent="Complete UIs" node_paths=PackedStringArray("name_label", "description_label")]
+[node name="Info_UI" type="CanvasLayer" parent="Complete UIs" node_paths=PackedStringArray("name_label", "description_label")]
 script = ExtResource("5_2f8rt")
-name_label = NodePath("Info_Panel/Name_Label")
-description_label = NodePath("Info_Panel/Description_Label")
+name_label = NodePath("Name_Label")
+description_label = NodePath("Description_Label")
 
-[node name="Info_Panel" type="Panel" parent="Complete UIs/UI"]
-self_modulate = Color(1, 1, 1, 0.415686)
-anchors_preset = 15
-anchor_right = 1.0
-anchor_bottom = 1.0
+[node name="ColorRect" type="ColorRect" parent="Complete UIs/Info_UI"]
+material = SubResource("ShaderMaterial_n2tod")
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -960.0
+offset_top = -540.0
+offset_right = 960.0
+offset_bottom = 540.0
 grow_horizontal = 2
 grow_vertical = 2
+metadata/_edit_use_anchors_ = true
 
-[node name="Name_Label" type="Label" parent="Complete UIs/UI/Info_Panel"]
-layout_mode = 1
+[node name="Name_Label" type="Label" parent="Complete UIs/Info_UI"]
 anchors_preset = 10
 anchor_right = 1.0
 offset_left = 108.0
@@ -350,9 +365,9 @@ text = "Test Headline"
 vertical_alignment = 3
 autowrap_mode = 3
 uppercase = true
+metadata/_edit_use_anchors_ = true
 
-[node name="Description_Label" type="Label" parent="Complete UIs/UI/Info_Panel"]
-layout_mode = 1
+[node name="Description_Label" type="Label" parent="Complete UIs/Info_UI"]
 anchors_preset = 14
 anchor_top = 0.5
 anchor_right = 1.0
@@ -367,10 +382,10 @@ theme_override_fonts/font = ExtResource("7_8qwpf")
 theme_override_font_sizes/font_size = 33
 text = "Test Label Description wowo wowow lotrs of very lovely great amazing tecttst dasm ist guuit ajssdkakdjasjddsjfdlsa<jfs<fjsdal<asdfdsfdslfdsafdshifSFLDSHADFAhfswfphswjfidsajö"
 autowrap_mode = 3
+metadata/_edit_use_anchors_ = true
 
-[node name="Rotate_Button" type="Button" parent="Complete UIs/UI/Info_Panel"]
+[node name="Rotate_Button" type="Button" parent="Complete UIs/Info_UI"]
 visible = false
-layout_mode = 1
 anchors_preset = 4
 anchor_top = 0.5
 anchor_bottom = 0.5
@@ -380,9 +395,8 @@ offset_right = 144.0
 offset_bottom = 4.0
 grow_vertical = 2
 
-[node name="Zoom_Button" type="Button" parent="Complete UIs/UI/Info_Panel"]
+[node name="Zoom_Button" type="Button" parent="Complete UIs/Info_UI"]
 visible = false
-layout_mode = 1
 anchors_preset = 4
 anchor_top = 0.5
 anchor_bottom = 0.5
@@ -392,9 +406,8 @@ offset_right = 143.0
 offset_bottom = 66.0
 grow_vertical = 2
 
-[node name="Close_Button" type="Button" parent="Complete UIs/UI/Info_Panel"]
+[node name="Close_Button" type="Button" parent="Complete UIs/Info_UI"]
 visible = false
-layout_mode = 1
 anchors_preset = 4
 anchor_top = 0.5
 anchor_bottom = 0.5
@@ -403,6 +416,13 @@ offset_top = 85.0
 offset_right = 146.0
 offset_bottom = 127.0
 grow_vertical = 2
+
+[node name="Pause_UI" type="CanvasLayer" parent="Complete UIs"]
+layer = 10
+
+[node name="PauseMenu" parent="Complete UIs/Pause_UI" instance=ExtResource("9_57gqt")]
+z_index = 10
+metadata/_edit_use_anchors_ = true
 
 [node name="---- Lights ----" type="Node3D" parent="."]
 
@@ -1106,3 +1126,7 @@ surface_material_override/1 = ExtResource("38_447e6")
 surface_material_override/2 = ExtResource("91_70wbd")
 surface_material_override/3 = ExtResource("37_5rjjo")
 surface_material_override/4 = ExtResource("39_1mjkq")
+
+[connection signal="pressed" from="Complete UIs/Info_UI/Rotate_Button" to="Complete UIs/Info_UI" method="_on_rotate_button_pressed"]
+[connection signal="pressed" from="Complete UIs/Info_UI/Zoom_Button" to="Complete UIs/Info_UI" method="_on_zoom_button_pressed"]
+[connection signal="pressed" from="Complete UIs/Info_UI/Close_Button" to="Complete UIs/Info_UI" method="_on_close_button_pressed"]
