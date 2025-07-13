@@ -77,6 +77,15 @@ func _physics_process(_delta: float) -> void:
 			var obj := raycast.get_collider()
 			if obj and obj.has_method("view_object"):
 				_select_object(obj)
+			if obj and obj.has_method("toggle_drawer"):
+				print("✔ Hit: ", obj.name)
+				obj.toggle_drawer()
+			else:
+				print("⚠️ Collider has no toggle_drawer method")
+
+
+
+
 
 
 #func _on_time_changed(time_blend: float) -> void:
