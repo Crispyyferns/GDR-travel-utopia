@@ -1,0 +1,16 @@
+# Blender 4.4.0
+# www.blender.org
+mtllib obj_Document_Reiseb_roderDDR-BulgarischeSchwarzmeerk_ste__008.mtl
+o obj_Document_ReisebüroderDDR-BulgarischeSchwarzmeerküste_.008
+v 0.023758 -0.000018 -0.011803
+v 0.023758 -0.000018 0.011788
+v 0.057540 -0.000018 0.011788
+v 0.057540 -0.000018 -0.011803
+vn -0.0000 1.0000 -0.0000
+vt 0.736193 0.001720
+vt 0.736193 0.160563
+vt 0.792900 0.160563
+vt 0.792900 0.001720
+s 0
+usemtl tex_Documents_Collection_70s
+f 2/1/1 3/2/1 4/3/1 1/4/1

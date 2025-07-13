@@ -1,0 +1,22 @@
+# Blender 4.4.0 MTL File: 'KW_Reise-Utopie_GDR_GameObjects_SoSe2026_MMVR.blend'
+# www.blender.org
+
+newmtl tex_Documents_Collection_70s
+Ns 167.355392
+Ka 1.000000 1.000000 1.000000
+Ks 0.500000 0.500000 0.500000
+Ke 0.000000 0.000000 0.000000
+Ni 1.200000
+illum 2
+map_Kd C:/Users/alexa/Desktop/UNI/Semester 6/Reise-Utopien/GDR-travel-utopia/BLENDER/Textures/Photo-Textures/Documents-Paintings-Stamp_Collection_70s.png
+map_d C:/Users/alexa/Desktop/UNI/Semester 6/Reise-Utopien/GDR-travel-utopia/BLENDER/Textures/Photo-Textures/Documents-Paintings-Stamp_Collection_70s.png
+
+newmtl writingonpaper
+Ns 360.000000
+Ka 1.000000 1.000000 1.000000
+Kd 0.800000 0.800000 0.800000
+Ks 0.500000 0.500000 0.500000
+Ke 0.000000 0.000000 0.000000
+Ni 1.000000
+d 1.000000
+illum 2

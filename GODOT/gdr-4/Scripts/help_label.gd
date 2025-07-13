@@ -10,11 +10,10 @@ var tween: Tween
 var tip_index := 0
 
 var tips := [
-	"Use the mouse to rotate the object.",
-	"Scroll to travel through time.",
-	"Right click to exit inspection view.",
-	"Click on an object to examine it closely.",
-	"Press ESC to pause or resume."
+	"Klick mit der linken Maustaste auf Objekte über denen ein gelber Kreis erscheint um sie näher zu betrachten.",
+	"Rechtsklick um die nahe Ansicht zu verlassen.",
+	"Klicke auf das Radio um in die 80er oder zurück in die 70er Jahre zu reisen. Dafür dann mit dem Mausrad vor- oder zurückscrollen.",
+	"Drücke ESC auf der Tastatur um die Anwendung zu pausieren."
 ]
 
 func _ready():

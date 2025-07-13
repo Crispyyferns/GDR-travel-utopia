@@ -1,4 +1,4 @@
-[gd_scene load_steps=129 format=3 uid="uid://bq5aw4t3xa4wn"]
+[gd_scene load_steps=174 format=3 uid="uid://bq5aw4t3xa4wn"]
 
 [ext_resource type="Script" uid="uid://chlarin68qmfo" path="res://Scripts/scene-1_70s_MAIN.gd" id="1_x1vip"]
 [ext_resource type="Script" uid="uid://ctr8yldlwhxm6" path="res://Scripts/player.gd" id="2_quctf"]
@@ -46,7 +46,9 @@
 [ext_resource type="ArrayMesh" uid="uid://cr8ghshap4m02" path="res://Assets/00.3D/obj_export_kw26/obj_Flyer_WE-u-Sonderfahrten_2.obj" id="37_eu7pm"]
 [ext_resource type="Script" uid="uid://dij6t01mkhmfm" path="res://Scenes/drawer.gd" id="37_jt7b8"]
 [ext_resource type="ArrayMesh" uid="uid://buh3717hqaqiu" path="res://Assets/00.3D/obj_export_kw26/obj_Poster_002_001.obj" id="38_cw26l"]
+[ext_resource type="ArrayMesh" uid="uid://cygeha0xxe72g" path="res://Assets/00.3D/obj_export_kw27/obj_Document_Reiseb_roderDDR-BulgarischeSchwarzmeerk_ste_80s.obj" id="47_jtstv"]
 [ext_resource type="ArrayMesh" uid="uid://c6725lm4bwxp3" path="res://Assets/00.3D/obj_export_kw26/obj_Pinboard.obj" id="47_ufj43"]
+[ext_resource type="ArrayMesh" uid="uid://du83o7uy5ve3b" path="res://Assets/00.3D/obj_export_kw28/obj_Booklet_FDJ_70s.obj" id="47_vbbqu"]
 [ext_resource type="ArrayMesh" uid="uid://c1twjbmhpfube" path="res://Assets/00.3D/obj_export_kw26/obj_Pin.obj" id="50_j7nk8"]
 [ext_resource type="ArrayMesh" uid="uid://kwwx6mxwsq86" path="res://Assets/00.3D/obj_export_kw26/obj_Poster_002_002.obj" id="51_dsw8n"]
 [ext_resource type="ArrayMesh" uid="uid://fwygrr6e7u71" path="res://Assets/00.3D/obj_export_kw26/Arm_Book_Pionierkalender-1978_closed.obj" id="52_d12h7"]
@@ -75,7 +77,28 @@
 [ext_resource type="Material" uid="uid://p5oribelgftv" path="res://Assets/03.Materials/mat_White-Beige.tres" id="77_emdq1"]
 [ext_resource type="ArrayMesh" uid="uid://wuogoohp8f1q" path="res://Assets/00.3D/obj_export_kw27/obj_Lampe_VEB_NARVA_Kombinat_70er.obj" id="77_hpku1"]
 [ext_resource type="ArrayMesh" uid="uid://tby7hf02lt5d" path="res://Assets/00.3D/obj_export_kw27/Plane_011.obj" id="79_qhhid"]
+[ext_resource type="Texture2D" uid="uid://dlnqrudqvlckt" path="res://Assets/01.Textures/Photo-Textures/kw28/Flyer_Collection_70s.png" id="80_182ij"]
+[ext_resource type="ArrayMesh" uid="uid://dnutscvfgi087" path="res://Assets/00.3D/obj_export_kw28/obj_Booklet_Ferienhelfer_70s_001.obj" id="81_l334t"]
+[ext_resource type="ArrayMesh" uid="uid://4k4imeik4jgt" path="res://Assets/00.3D/obj_export_kw28/obj_Booklet_Ferienhelfer_70s_002.obj" id="82_75btn"]
+[ext_resource type="ArrayMesh" uid="uid://clc73ovq2h0rb" path="res://Assets/00.3D/obj_export_kw28/obj_Document_RBdDDR-Jugendtourist-Reiseprogramm-VRBulgarien_002.obj" id="85_01uuu"]
+[ext_resource type="ArrayMesh" uid="uid://ky6wn1etobtp" path="res://Assets/00.3D/obj_export_kw28/obj_Document_RBdDDR-Jugendtourist-Reiseprogramm-VRBulgarien_003.obj" id="86_r0576"]
+[ext_resource type="ArrayMesh" uid="uid://8w80usemyfwj" path="res://Assets/00.3D/obj_export_kw28/obj_Document_Reiseb_roderDDR-BulgarischeSchwarzmeerk_ste_.obj" id="87_u1gjv"]
+[ext_resource type="ArrayMesh" uid="uid://dahjh5jde1a7u" path="res://Assets/00.3D/obj_export_kw28/obj_Document_Reiseb_roderDDR-BulgarischeSchwarzmeerk_ste__001.obj" id="88_12pjp"]
 [ext_resource type="Script" uid="uid://dumv3ao65w4in" path="res://Scripts/ui.gd" id="88_iwmvm"]
+[ext_resource type="ArrayMesh" uid="uid://bsfj8u8ehjdph" path="res://Assets/00.3D/obj_export_kw28/obj_Document_Reiseb_roderDDR-BulgarischeSchwarzmeerk_ste__002.obj" id="89_8k2xw"]
+[ext_resource type="Texture2D" uid="uid://clcrddrottl6n" path="res://Assets/01.Textures/Photo-Textures/kw28/Documents-Paintings-Stamp_Collection_70s.png" id="89_vbbqu"]
+[ext_resource type="ArrayMesh" uid="uid://cmjrgj2rvudaa" path="res://Assets/00.3D/obj_export_kw28/obj_Document_Reiseb_roderDDR-BulgarischeSchwarzmeerk_ste__003.obj" id="90_tj2mi"]
+[ext_resource type="ArrayMesh" uid="uid://b44hhluew1x27" path="res://Assets/00.3D/obj_export_kw28/obj_Document_Reiseb_roderDDR-BulgarischeSchwarzmeerk_ste__004.obj" id="91_g5m6h"]
+[ext_resource type="ArrayMesh" uid="uid://sh4iekkbfd2g" path="res://Assets/00.3D/obj_export_kw28/obj_Document_Reiseb_roderDDR-BulgarischeSchwarzmeerk_ste__005.obj" id="92_epcfe"]
+[ext_resource type="ArrayMesh" uid="uid://j0rakgwbmvl1" path="res://Assets/00.3D/obj_export_kw28/obj_Document_Reiseb_roderDDR-BulgarischeSchwarzmeerk_ste__006.obj" id="93_y6gkk"]
+[ext_resource type="ArrayMesh" uid="uid://dr0si262ykscs" path="res://Assets/00.3D/obj_export_kw28/obj_Document_Reiseb_roderDDR-BulgarischeSchwarzmeerk_ste__007.obj" id="94_kh87g"]
+[ext_resource type="ArrayMesh" uid="uid://d2hhqsyev7jib" path="res://Assets/00.3D/obj_export_kw28/obj_Document_Reiseb_roderDDR-BulgarischeSchwarzmeerk_ste__008.obj" id="95_62ncw"]
+[ext_resource type="ArrayMesh" uid="uid://bb7nwkry0gfug" path="res://Assets/00.3D/obj_export_kw28/obj_Document_Reiseb_roderDDR-BulgarischeSchwarzmeerk_ste__013.obj" id="97_1qfd0"]
+[ext_resource type="ArrayMesh" uid="uid://cqvh6orw21cag" path="res://Assets/00.3D/obj_export_kw28/obj_Pictureframe_Sandmann_001.obj" id="98_n4yf6"]
+[ext_resource type="ArrayMesh" uid="uid://y8ejxlh8lwgp" path="res://Assets/00.3D/obj_export_kw28/obj_Pictureframe_Sandmann_002.obj" id="99_ii1lo"]
+[ext_resource type="ArrayMesh" uid="uid://blen2qe7ha24d" path="res://Assets/00.3D/obj_export_kw28/obj_Pictureframe_Sandmann_003.obj" id="100_8s3kd"]
+[ext_resource type="ArrayMesh" uid="uid://c4j61lrg6uefl" path="res://Assets/00.3D/obj_export_kw28/obj_Postcard_R_gen_80s_001.obj" id="101_2tptc"]
+[ext_resource type="ArrayMesh" uid="uid://dfbxpwmurk03j" path="res://Assets/00.3D/obj_export_kw28/obj_Postcard_R_gen_80s_003.obj" id="103_tmwyl"]
 
 [sub_resource type="ProceduralSkyMaterial" id="ProceduralSkyMaterial_udtmk"]
 sky_top_color = Color(0.224972, 0.479705, 0.615122, 1)
@@ -151,6 +174,10 @@ albedo_texture = ExtResource("24_xebjs")
 
 [sub_resource type="ConcavePolygonShape3D" id="ConcavePolygonShape3D_eu7pm"]
 data = PackedVector3Array(-0.0257, 0.0019, -0.1551, -0.0257, 0.0019, 0.1551, -0.002, 0.0063, -0.1551, -0.002, 0.0063, -0.1551, -0.0257, 0.0019, 0.1551, -0.002, 0.0063, 0.1551, -0.002, 0.0061, 0.1551, -0.0257, 0.0017, 0.1551, -0.002, 0.0061, -0.1551, -0.002, 0.0061, -0.1551, -0.0257, 0.0017, 0.1551, -0.0257, 0.0017, -0.1551, -0.3122, 0.0063, 0.1551, -0.3122, 0.0063, -0.1551, -0.3122, 0.0061, 0.1551, -0.3122, 0.0061, 0.1551, -0.3122, 0.0063, -0.1551, -0.3122, 0.0061, -0.1551, -0.3122, 0.0063, -0.1551, -0.2346, 0.0051, -0.1551, -0.3122, 0.0061, -0.1551, -0.3122, 0.0061, -0.1551, -0.2346, 0.0051, -0.1551, -0.2346, 0.005, -0.1551, -0.2346, 0.0051, -0.1551, -0.1571, 0.0051, -0.1551, -0.2346, 0.005, -0.1551, -0.2346, 0.005, -0.1551, -0.1571, 0.0051, -0.1551, -0.1571, 0.005, -0.1551, -0.1571, 0.0051, -0.1551, -0.0795, 0.0016, -0.1551, -0.1571, 0.005, -0.1551, -0.1571, 0.005, -0.1551, -0.0795, 0.0016, -0.1551, -0.0795, 0.0014, -0.1551, -0.0795, 0.0016, -0.1551, -0.0257, 0.0019, -0.1551, -0.0795, 0.0014, -0.1551, -0.0795, 0.0014, -0.1551, -0.0257, 0.0019, -0.1551, -0.0257, 0.0017, -0.1551, -0.0257, 0.0019, -0.1551, -0.002, 0.0063, -0.1551, -0.0257, 0.0017, -0.1551, -0.0257, 0.0017, -0.1551, -0.002, 0.0063, -0.1551, -0.002, 0.0061, -0.1551, -0.002, 0.0063, 0.1551, -0.0257, 0.0019, 0.1551, -0.002, 0.0061, 0.1551, -0.002, 0.0061, 0.1551, -0.0257, 0.0019, 0.1551, -0.0257, 0.0017, 0.1551, -0.0257, 0.0019, 0.1551, -0.0795, 0.0016, 0.1551, -0.0257, 0.0017, 0.1551, -0.0257, 0.0017, 0.1551, -0.0795, 0.0016, 0.1551, -0.0795, 0.0014, 0.1551, -0.0795, 0.0016, 0.1551, -0.1571, 0.0051, 0.1551, -0.0795, 0.0014, 0.1551, -0.0795, 0.0014, 0.1551, -0.1571, 0.0051, 0.1551, -0.1571, 0.005, 0.1551, -0.1571, 0.0051, 0.1551, -0.2346, 0.0051, 0.1551, -0.1571, 0.005, 0.1551, -0.1571, 0.005, 0.1551, -0.2346, 0.0051, 0.1551, -0.2346, 0.005, 0.1551, -0.2346, 0.0051, 0.1551, -0.3122, 0.0063, 0.1551, -0.2346, 0.005, 0.1551, -0.2346, 0.005, 0.1551, -0.3122, 0.0063, 0.1551, -0.3122, 0.0061, 0.1551, -0.002, 0.0063, -0.1551, -0.002, 0.0063, 0.1551, -0.002, 0.0061, -0.1551, -0.002, 0.0061, -0.1551, -0.002, 0.0063, 0.1551, -0.002, 0.0061, 0.1551, 0.2345, -0.0301, -0.1551, 0.2345, -0.03, 0.1551, 0.3118, -0.0169, -0.1551, 0.3118, -0.0169, -0.1551, 0.2345, -0.03, 0.1551, 0.3118, -0.0169, 0.1551, 0.3118, -0.0171, 0.1551, 0.2344, -0.0302, 0.1551, 0.3118, -0.0171, -0.1551, 0.3118, -0.0171, -0.1551, 0.2344, -0.0302, 0.1551, 0.2344, -0.0302, -0.1551, 0.0023, 0.0047, 0.1551, 0.0023, 0.0047, -0.1551, 0.0023, 0.0046, 0.1551, 0.0023, 0.0046, 0.1551, 0.0023, 0.0047, -0.1551, 0.0023, 0.0045, -0.1551, 0.0023, 0.0047, -0.1551, 0.0237, -0.0058, -0.1551, 0.0023, 0.0045, -0.1551, 0.0023, 0.0045, -0.1551, 0.0237, -0.0058, -0.1551, 0.0237, -0.006, -0.1551, 0.0237, -0.0058, -0.1551, 0.0797, -0.0192, -0.1551, 0.0237, -0.006, -0.1551, 0.0237, -0.006, -0.1551, 0.0797, -0.0192, -0.1551, 0.0797, -0.0194, -0.1551, 0.0797, -0.0192, -0.1551, 0.1571, -0.0297, -0.1551, 0.0797, -0.0194, -0.1551, 0.3118, -0.0169, 0.1551, 0.2345, -0.03, 0.1551, 0.3118, -0.0171, 0.1551, 0.3118, -0.0171, 0.1551, 0.2345, -0.03, 0.1551, 0.2344, -0.0302, 0.1551, 0.2345, -0.03, 0.1551, 0.1571, -0.0297, 0.1551, 0.2344, -0.0302, 0.1551, 0.2344, -0.0302, 0.1551, 0.1571, -0.0297, 0.1551, 0.1571, -0.0299, 0.1551, 0.1571, -0.0297, 0.1551, 0.0797, -0.0192, 0.1551, 0.1571, -0.0299, 0.1551, 0.1571, -0.0299, 0.1551, 0.0797, -0.0192, 0.1551, 0.0797, -0.0194, 0.1551, 0.0797, -0.0192, 0.1551, 0.0237, -0.0058, 0.1551, 0.0797, -0.0194, 0.1551, 0.0797, -0.0194, 0.1551, 0.0237, -0.0058, 0.1551, 0.0237, -0.0059, 0.1551, 0.0237, -0.0058, 0.1551, 0.0023, 0.0047, 0.1551, 0.0237, -0.0059, 0.1551, 0.0237, -0.0059, 0.1551, 0.0023, 0.0047, 0.1551, 0.0023, 0.0046, 0.1551, 0.3118, -0.0169, -0.1551, 0.3118, -0.0169, 0.1551, 0.3118, -0.0171, -0.1551, 0.3118, -0.0171, -0.1551, 0.3118, -0.0169, 0.1551, 0.3118, -0.0171, 0.1551, 0.0023, 0.0045, -0.1551, -0.002, 0.0061, -0.1551, 0.0023, 0.0046, 0.1551, 0.0023, 0.0046, 0.1551, -0.002, 0.0061, -0.1551, -0.002, 0.0061, 0.1551, 0.2345, -0.0301, -0.1551, 0.3118, -0.0169, -0.1551, 0.2344, -0.0302, -0.1551, 0.2344, -0.0302, -0.1551, 0.3118, -0.0169, -0.1551, 0.3118, -0.0171, -0.1551, 0.1571, -0.0299, -0.1551, 0.2345, -0.0301, -0.1551, 0.2344, -0.0302, -0.1551, 0.1571, -0.0297, -0.1551, 0.2345, -0.0301, -0.1551, 0.1571, -0.0299, -0.1551, 0.0797, -0.0194, -0.1551, 0.1571, -0.0297, -0.1551, 0.1571, -0.0299, -0.1551, 0.0797, -0.0194, 0.1551, 0.0237, -0.0059, 0.1551, 0.0797, -0.0194, -0.1551, 0.0797, -0.0194, -0.1551, 0.0237, -0.0059, 0.1551, 0.0237, -0.006, -0.1551, 0.1571, -0.0299, 0.1551, 0.0797, -0.0194, 0.1551, 0.1571, -0.0299, -0.1551, 0.1571, -0.0299, -0.1551, 0.0797, -0.0194, 0.1551, 0.0797, -0.0194, -0.1551, 0.2344, -0.0302, 0.1551, 0.1571, -0.0299, 0.1551, 0.2344, -0.0302, -0.1551, 0.2344, -0.0302, -0.1551, 0.1571, -0.0299, 0.1551, 0.1571, -0.0299, -0.1551, 0.0237, -0.0058, -0.1551, 0.0237, -0.0058, 0.1551, 0.0797, -0.0192, -0.1551, 0.0797, -0.0192, -0.1551, 0.0237, -0.0058, 0.1551, 0.0797, -0.0192, 0.1551, 0.0797, -0.0192, -0.1551, 0.0797, -0.0192, 0.1551, 0.1571, -0.0297, -0.1551, 0.1571, -0.0297, -0.1551, 0.0797, -0.0192, 0.1551, 0.1571, -0.0297, 0.1551, 0.1571, -0.0297, -0.1551, 0.1571, -0.0297, 0.1551, 0.2345, -0.0301, -0.1551, 0.2345, -0.0301, -0.1551, 0.1571, -0.0297, 0.1551, 0.2345, -0.03, 0.1551, -0.2346, 0.005, 0.1551, -0.3122, 0.0061, 0.1551, -0.2346, 0.005, -0.1551, -0.2346, 0.005, -0.1551, -0.3122, 0.0061, 0.1551, -0.3122, 0.0061, -0.1551, -0.1571, 0.005, 0.1551, -0.2346, 0.005, 0.1551, -0.1571, 0.005, -0.1551, -0.1571, 0.005, -0.1551, -0.2346, 0.005, 0.1551, -0.2346, 0.005, -0.1551, -0.0795, 0.0014, 0.1551, -0.1571, 0.005, 0.1551, -0.0795, 0.0014, -0.1551, -0.0795, 0.0014, -0.1551, -0.1571, 0.005, 0.1551, -0.1571, 0.005, -0.1551, -0.3122, 0.0063, -0.1551, -0.3122, 0.0063, 0.1551, -0.2346, 0.0051, -0.1551, -0.2346, 0.0051, -0.1551, -0.3122, 0.0063, 0.1551, -0.2346, 0.0051, 0.1551, -0.2346, 0.0051, -0.1551, -0.2346, 0.0051, 0.1551, -0.1571, 0.0051, -0.1551, -0.1571, 0.0051, -0.1551, -0.2346, 0.0051, 0.1551, -0.1571, 0.0051, 0.1551, -0.1571, 0.0051, -0.1551, -0.1571, 0.0051, 0.1551, -0.0795, 0.0016, -0.1551, -0.0795, 0.0016, -0.1551, -0.1571, 0.0051, 0.1551, -0.0795, 0.0016, 0.1551, 0.0023, 0.0047, -0.1551, 0.0023, 0.0047, 0.1551, 0.0237, -0.0058, -0.1551, 0.0237, -0.0058, -0.1551, 0.0023, 0.0047, 0.1551, 0.0237, -0.0058, 0.1551, 0.0237, -0.0059, 0.1551, 0.0023, 0.0046, 0.1551, 0.0237, -0.006, -0.1551, 0.0237, -0.006, -0.1551, 0.0023, 0.0046, 0.1551, 0.0023, 0.0045, -0.1551, -0.0257, 0.0017, 0.1551, -0.0795, 0.0014, 0.1551, -0.0257, 0.0017, -0.1551, -0.0257, 0.0017, -0.1551, -0.0795, 0.0014, 0.1551, -0.0795, 0.0014, -0.1551, -0.0795, 0.0016, -0.1551, -0.0795, 0.0016, 0.1551, -0.0257, 0.0019, -0.1551, -0.0257, 0.0019, -0.1551, -0.0795, 0.0016, 0.1551, -0.0257, 0.0019, 0.1551, -0.0021, 0.0058, 0.1551, -0.0222, -0.0075, 0.1551, -0.0021, 0.0058, -0.1551, -0.0021, 0.0058, -0.1551, -0.0222, -0.0075, 0.1551, -0.0222, -0.0075, -0.1551, -0.2888, -0.029, 0.1551, -0.2888, -0.029, -0.1551, -0.2888, -0.0291, 0.1551, -0.2888, -0.0291, 0.1551, -0.2888, -0.029, -0.1551, -0.2888, -0.0291, -0.1551, -0.2888, -0.029, -0.1551, -0.2126, -0.0436, -0.1551, -0.2888, -0.0291, -0.1551, -0.2888, -0.0291, -0.1551, -0.2126, -0.0436, -0.1551, -0.2126, -0.0438, -0.1551, -0.2126, -0.0436, -0.1551, -0.1347, -0.0453, -0.1551, -0.2126, -0.0438, -0.1551, -0.2126, -0.0438, -0.1551, -0.1347, -0.0453, -0.1551, -0.1347, -0.0455, -0.1551, -0.1347, -0.0453, -0.1551, -0.0677, -0.0335, -0.1551, -0.1347, -0.0455, -0.1551, -0.1347, -0.0455, -0.1551, -0.0677, -0.0335, -0.1551, -0.0676, -0.0337, -0.1551, -0.0021, 0.006, 0.1551, -0.0223, -0.0073, 0.1551, -0.0021, 0.0058, 0.1551, -0.0021, 0.0058, 0.1551, -0.0223, -0.0073, 0.1551, -0.0222, -0.0075, 0.1551, -0.0021, 0.006, -0.1551, -0.0021, 0.006, 0.1551, -0.0021, 0.0058, -0.1551, -0.0021, 0.0058, -0.1551, -0.0021, 0.006, 0.1551, -0.0021, 0.0058, 0.1551, -0.2126, -0.0436, 0.1551, -0.2888, -0.029, 0.1551, -0.2126, -0.0438, 0.1551, -0.2126, -0.0438, 0.1551, -0.2888, -0.029, 0.1551, -0.2888, -0.0291, 0.1551, -0.1347, -0.0455, 0.1551, -0.2126, -0.0436, 0.1551, -0.2126, -0.0438, 0.1551, -0.1347, -0.0453, 0.1551, -0.2126, -0.0436, 0.1551, -0.1347, -0.0455, 0.1551, -0.0676, -0.0337, 0.1551, -0.1347, -0.0453, 0.1551, -0.1347, -0.0455, 0.1551, -0.0677, -0.0335, 0.1551, -0.1347, -0.0453, 0.1551, -0.0676, -0.0337, 0.1551, -0.0677, -0.0335, -0.1551, -0.0223, -0.0073, -0.1551, -0.0676, -0.0337, -0.1551, -0.0676, -0.0337, -0.1551, -0.0223, -0.0073, -0.1551, -0.0222, -0.0075, -0.1551, -0.2126, -0.0438, 0.1551, -0.2888, -0.0291, 0.1551, -0.2126, -0.0438, -0.1551, -0.2126, -0.0438, -0.1551, -0.2888, -0.0291, 0.1551, -0.2888, -0.0291, -0.1551, -0.1347, -0.0455, 0.1551, -0.2126, -0.0438, 0.1551, -0.1347, -0.0455, -0.1551, -0.1347, -0.0455, -0.1551, -0.2126, -0.0438, 0.1551, -0.2126, -0.0438, -0.1551, -0.0676, -0.0337, 0.1551, -0.1347, -0.0455, 0.1551, -0.0676, -0.0337, -0.1551, -0.0676, -0.0337, -0.1551, -0.1347, -0.0455, 0.1551, -0.1347, -0.0455, -0.1551, -0.0223, -0.0073, -0.1551, -0.0021, 0.006, -0.1551, -0.0222, -0.0075, -0.1551, -0.0222, -0.0075, -0.1551, -0.0021, 0.006, -0.1551, -0.0021, 0.0058, -0.1551, -0.0223, -0.0073, 0.1551, -0.0677, -0.0335, 0.1551, -0.0222, -0.0075, 0.1551, -0.0222, -0.0075, 0.1551, -0.0677, -0.0335, 0.1551, -0.0676, -0.0337, 0.1551, -0.0222, -0.0075, 0.1551, -0.0676, -0.0337, 0.1551, -0.0222, -0.0075, -0.1551, -0.0222, -0.0075, -0.1551, -0.0676, -0.0337, 0.1551, -0.0676, -0.0337, -0.1551)
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_qhhid"]
+cull_mode = 2
+albedo_texture = ExtResource("24_xebjs")
 
 [sub_resource type="StandardMaterial3D" id="StandardMaterial3D_j7nk8"]
 cull_mode = 2
@@ -244,6 +271,16 @@ albedo_texture = ExtResource("8_wllko")
 cull_mode = 2
 albedo_texture = ExtResource("8_wllko")
 
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_ii1lo"]
+cull_mode = 2
+albedo_texture = ExtResource("68_rfs5q")
+
+[sub_resource type="ConcavePolygonShape3D" id="ConcavePolygonShape3D_8s3kd"]
+data = PackedVector3Array(-0.186, 0, -0.1299, -0.186, 0, 0.1299, 0.186, 0, -0.1299, 0.186, 0, -0.1299, -0.186, 0, 0.1299, 0.186, 0, 0.1299, 0.1861, -0.0002, 0.1298, -0.1859, -0.0002, 0.1298, 0.1861, -0.0002, -0.13, 0.1861, -0.0002, -0.13, -0.1859, -0.0002, 0.1298, -0.1859, -0.0002, -0.13, 0.186, 0, -0.1299, 0.186, 0, 0.1299, 0.1861, -0.0002, -0.13, 0.1861, -0.0002, -0.13, 0.186, 0, 0.1299, 0.1861, -0.0002, 0.1298, -0.186, 0, 0.1299, -0.186, 0, -0.1299, -0.1859, -0.0002, 0.1298, -0.1859, -0.0002, 0.1298, -0.186, 0, -0.1299, -0.1859, -0.0002, -0.13, -0.186, 0, -0.1299, 0.186, 0, -0.1299, -0.1859, -0.0002, -0.13, -0.1859, -0.0002, -0.13, 0.186, 0, -0.1299, 0.1861, -0.0002, -0.13, 0.186, 0, 0.1299, -0.186, 0, 0.1299, 0.1861, -0.0002, 0.1298, 0.1861, -0.0002, 0.1298, -0.186, 0, 0.1299, -0.1859, -0.0002, 0.1298)
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_n4yf6"]
+albedo_texture = ExtResource("89_vbbqu")
+
 [sub_resource type="StandardMaterial3D" id="StandardMaterial3D_28mpb"]
 albedo_texture = ExtResource("15_j503t")
 
@@ -265,6 +302,64 @@ albedo_texture = ExtResource("24_xebjs")
 [sub_resource type="StandardMaterial3D" id="StandardMaterial3D_eaofq"]
 cull_mode = 2
 albedo_texture = ExtResource("68_rfs5q")
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_vcq2x"]
+albedo_texture = ExtResource("80_182ij")
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_62ncw"]
+cull_mode = 2
+albedo_texture = ExtResource("80_182ij")
+
+[sub_resource type="ConcavePolygonShape3D" id="ConcavePolygonShape3D_j4ec3"]
+data = PackedVector3Array(-0.1706, 0, -0.0946, -0.1706, 0, 0.0946, 0.1706, 0, -0.0946, 0.1706, 0, -0.0946, -0.1706, 0, 0.0946, 0.1706, 0, 0.0946, 0.1707, -0.0001, 0.0945, -0.1705, -0.0001, 0.0945, 0.1707, -0.0001, -0.0946, 0.1707, -0.0001, -0.0946, -0.1705, -0.0001, 0.0945, -0.1705, -0.0001, -0.0946, 0.1706, 0, -0.0946, 0.1706, 0, 0.0946, 0.1707, -0.0001, -0.0946, 0.1707, -0.0001, -0.0946, 0.1706, 0, 0.0946, 0.1707, -0.0001, 0.0945, -0.1706, 0, 0.0946, -0.1706, 0, -0.0946, -0.1705, -0.0001, 0.0945, -0.1705, -0.0001, 0.0945, -0.1706, 0, -0.0946, -0.1705, -0.0001, -0.0946, -0.1706, 0, -0.0946, 0.1706, 0, -0.0946, -0.1705, -0.0001, -0.0946, -0.1705, -0.0001, -0.0946, 0.1706, 0, -0.0946, 0.1707, -0.0001, -0.0946, 0.1706, 0, 0.0946, -0.1706, 0, 0.0946, 0.1707, -0.0001, 0.0945, 0.1707, -0.0001, 0.0945, -0.1706, 0, 0.0946, -0.1705, -0.0001, 0.0945)
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_5fepv"]
+cull_mode = 2
+albedo_texture = ExtResource("80_182ij")
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_jtstv"]
+albedo_texture = ExtResource("89_vbbqu")
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_182ij"]
+albedo_texture = ExtResource("89_vbbqu")
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_8qmfl"]
+albedo_texture = ExtResource("89_vbbqu")
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_01uuu"]
+albedo_texture = ExtResource("89_vbbqu")
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_r0576"]
+albedo_texture = ExtResource("89_vbbqu")
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_u1gjv"]
+albedo_texture = ExtResource("89_vbbqu")
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_1qfd0"]
+albedo_texture = ExtResource("89_vbbqu")
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_12pjp"]
+albedo_texture = ExtResource("89_vbbqu")
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_75btn"]
+cull_mode = 2
+albedo_texture = ExtResource("15_j503t")
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_epcfe"]
+albedo_texture = ExtResource("89_vbbqu")
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_y6gkk"]
+albedo_texture = ExtResource("89_vbbqu")
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_kh87g"]
+albedo_texture = ExtResource("89_vbbqu")
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_8k2xw"]
+albedo_texture = ExtResource("89_vbbqu")
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_g5m6h"]
+cull_mode = 2
+albedo_texture = ExtResource("89_vbbqu")
 
 [node name="Scene-1_70s" type="Node3D" node_paths=PackedStringArray("main_camera", "raycast", "ui")]
 script = ExtResource("1_x1vip")
@@ -295,16 +390,16 @@ anchor_left = 0.5
 anchor_top = 0.5
 anchor_right = 0.5
 anchor_bottom = 0.5
-offset_left = -237.0
-offset_top = -447.0
-offset_right = 263.0
-offset_bottom = -355.0
+offset_left = 390.0
+offset_top = -469.0
+offset_right = 890.0
+offset_bottom = -377.0
 grow_horizontal = 2
 grow_vertical = 2
-theme_override_colors/font_color = Color(1, 0.686275, 0, 1)
+theme_override_colors/font_color = Color(1, 0.796815, 0.500837, 1)
 theme_override_colors/font_shadow_color = Color(0.073707, 0.153452, 0.383628, 1)
 theme_override_fonts/font = ExtResource("5_2uxy1")
-theme_override_font_sizes/font_size = 76
+theme_override_font_sizes/font_size = 40
 text = "Help"
 horizontal_alignment = 1
 vertical_alignment = 1
@@ -494,6 +589,8 @@ transform = Transform3D(1, 0, -1.11022e-16, 0, 1, 0, 1.11022e-16, 0, 1, 0, 0, 0)
 transform = Transform3D(0.0350631, 1.80966, 0.00302898, -1.80966, 0.0350634, -0.000152912, -0.000211561, -0.00302545, 1.81, -0.797073, 3.57827, -1.67998)
 script = ExtResource("58_shgk2")
 local_view_camera = NodePath("Camera3D")
+object_name = ""
+description = ""
 
 [node name="DDR_Karte_1979" type="MeshInstance3D" parent="---- Complete Set ----/--- Interactables ---/-- 70s Scene --/DDR_Karte_1979"]
 transform = Transform3D(1, -2.03812e-10, -2.18279e-11, -2.03741e-10, 1, 0, 1.45519e-11, 1.16415e-10, 1, 0, 0, 0)
@@ -512,6 +609,8 @@ transform = Transform3D(-0.022373, -0.551257, -0.0292609, -0.00117266, -0.029237
 transform = Transform3D(-0.252741, 0.0150823, 0.931992, -0.00806466, -0.965645, 0.0134398, 0.932079, -0.00426543, 0.252833, -0.377914, 1.75408, -0.369584)
 script = ExtResource("58_shgk2")
 local_view_camera = NodePath("Camera3D")
+object_name = "\"Wochenend- und Sonderfahrten\""
+description = ""
 
 [node name="ObjFlyerWe-u-sonderfahrten270sOpen" type="MeshInstance3D" parent="---- Complete Set ----/--- Interactables ---/-- 70s Scene --/Flyer_Sonderfahrten_70s"]
 transform = Transform3D(1, 3.72529e-09, 1.49012e-08, -3.72529e-09, 1, 4.65661e-10, -4.47035e-08, 0, 1, -1.19209e-07, 0, -5.96046e-08)
@@ -530,7 +629,8 @@ transform = Transform3D(-1.02681, 0.104775, -0.082621, 0.0834344, 0.00382492, -1
 transform = Transform3D(-0.00832508, 0.999965, -1.74623e-09, -0.999965, -0.00832509, -2.38524e-18, -3.00133e-11, 2.32831e-10, 1, -0.823722, 3.24395, 0.0911068)
 script = ExtResource("58_shgk2")
 local_view_camera = NodePath("Camera3D")
-description = "No description"
+object_name = "Unnamed ObjeEin Aufnäher der Anti-Apartheidsbewegung der 70er Jahrect"
+description = ""
 
 [node name="ObjFlyer-patchSymbolAntiApartheidsbewegung1978" type="MeshInstance3D" parent="---- Complete Set ----/--- Interactables ---/-- 70s Scene --/Patch_AntiApartheidsbewegung_1978"]
 transform = Transform3D(1, -5.23497e-20, 0, -1.47128e-19, 1, 0, 3.46945e-18, 0, 1, 0, 5.96046e-08, 0)
@@ -600,6 +700,7 @@ transform = Transform3D(0.0061999, -0.600714, -0.0447503, 0.00175953, -0.0447343
 transform = Transform3D(0.3313, -0.0303536, 0.943037, -0.00910139, -0.999539, -0.0289748, 0.943482, 0.00101635, -0.331424, -0.0843192, 1.75108, 0.551213)
 script = ExtResource("58_shgk2")
 local_view_camera = NodePath("Camera3D")
+object_name = "\"Geschenkreisen für Bürger der DDR\""
 description = "No description"
 
 [node name="ObjFlyerGeschenk-reisenfRBRgerderDdr70sOpen" type="MeshInstance3D" parent="---- Complete Set ----/--- Interactables ---/-- 70s Scene --/Flyer_Geschenkreisen_70S"]
@@ -616,21 +717,23 @@ transform = Transform3D(1, 9.31323e-10, 2.98023e-08, 1.10595e-09, 1, 2.76486e-09
 shape = SubResource("ConcavePolygonShape3D_eu7pm")
 
 [node name="Broschure_70s" type="MeshInstance3D" parent="---- Complete Set ----/--- Interactables ---/-- 70s Scene --"]
-transform = Transform3D(0.0176213, 1.5899, 8.84752e-09, -1.5899, 0.0176214, -3.00698e-10, -1.47339e-10, 6.75207e-09, 1.59, -0.815862, 2.6611, -0.852728)
+transform = Transform3D(-0.0176213, -1.5899, 1.35338e-07, 1.5899, -0.0176214, -1.38702e-07, 1.40444e-07, 1.49388e-07, 1.59, -0.815862, 2.6611, -0.852728)
 mesh = ExtResource("51_dsw8n")
 skeleton = NodePath("../../..")
+surface_material_override/0 = SubResource("StandardMaterial3D_qhhid")
 
 [node name="FDJ_Stellung und Aufgaben" type="MeshInstance3D" parent="---- Complete Set ----/--- Interactables ---/-- 70s Scene --"]
-transform = Transform3D(-0.00109299, 0.99993, -0.0117392, -0.0115998, -0.0117511, -0.999864, -0.999932, -0.000956667, 0.0116119, -0.820673, 3.02981, -0.83453)
+transform = Transform3D(-0.00109299, 0.99993, -0.0117392, -0.0115998, -0.0117511, -0.999864, -0.999932, -0.000956667, 0.0116119, -0.820673, 2.93621, -0.83453)
 mesh = ExtResource("64_iwmvm")
 skeleton = NodePath("../../../..")
 surface_material_override/0 = SubResource("StandardMaterial3D_j7nk8")
 
-[node name="Flyer_Trabant-601_70s" type="StaticBody3D" parent="---- Complete Set ----/--- Interactables ---/-- 70s Scene --"]
+[node name="Flyer_Trabant-601_70s" type="StaticBody3D" parent="---- Complete Set ----/--- Interactables ---/-- 70s Scene --" groups=["interactable"]]
 transform = Transform3D(-0.0798014, 0.00243146, 0.962466, -0.0304366, -0.965292, -8.49893e-05, 0.961988, -0.0303394, 0.0798386, 0.156909, 1.75159, 0.13644)
 script = ExtResource("58_shgk2")
 local_view_camera = NodePath("Camera3D")
-description = "No description"
+object_name = ""
+description = ""
 
 [node name="ObjFlyerTrabant-60170sOpen" type="MeshInstance3D" parent="---- Complete Set ----/--- Interactables ---/-- 70s Scene --/Flyer_Trabant-601_70s"]
 transform = Transform3D(1, 0, 2.32831e-10, 0, 1, 0, 0, 7.27596e-12, 1, 0, 0, 0)
@@ -646,18 +749,18 @@ transform = Transform3D(1, 0, 2.32831e-10, 0, 1, 0, 0, 7.27596e-12, 1, 0, 0, 0)
 shape = SubResource("ConcavePolygonShape3D_qawiy")
 
 [node name="Flyer_Fernsehturm-Berlin_70er" type="MeshInstance3D" parent="---- Complete Set ----/--- Interactables ---/-- 70s Scene --"]
-transform = Transform3D(-0.0171255, 1.53548, -9.06468e-07, -1.53548, -0.0171255, 4.12115e-13, -2.99889e-09, 1.46509e-07, 1.53557, -0.766261, 2.72465, -0.484053)
+transform = Transform3D(-0.0171255, 1.53548, -9.06468e-07, -1.53548, -0.0171255, 4.12115e-13, -2.99889e-09, 1.46509e-07, 1.53557, -0.766261, 2.75006, -0.436572)
 mesh = ExtResource("38_cw26l")
 skeleton = NodePath("../../../..")
 
 [node name="ObjBooklet25-jahre-halleanderSaale" type="MeshInstance3D" parent="---- Complete Set ----/--- Interactables ---/-- 70s Scene --"]
-transform = Transform3D(0.000152616, 0.965288, 0.0305543, -0.00481832, 0.0305547, -0.965277, -0.965759, 2.66648e-07, 0.00482075, -0.777976, 2.65955, -1.30048)
+transform = Transform3D(0.965705, 0.0103608, -0.00449252, -0.00481832, 0.0305547, -0.965277, -0.0102135, 0.965232, 0.0306043, -0.517781, 2.65955, -2.19665)
 mesh = ExtResource("59_dsw8n")
 skeleton = NodePath("../../../..")
 surface_material_override/0 = SubResource("StandardMaterial3D_vbbqu")
 
 [node name="ObjBookletFerienhelfer70s" type="MeshInstance3D" parent="---- Complete Set ----/--- Interactables ---/-- 70s Scene --"]
-transform = Transform3D(1.40958, -4.59637e-11, 0.209054, -0.00413733, 1.42472, 0.0278967, -0.209013, -0.0282018, 1.40931, -0.239194, 1.74445, -0.0107275)
+transform = Transform3D(1.41798, 0.00135159, 0.141271, -0.00413733, 1.42472, 0.0278967, -0.141218, -0.0281694, 1.41771, -0.233573, 1.74445, 0.12797)
 mesh = ExtResource("60_d12h7")
 skeleton = NodePath("../../../..")
 
@@ -725,6 +828,8 @@ shape = SubResource("ConcavePolygonShape3D_jt7b8")
 transform = Transform3D(-0.78954, 0.152442, 0.000304008, 0.00153878, 0.00957325, -0.804059, -0.152435, -0.789483, -0.00969144, 0.263045, 0.0948252, -1.20419)
 script = ExtResource("58_shgk2")
 local_view_camera = NodePath("Camera3D")
+object_name = ""
+description = ""
 
 [node name="ArmBookPionierkalender-1978Closed" type="MeshInstance3D" parent="---- Complete Set ----/--- Interactables ---/Desk_Drawer/Desk_Shelf_1/Drawer_Shelf/Pionierkalender_1978"]
 transform = Transform3D(1, 0, -4.65661e-10, 0, 1, 1.86265e-09, 2.32831e-10, 2.79397e-09, 1, 0, 0, -5.96046e-08)
@@ -808,6 +913,31 @@ surface_material_override/4 = SubResource("StandardMaterial3D_bmjck")
 surface_material_override/5 = SubResource("StandardMaterial3D_7amc5")
 surface_material_override/6 = SubResource("StandardMaterial3D_ar7jl")
 
+[node name="ObjDFlyer_Reisebüro_Bulgarien__80s" type="StaticBody3D" parent="---- Complete Set ----/--- Static 3D Scene ---/-- Non-Interactables --/Desk/ObjDesk" groups=["interactable"]]
+transform = Transform3D(0.995404, 1.86265e-09, -0.0957591, -1.86265e-08, 1, 2.79397e-09, 0.095759, -6.89179e-08, 0.995404, -0.0964944, 0.653008, -2.46308)
+script = ExtResource("58_shgk2")
+local_view_camera = NodePath("Camera3D")
+object_name = ""
+description = ""
+
+[node name="ObjDocumentReisebRoderDdr-bulgarischeSchwarzmeerkSte80s" type="MeshInstance3D" parent="---- Complete Set ----/--- Static 3D Scene ---/-- Non-Interactables --/Desk/ObjDesk/ObjDFlyer_Reisebüro_Bulgarien__80s"]
+transform = Transform3D(0.959363, 5.30261e-10, 0.282174, -1.83118e-09, 1, 5.36945e-09, -0.282174, -4.97243e-09, 0.959363, 0.301249, 0.00197172, 1.73369)
+mesh = ExtResource("47_jtstv")
+skeleton = NodePath("../../../../..")
+surface_material_override/0 = SubResource("StandardMaterial3D_ii1lo")
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="---- Complete Set ----/--- Static 3D Scene ---/-- Non-Interactables --/Desk/ObjDesk/ObjDFlyer_Reisebüro_Bulgarien__80s"]
+transform = Transform3D(0.959363, 5.30261e-10, 0.282174, -1.83118e-09, 1, 5.36945e-09, -0.282174, -4.97243e-09, 0.959363, 0.301249, 2.38419e-07, 1.73369)
+shape = SubResource("ConcavePolygonShape3D_8s3kd")
+
+[node name="Camera3D" type="Camera3D" parent="---- Complete Set ----/--- Static 3D Scene ---/-- Non-Interactables --/Desk/ObjDesk/ObjDFlyer_Reisebüro_Bulgarien__80s"]
+transform = Transform3D(-0.402538, -0.914401, 0.042845, 0.0957581, 0.00448532, 0.995395, -0.910382, 0.404787, 0.0857559, 0.258371, 0.222237, 1.75275)
+
+[node name="ObjBookletFdj70s" type="MeshInstance3D" parent="---- Complete Set ----/--- Static 3D Scene ---/-- Non-Interactables --/Desk"]
+transform = Transform3D(0.435232, -0.0533388, 1.3506, -0.0396755, 1.41778, 0.0687772, -1.35107, -0.0588169, 0.433061, -1.29703, 0.182029, 0.492036)
+mesh = ExtResource("47_vbbqu")
+surface_material_override/0 = SubResource("StandardMaterial3D_n4yf6")
+
 [node name="Framed-Picture_Sandmann" type="Node3D" parent="---- Complete Set ----/--- Static 3D Scene ---/-- Non-Interactables --"]
 transform = Transform3D(0.00167556, 0, -0.999999, 0, 1, 0, 0.999999, 0, 0.00167556, -0.809173, 3.63312, -2.72293)
 
@@ -867,24 +997,35 @@ transform = Transform3D(-0.99722, 0, 0.0745088, 0, 1, 0, -0.0745088, 0, -0.99722
 transform = Transform3D(1, 0, 7.45058e-09, 0, 1, 0, -7.45058e-09, 0, 1, 0.0101346, 0, 0.13564)
 mesh = ExtResource("34_sm84e")
 skeleton = NodePath("../../../../..")
+surface_material_override/0 = ExtResource("56_emdq1")
 surface_material_override/1 = ExtResource("25_08dwc")
 
 [node name="ObjFolder005" type="MeshInstance3D" parent="---- Complete Set ----/--- Static 3D Scene ---/-- Non-Interactables --/Folders"]
 transform = Transform3D(0.996292, 0, -0.0860427, 0, 1, 0, 0.0860427, 0, 0.996292, 0.00441015, 0, 0.0590241)
 mesh = ExtResource("34_sm84e")
 skeleton = NodePath("../../../../..")
+surface_material_override/0 = ExtResource("56_emdq1")
 surface_material_override/1 = ExtResource("25_08dwc")
 
 [node name="ObjFolder006" type="MeshInstance3D" parent="---- Complete Set ----/--- Static 3D Scene ---/-- Non-Interactables --/Folders"]
 transform = Transform3D(0.986625, -0.0237628, -0.161268, -0.0123526, 0.975574, -0.219323, 0.162541, 0.218382, 0.962232, 0.0155731, -0.00843, -0.0490983)
 mesh = ExtResource("34_sm84e")
 skeleton = NodePath("../../../../..")
+surface_material_override/0 = ExtResource("21_hi36m")
 surface_material_override/1 = ExtResource("25_08dwc")
 
 [node name="ObjFolder007" type="MeshInstance3D" parent="---- Complete Set ----/--- Static 3D Scene ---/-- Non-Interactables --/Folders"]
 transform = Transform3D(0.968343, -0.0115387, -0.249359, -0.0849378, 0.924096, -0.372603, 0.234731, 0.381988, 0.893861, -0.0172791, 0.00844002, -0.165043)
 mesh = ExtResource("34_sm84e")
 skeleton = NodePath("../../../../..")
+surface_material_override/0 = ExtResource("24_ufj43")
+surface_material_override/1 = ExtResource("25_08dwc")
+
+[node name="ObjFolder008" type="MeshInstance3D" parent="---- Complete Set ----/--- Static 3D Scene ---/-- Non-Interactables --/Folders"]
+transform = Transform3D(0.98764, 0.145194, -0.059048, -0.0616484, 0.0134714, -0.998007, -0.144109, 0.989312, 0.0222563, -0.0148296, -0.632362, -0.117842)
+mesh = ExtResource("34_sm84e")
+skeleton = NodePath("../../../../..")
+surface_material_override/0 = ExtResource("24_ufj43")
 surface_material_override/1 = ExtResource("25_08dwc")
 
 [node name="Paper" type="Node3D" parent="---- Complete Set ----/--- Static 3D Scene ---/-- Non-Interactables --"]
@@ -909,9 +1050,10 @@ skeleton = NodePath("../../../../..")
 transform = Transform3D(-1.41474, 0.0222738, 0.120108, -0.0225253, -1.41982, -0.00201963, 0.120061, -0.00391741, 1.41491, 0.226638, 1.5208, -1.08342)
 
 [node name="ObjPassport" type="MeshInstance3D" parent="---- Complete Set ----/--- Static 3D Scene ---/-- Non-Interactables --/Passport"]
-transform = Transform3D(1, 6.8394e-10, 0, -9.02219e-10, 1, 0, 0, 0, 1, 0, 0, 0)
+transform = Transform3D(1, 6.54836e-10, 0, -9.45874e-10, 1, 0, 0, 0, 1, 0.0261871, -0.000412345, -0.00222325)
 mesh = ExtResource("58_d12h7")
 skeleton = NodePath("../../../../..")
+surface_material_override/0 = ExtResource("21_hi36m")
 
 [node name="Pin-Board" type="Node3D" parent="---- Complete Set ----/--- Static 3D Scene ---/-- Non-Interactables --"]
 transform = Transform3D(1.255, 0, 1.86265e-09, 0, 1.255, 0, 0, 0, 1.41, -0.826234, 2.92091, -0.171789)
@@ -941,7 +1083,7 @@ skeleton = NodePath("../../../../..")
 surface_material_override/0 = ExtResource("25_08dwc")
 
 [node name="Letter_2" type="MeshInstance3D" parent="---- Complete Set ----/--- Static 3D Scene ---/-- Non-Interactables --/Letters"]
-transform = Transform3D(-0.458044, 0.429889, 0.366496, 0.399187, 0.580166, -0.181615, -0.399716, 0.0867808, -0.601351, -0.968082, -0.498078, -0.601174)
+transform = Transform3D(-0.458044, 0.429889, 0.366496, 0.399187, 0.580166, -0.181615, -0.399716, 0.0867808, -0.601351, -0.968253, -0.498082, -0.601177)
 mesh = ExtResource("54_eaofq")
 skeleton = NodePath("../../../../..")
 
@@ -972,6 +1114,129 @@ surface_material_override/1 = ExtResource("22_lfqnm")
 surface_material_override/2 = ExtResource("77_emdq1")
 surface_material_override/3 = ExtResource("56_emdq1")
 surface_material_override/4 = ExtResource("57_eaofq")
+
+[node name="ObjBookletFerienhelfer70s001" type="MeshInstance3D" parent="."]
+transform = Transform3D(0.983226, 0.00139963, -0.182384, 7.21945e-05, 0.999967, 0.00806301, 0.18239, -0.00794093, 0.983194, 0.130862, 1.74171, -0.868364)
+mesh = ExtResource("81_l334t")
+surface_material_override/0 = SubResource("StandardMaterial3D_vcq2x")
+
+[node name="ObjBookletFerienhelfer70s002" type="MeshInstance3D" parent="."]
+transform = Transform3D(0.996489, -8.72693e-08, 0.0837299, 7.99494e-08, 1, 9.07757e-08, -0.0837299, -8.37628e-08, 0.996488, -0.0639855, 1.7451, -0.159251)
+mesh = ExtResource("82_75btn")
+surface_material_override/0 = SubResource("StandardMaterial3D_62ncw")
+
+[node name="ObjDocumentRBdDdr-jugendtourist-reiseprogramm-vrBulgarien002" type="MeshInstance3D" parent="."]
+transform = Transform3D(-4.37114e-08, 1, 0, -1, -4.37114e-08, 0, 0, 0, 1, -0.809438, 2.94197, 0.0681721)
+mesh = ExtResource("85_01uuu")
+
+[node name="StaticBody3D" type="StaticBody3D" parent="." groups=["interactable"]]
+transform = Transform3D(3.71547e-08, 0.85, 7.43094e-08, 0.85, -3.71547e-08, -7.43094e-08, -7.43094e-08, 7.43094e-08, -0.85, -0.7924, 2.59213, -0.614227)
+script = ExtResource("58_shgk2")
+local_view_camera = NodePath("Camera3D")
+object_name = ""
+description = ""
+
+[node name="ObjDocumentRBdDdr-jugendtourist-reiseprogramm-vrBulgarien003" type="MeshInstance3D" parent="StaticBody3D"]
+transform = Transform3D(1, -5.37315e-16, 7.10543e-15, -5.37315e-16, 1, 7.10543e-15, 1.42109e-14, 7.10543e-15, 1, 0, 0, 0)
+mesh = ExtResource("86_r0576")
+skeleton = NodePath("../..")
+
+[node name="Camera3D" type="Camera3D" parent="StaticBody3D"]
+transform = Transform3D(-0.0358853, 1.17583, 0.0151296, 0.000249907, -0.015129, 1.17637, 1.17592, 0.0358856, 0.000211702, 0.116788, 0.352151, -0.0171664)
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="StaticBody3D"]
+transform = Transform3D(1, -5.37315e-16, 7.10543e-15, -5.37315e-16, 1, 7.10543e-15, 1.42109e-14, 7.10543e-15, 1, 0, 0, 0)
+shape = SubResource("ConcavePolygonShape3D_j4ec3")
+
+[node name="ObjDocumentReisebRoderDdr-bulgarischeSchwarzmeerkSte" type="MeshInstance3D" parent="."]
+transform = Transform3D(0.0698552, 2.71676e-07, 1.42829, -1.42829, 1.36512e-07, 0.0698552, -1.23077e-07, -1.43, 2.78021e-07, -0.499249, 2.25379, -2.19836)
+mesh = ExtResource("87_u1gjv")
+surface_material_override/0 = SubResource("StandardMaterial3D_5fepv")
+
+[node name="ObjDocumentReisebRoderDdr-bulgarischeSchwarzmeerkSte001" type="MeshInstance3D" parent="."]
+transform = Transform3D(-4.37114e-08, 1, 0, 4.37114e-08, 1.91069e-15, -1, -1, -4.37114e-08, -4.37114e-08, -0.80991, 3.25072, 0.456406)
+mesh = ExtResource("88_12pjp")
+surface_material_override/0 = SubResource("StandardMaterial3D_jtstv")
+
+[node name="ObjDocumentReisebRoderDdr-bulgarischeSchwarzmeerkSte002" type="MeshInstance3D" parent="."]
+transform = Transform3D(4.20754e-08, 0.84, -7.32394e-08, 0.837761, -3.66197e-08, 0.0612861, 0.0612861, -7.6114e-08, -0.837761, -0.806105, 2.88689, 0.460056)
+mesh = ExtResource("89_8k2xw")
+surface_material_override/0 = SubResource("StandardMaterial3D_182ij")
+
+[node name="ObjDocumentReisebRoderDdr-bulgarischeSchwarzmeerkSte003" type="MeshInstance3D" parent="."]
+transform = Transform3D(0.77582, 0, 1.03063, 0, 1.29, 0, -1.03063, 0, 0.77582, -0.349511, 1.74279, -1.15044)
+mesh = ExtResource("90_tj2mi")
+surface_material_override/0 = SubResource("StandardMaterial3D_8qmfl")
+
+[node name="ObjDocumentReisebRoderDdr-bulgarischeSchwarzmeerkSte004" type="MeshInstance3D" parent="."]
+transform = Transform3D(1.29, 0, 0, 0, 1.29, 0, 0, 0, 1.29, -0.504756, 1.74388, -0.926026)
+mesh = ExtResource("91_g5m6h")
+surface_material_override/0 = SubResource("StandardMaterial3D_01uuu")
+
+[node name="ObjDocumentReisebRoderDdr-bulgarischeSchwarzmeerkSte005" type="MeshInstance3D" parent="."]
+transform = Transform3D(1.29, 0, 0, 0, 1.29, 0, 0, 0, 1.29, -0.433707, 1.74047, -1.1365)
+mesh = ExtResource("92_epcfe")
+surface_material_override/0 = SubResource("StandardMaterial3D_r0576")
+
+[node name="ObjDocumentReisebRoderDdr-bulgarischeSchwarzmeerkSte006" type="MeshInstance3D" parent="."]
+transform = Transform3D(1.29, 0, 0, 0, 1.29, 0, 0, 0, 1.29, -0.465611, 1.7426, -0.935158)
+mesh = ExtResource("93_y6gkk")
+surface_material_override/0 = SubResource("StandardMaterial3D_u1gjv")
+
+[node name="ObjDocumentReisebRoderDdr-bulgarischeSchwarzmeerkSte009" type="MeshInstance3D" parent="."]
+transform = Transform3D(1.22785, 0, 0.39559, 0, 1.29, 0, -0.39559, 0, 1.22785, -0.51286, 1.7426, -0.893992)
+mesh = ExtResource("93_y6gkk")
+surface_material_override/0 = SubResource("StandardMaterial3D_u1gjv")
+
+[node name="ObjDocumentReisebRoderDdr-bulgarischeSchwarzmeerkSte010" type="MeshInstance3D" parent="."]
+transform = Transform3D(0.809489, 0, 0.587136, 0, 1, 0, -0.587136, 0, 0.809489, -0.476048, 1.74412, -0.996678)
+mesh = ExtResource("93_y6gkk")
+surface_material_override/0 = SubResource("StandardMaterial3D_u1gjv")
+
+[node name="ObjDocumentReisebRoderDdr-bulgarischeSchwarzmeerkSte007" type="MeshInstance3D" parent="."]
+transform = Transform3D(0.382108, 0, -1.23211, 0, 1.29, 0, 1.23211, 0, 0.382108, -0.346113, 1.74176, -0.978076)
+mesh = ExtResource("94_kh87g")
+surface_material_override/0 = SubResource("StandardMaterial3D_1qfd0")
+
+[node name="ObjDocumentReisebRoderDdr-bulgarischeSchwarzmeerkSte008" type="MeshInstance3D" parent="."]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.1254, 3.37809, -0.978076)
+mesh = ExtResource("95_62ncw")
+surface_material_override/0 = SubResource("StandardMaterial3D_12pjp")
+
+[node name="ObjDocumentReisebRoderDdr-bulgarischeSchwarzmeerkSte013" type="MeshInstance3D" parent="."]
+transform = Transform3D(0.997323, -6.39203e-09, -0.0731164, 0, -1, 8.74228e-08, -0.0731164, -8.71888e-08, -0.997323, -0.122096, 1.74096, -0.724937)
+mesh = ExtResource("97_1qfd0")
+surface_material_override/0 = SubResource("StandardMaterial3D_75btn")
+
+[node name="ObjPictureframeSandmann001" type="MeshInstance3D" parent="."]
+transform = Transform3D(-0.311244, 0, -1.6051, 0, 1.635, 0, 1.6051, 0, -0.311244, -0.00761628, 3.46063, -4.54964)
+mesh = ExtResource("98_n4yf6")
+surface_material_override/0 = SubResource("StandardMaterial3D_epcfe")
+
+[node name="ObjPictureframeSandmann002" type="MeshInstance3D" parent="."]
+transform = Transform3D(1.37, 0, 0, 0, 1.37, 0, 0, 0, 1.37, -0.825736, 3.62631, -3.82291)
+mesh = ExtResource("99_ii1lo")
+surface_material_override/0 = SubResource("StandardMaterial3D_y6gkk")
+
+[node name="ObjPictureframeSandmann003" type="MeshInstance3D" parent="."]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.825575, 4.02418, -0.0578553)
+mesh = ExtResource("100_8s3kd")
+surface_material_override/0 = SubResource("StandardMaterial3D_kh87g")
+
+[node name="ObjPostcardRGen80s001" type="MeshInstance3D" parent="."]
+transform = Transform3D(-5.02681e-08, 1.15, -5.02681e-08, 0, -5.02681e-08, -1.15, -1.15, -5.02681e-08, 2.19729e-15, -0.80482, 2.61278, -0.089537)
+mesh = ExtResource("101_2tptc")
+surface_material_override/0 = SubResource("StandardMaterial3D_8k2xw")
+
+[node name="ObjPostcardRGen80s003" type="MeshInstance3D" parent="."]
+transform = Transform3D(-1.08839, 1.4906e-07, -0.190875, 1.34069e-07, 1.105, 9.84541e-08, 0.190875, 7.38154e-08, -1.08839, -0.590775, 1.74464, -0.739298)
+mesh = ExtResource("103_tmwyl")
+surface_material_override/0 = SubResource("StandardMaterial3D_g5m6h")
+
+[node name="ObjPostcardRGen80s004" type="MeshInstance3D" parent="."]
+transform = Transform3D(-0.901545, -0.129501, -0.75023, -0.104248, 1.17285, -0.077177, 0.754154, 0.007315, -0.907523, -0.372775, 1.61753, -2.55353)
+mesh = ExtResource("103_tmwyl")
+surface_material_override/0 = SubResource("StandardMaterial3D_g5m6h")
 
 [connection signal="pressed" from="Complete UIs/Info_UI/Rotate_Button" to="Complete UIs/Info_UI" method="_on_rotate_button_pressed"]
 [connection signal="pressed" from="Complete UIs/Info_UI/Zoom_Button" to="Complete UIs/Info_UI" method="_on_zoom_button_pressed"]
